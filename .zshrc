@@ -12,5 +12,4 @@ prompt_context() {
   fi
 }
 
-alias vi="nvim"
 alias lla="ls -la"
