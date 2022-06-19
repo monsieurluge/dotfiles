@@ -22,11 +22,13 @@ set encoding=utf-8
 
 " ui ----------
 
-set cursorline
 set number
 set wildmode=longest,list
 set cc=80 
 set ru " display rulers
+set cursorline
+highlight Visual cterm=none ctermbg=236 ctermfg=none guibg=Grey40
+highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
 
 " system ----------
 
