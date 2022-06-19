@@ -42,11 +42,11 @@
                         ]
                     },
                     {
-                        "description": "Change Command + h/j/k/l to Arrows",
+                        "description": "Change Command + j/k/l/; to Arrows",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "h",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -65,7 +65,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -84,7 +84,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
@@ -103,7 +103,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
