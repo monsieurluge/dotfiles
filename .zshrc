@@ -13,3 +13,5 @@ prompt_context() {
 }
 
 alias lla="ls -la"
+
+[ -f .aliases ] && source .aliases
