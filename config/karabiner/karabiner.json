@@ -42,7 +42,7 @@
                         ]
                     },
                     {
-                        "description": "Change Command + j/k/l/; to Arrows",
+                        "description": "Navigation cluster",
                         "manipulators": [
                             {
                                 "from": {
@@ -119,12 +119,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Command + ,/. to pageup/pagedown",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "comma",
@@ -162,12 +157,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Command + h/m to home/end",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "h",
