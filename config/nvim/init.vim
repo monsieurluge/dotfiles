@@ -56,3 +56,5 @@ call plug#end()
 
 colorscheme nord
 
+hi Normal guibg=NONE ctermbg=NONE
+
