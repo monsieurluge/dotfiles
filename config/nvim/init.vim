@@ -47,6 +47,9 @@ nnoremap j h
 call plug#begin()
   Plug 'shaunsingh/nord.nvim'
   Plug 'scrooloose/nerdtree'
+  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 " theme ----------
