@@ -258,7 +258,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "3",
+                                    "key_code": "1",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
