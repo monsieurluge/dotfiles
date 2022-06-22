@@ -42,7 +42,7 @@
                         ]
                     },
                     {
-                        "description": "grave accent if pressed alone, left command otherwise",
+                        "description": "Accents",
                         "manipulators": [
                             {
                                 "from": {
@@ -64,12 +64,7 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "single quote if pressed alone, right command otherwise",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
                                     "key_code": "right_command",
