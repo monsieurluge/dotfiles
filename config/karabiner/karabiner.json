@@ -249,7 +249,7 @@
                         ]
                     },
                     {
-                        "description": "Change Command + numbers to function keys",
+                        "description": "Function keys",
                         "manipulators": [
                             {
                                 "from": {
