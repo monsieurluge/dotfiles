@@ -37,10 +37,10 @@ set clipboard+=unnamedplus
 
 " mappings ----------
 
-nnoremap ; l
-nnoremap l k
-nnoremap k j
-nnoremap j h
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
 
 " plugins ----------
 
