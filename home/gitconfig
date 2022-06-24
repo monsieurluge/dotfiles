@@ -3,3 +3,6 @@
 [diff]
     tool = nvim
 
+[user]
+	name = monsieurluge
+	email = monsieurluge@gmail.com
