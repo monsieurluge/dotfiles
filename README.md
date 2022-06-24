@@ -4,5 +4,13 @@ These are my personal config files.
 
 # Content
 
- - zsh config
+## Home Folder
+
+ - .zsh
+ - .gitignore
+ - .gitconfig
+
+## Config Folder
+
  - karabiner-elements config
+
