@@ -19,7 +19,7 @@ alias lla="ls -la"
 [ -f .aliases ] && source .aliases
 
 
-# typewriter prompt theme
+# typewritten prompt theme
 
 fpath=($fpath "$HOME/.zfunctions")
 autoload -U promptinit; promptinit

@@ -14,3 +14,7 @@ These are my personal config files.
 
  - karabiner-elements config
 
+# Resources
+
+[typewritten zsh prompt theme](https://typewritten.dev)
+
