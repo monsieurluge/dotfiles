@@ -12,6 +12,16 @@ prompt_context() {
   fi
 }
 
+# aliases
+
 alias lla="ls -la"
 
 [ -f .aliases ] && source .aliases
+
+
+# typewriter prompt theme
+
+fpath=($fpath "$HOME/.zfunctions")
+autoload -U promptinit; promptinit
+prompt typewritten
+
