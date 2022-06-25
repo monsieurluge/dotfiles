@@ -50,7 +50,25 @@ call plug#begin()
   Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
+
+lua << END
+require('lualine').setup({
+  options = {
+    icons_enabled = false,
+    theme = 'nord',
+    component_separators = '',
+    section_separators = ''
+  },
+  sections = {
+    lualine_x = {},
+    lualine_y = {'encoding', 'fileformat', 'filetype'},
+    lualine_z = {'location'}
+  }
+})
+END
 
 " theme ----------
 
