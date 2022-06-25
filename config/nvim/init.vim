@@ -6,6 +6,7 @@ set hlsearch
 set shell=zsh
 set ttyfast
 set ignorecase " ignore case when searching
+set noswapfile
 
 " formatting ----------
 
