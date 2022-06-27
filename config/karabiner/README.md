@@ -8,11 +8,11 @@ This file is intended to be read with a monotype font, without text wrapping.
 
 ```txt
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
-│  `  │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │DELETE│
+│ ESC │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │DELETE│
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
-│ ESC  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │ DEL │
+│ TAB  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │ DEL │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│  TAB   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │ RETURN  │
+│  ESC   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │ RETURN  │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │   SHIFT   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │   SHIFT    │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
@@ -22,12 +22,9 @@ This file is intended to be read with a monotype font, without text wrapping.
 
 Changes from the default layout:
 
- - ESC instead of TAB
- - TAB instead of CAPS LOCK
+ - single press on CAPS LOCK = ESC
+ - long press on CAPS LOCK = CONTROL
  - BACKSPACE instead of BACKSLASH
- - single press on LEFT COMMAND = GRAVE ACCENT ( \` )
- - long press on SPACEBAR = CONTROL
- - single press on RIGHT COMMAND = SINGLE QUOTE ( ' )
 
 # Left Command Layer
 
@@ -37,7 +34,7 @@ Changes from the default layout:
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
 │      │     │     │     │     │     │     │     │     │     │     │     │     │SUPR │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│        │     │     │     │     │     │     │     │     │     │     │     │         │
+│        │     │     │     │     │     │     │  '  │  (  │  )  │  `  │     │         │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │           │     │     │     │     │     │     │     │  [  │  ]  │  \  │            │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
