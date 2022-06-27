@@ -46,8 +46,11 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_command",
+                                    "key_code": "j",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -55,20 +58,18 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_command"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
+                                        "key_code": "quote"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "right_command",
+                                    "key_code": "semicolon",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -76,12 +77,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "quote"
+                                        "key_code": "grave_accent_and_tilde"
                                     }
                                 ],
                                 "type": "basic"
