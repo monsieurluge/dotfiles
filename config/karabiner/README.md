@@ -24,9 +24,14 @@ Changes from the default layout:
 
  - ESC instead of TAB
  - TAB instead of CAPSLOCK
+ - BACKSPACE instead of BACKSLASH
  - single press on SPACEBAR = SPACE
  - long press on SPACEBAR = CONTROL
- - BACKSPACE instead of BACKSLASH
+ - single press on LEFT COMMAND = GRAVE ACCENT
+ - long press on LEFT COMMAND = LEFT COMMAND
+ - single press on RIGHT COMMAND = QUOTE
+ - long press on RIGHT COMMAND = RIGHT COMMAND
+
 
 # Left Command Layer
 
@@ -36,7 +41,7 @@ Changes from the default layout:
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
 │      │     │     │     │     │     │     │     │     │     │     │     │     │SUPR │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│        │     │     │     │     │     │     │  '  │  (  │  )  │  `  │     │         │
+│        │     │     │     │     │     │     │     │  (  │  )  │     │     │         │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │           │     │     │     │     │     │     │     │  [  │  ]  │  \  │            │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
