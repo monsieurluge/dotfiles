@@ -2,7 +2,12 @@
     branch = false
 [diff]
     tool = nvim
+	colorMoved = zebra
 
 [user]
 	name = monsieurluge
 	email = monsieurluge@gmail.com
+[pull]
+	rebase = true
+[fetch]
+	prune = true
