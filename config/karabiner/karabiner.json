@@ -28,6 +28,14 @@
                 {
                     "from": { "key_code": "caps_lock" },
                     "to": [{ "key_code": "tab" }]
+                },
+                {
+                    "from": { "key_code": "left_command" },
+                    "to": [{ "key_code": "left_option" }]
+                },
+                {
+                    "from": { "key_code": "left_option" },
+                    "to": [{ "key_code": "left_command" }]
                 }
             ],
             "complex_modifications": {
