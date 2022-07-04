@@ -146,16 +146,6 @@
                         ]
                     },
                     {
-                        "description": "delete",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "delete_or_backspace", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
-                                "to": [{ "key_code": "delete_forward" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "function keys",
                         "manipulators": [
                             {
