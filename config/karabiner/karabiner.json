@@ -6,7 +6,7 @@
     },
     "profiles": [
         {
-            "name": "Default profile",
+            "name": "monsieurluge",
             "selected": true,
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
