@@ -25,6 +25,7 @@ Changes from the default layout:
  - ESC instead of TAB
  - TAB instead of CAPSLOCK
  - BACKSPACE instead of BACKSLASH
+ - switch the LEFT COMMAND and LEFT OPTION keys
  - single press on SPACEBAR = SPACE
  - long press on SPACEBAR = CONTROL
 
