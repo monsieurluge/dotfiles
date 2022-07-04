@@ -27,11 +27,6 @@ Changes from the default layout:
  - BACKSPACE instead of BACKSLASH
  - single press on SPACEBAR = SPACE
  - long press on SPACEBAR = CONTROL
- - single press on LEFT COMMAND = GRAVE ACCENT
- - long press on LEFT COMMAND = LEFT COMMAND
- - single press on RIGHT COMMAND = QUOTE
- - long press on RIGHT COMMAND = RIGHT COMMAND
-
 
 # Left Option Layer
 
