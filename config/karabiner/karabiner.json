@@ -224,31 +224,6 @@
                         ]
                     },
                     {
-                        "description": "opening & closing delimiters",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "k", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
-                                "to": [{ "key_code": "9", "modifiers": "left_shift" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "key_code": "l", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
-                                "to": [{ "key_code": "0", "modifiers": "left_shift" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "key_code": "comma", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
-                                "to": [{ "key_code": "open_bracket" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "key_code": "period", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
-                                "to": [{ "key_code": "close_bracket" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "backslash",
                         "manipulators": [
                             {
