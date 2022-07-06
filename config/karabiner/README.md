@@ -16,7 +16,7 @@ This file is intended to be read with a monotype font, without text wrapping.
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │   SHIFT   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │   SHIFT    │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
-│ FN  │ CTL │ CMD │ OPT │                             │ CMD │ OPT │  arrows cluster  │
+│ FN  │ CTL │ OPT │ CMD │                             │ CMD │ OPT │  arrows cluster  │
 └─────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴──────────────────┘
 ```
 
@@ -25,11 +25,10 @@ Changes from the default layout:
  - ESC instead of TAB
  - TAB instead of CAPSLOCK
  - BACKSPACE instead of BACKSLASH
- - switch the LEFT COMMAND and LEFT OPTION keys
  - single press on SPACEBAR = SPACE
  - long press on SPACEBAR = CONTROL
 
-# Left Option Layer
+# Left Command Layer
 
 ```txt
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
