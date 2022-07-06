@@ -291,6 +291,61 @@
                         ]
                     },
                     {
+                        "description": "numpad",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "m", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "1" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "comma", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "2" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "period", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "3" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "j", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "4" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "k", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "5" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "l", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "6" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "u", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "7" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "i", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "8" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "o", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "9" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "spacebar", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "0" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "disable annoying CTRL shortcuts",
                         "manipulators": [
                             { "from": { "key_code": "a", "modifiers": { "mandatory": ["left_control"] } }, "type": "basic" },
