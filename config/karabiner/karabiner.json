@@ -43,7 +43,7 @@
                         "description": "space & control",
                         "manipulators": [
                             {
-                                "from": { "key_code": "spacebar", "modifiers": { "optional": ["any"] } },
+                                "from": { "key_code": "spacebar" },
                                 "to": [{ "key_code": "left_control" }],
                                 "to_if_alone": [{ "key_code": "spacebar" }],
                                 "type": "basic"
@@ -340,6 +340,11 @@
                             },
                             {
                                 "from": { "key_code": "semicolon", "modifiers": { "mandatory": ["left_option"] } },
+                                "to": [{ "key_code": "0" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "spacebar", "modifiers": { "mandatory": ["left_option"] } },
                                 "to": [{ "key_code": "0" }],
                                 "type": "basic"
                             }
