@@ -12,9 +12,9 @@ The main goal is to reduce the finger traveling distance, typing fatigue and sta
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
 │ ESC │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │DELETE│
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
-│ ESC  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │ DEL │
+│ TAB  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │ DEL │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│  TAB   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │ RETURN  │
+│  ESC   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │ RETURN  │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │   SHIFT   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │   SHIFT    │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
@@ -22,13 +22,17 @@ The main goal is to reduce the finger traveling distance, typing fatigue and sta
 └─────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴──────────────────┘
 ```
 
-Changes from the default layout:
+Default layout changes:
 
- - ESC instead of TAB
- - TAB instead of CAPSLOCK
- - BACKSPACE instead of BACKSLASH
- - single press on SPACEBAR = SPACE
- - long press on SPACEBAR = CONTROL
+ - BACKSLASH is replaced by DELETE
+ - CAPS LOCK is replaced by ESC
+ - long press on CAPS LOCK = CONTROL
+ - single press on LEFT SHIFT = delete word on the left of the cursor
+ - single press on RIGHT SHIFT = delete word on the right of the cursor
+
+Misc:
+
+ - press COMMAND+Q twice to quit the current application
 
 # Left Command Layer
 

@@ -20,38 +20,47 @@
                 {
                     "from": { "key_code": "backslash" },
                     "to": [{ "key_code": "delete_or_backspace" }]
-                },
-                {
-                    "from": { "key_code": "tab" },
-                    "to": [{ "key_code": "escape" }]
-                },
-                {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "tab" }]
                 }
             ],
             "complex_modifications": {
                 "parameters": {
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
-                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_alone_timeout_milliseconds": 200,
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
                     {
-                        "description": "space & control",
+                        "description": "CAPS_LOCK to ESCAPE or LEFT_CONTROL if held",
                         "manipulators": [
                             {
-                                "from": { "key_code": "spacebar" },
+                                "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
                                 "to": [{ "key_code": "left_control" }],
-                                "to_if_alone": [{ "key_code": "spacebar" }],
+                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "left command shortcuts (top row)",
+                        "description": "LEFT SHIFT to delete previous word, RIGHT SHIFT to delete the next one",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "left_shift" },
+                                "to": [{ "key_code": "left_shift" }],
+                                "to_if_alone": [{ "key_code": "delete_or_backspace", "modifiers": "left_option" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "right_shift" },
+                                "to": [{ "key_code": "right_shift" }],
+                                "to_if_alone": [{ "key_code": "delete_or_backspace", "modifiers": ["left_option", "fn"] }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "LEFT_COMMAND shortcuts (top row)",
                         "manipulators": [
                             {
                                 "from": { "key_code": "q", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
@@ -106,7 +115,7 @@
                         ]
                     },
                     {
-                        "description": "left command shortcuts (home row)",
+                        "description": "LEFT_COMMAND shortcuts (home row)",
                         "manipulators": [
                             {
                                 "from": { "key_code": "a", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
@@ -161,7 +170,7 @@
                         ]
                     },
                     {
-                        "description": "left command shortcuts (bottom row)",
+                        "description": "LEFT_COMMAND shortcuts (bottom row)",
                         "manipulators": [
                             {
                                 "from": { "key_code": "v", "modifiers": { "mandatory": ["left_command"], "optional": ["any"] } },
@@ -346,6 +355,26 @@
                             {
                                 "from": { "key_code": "spacebar", "modifiers": { "mandatory": ["left_option"] } },
                                 "to": [{ "key_code": "0" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "quit application only by pressing COMMAND+Q twice",
+                        "manipulators": [
+                            {
+                                "conditions": [{ "name": "command-q", "type": "variable_if", "value": 1 }],
+                                "from": { "key_code": "q", "modifiers": { "mandatory": "command" } },
+                                "to": [{ "key_code": "q", "modifiers": "left_command" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "q", "modifiers": { "mandatory": "command" } },
+                                "to": [{ "set_variable": { "name": "command-q", "value": 1 } }],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [{ "set_variable": { "name": "command-q", "value": 0 } }],
+                                    "to_if_invoked": [{ "set_variable": { "name": "command-q", "value": 0 } }]
+                                },
                                 "type": "basic"
                             }
                         ]
