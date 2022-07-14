@@ -18,6 +18,14 @@
             },
             "simple_modifications": [
                 {
+                    "from": { "key_code": "tab" },
+                    "to": [{ "key_code": "escape" }]
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "tab" }]
+                },
+                {
                     "from": { "key_code": "backslash" },
                     "to": [{ "key_code": "delete_or_backspace" }]
                 }
@@ -32,12 +40,12 @@
                 },
                 "rules": [
                     {
-                        "description": "CAPS_LOCK to ESCAPE or LEFT_CONTROL if held",
+                        "description": "SPACEBAR to LEFT_CONTROL if held",
                         "manipulators": [
                             {
-                                "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
+                                "from": { "key_code": "spacebar", "modifiers": { "optional": ["any"] } },
                                 "to": [{ "key_code": "left_control" }],
-                                "to_if_alone": [{ "key_code": "escape" }],
+                                "to_if_alone": [{ "key_code": "spacebar" }],
                                 "type": "basic"
                             }
                         ]
