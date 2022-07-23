@@ -386,6 +386,19 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "disable annoying MacOS shortcuts",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "h", "modifiers": { "mandatory": "command" } },
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "m", "modifiers": { "mandatory": "command" } },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             }
