@@ -13,3 +13,5 @@
 	prune = true
 [init]
 	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore
