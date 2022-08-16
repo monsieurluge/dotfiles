@@ -38,5 +38,7 @@ delete:       \U007F
     "^n" = "noop:";
     "^o" = "noop:";
     "^t" = "noop:";
+    "@h" = "noop:";
+    "@m" = "noop:";
     "~ " = ("insertText:", "0");
 }
