@@ -15,6 +15,13 @@ alias lla="ls -la"
 
 fpath=($fpath "$HOME/.zfunctions")
 autoload -U promptinit; promptinit
+export TYPEWRITTEN_RELATIVE_PATH="home"
 prompt typewritten
 
 fpath=($fpath "/Users/laurent/.zfunctions")
+
+# volta
+
+export PATH=/Users/laurent/.volta/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
