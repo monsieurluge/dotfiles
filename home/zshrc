@@ -8,6 +8,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias lla="ls -la"
 alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
+alias dockerls="docker container ls --format '{{.ID}} -> {{.Names}} ({{.Status}}) :: {{.Ports}}'"
+alias dockerlst="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
 
 [ -f .aliases ] && source .aliases
 
