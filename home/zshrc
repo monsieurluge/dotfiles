@@ -6,10 +6,12 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 
-alias lla="ls -la"
+unalias -m '*'
+alias ll="ls -l --color"
+alias lla="ls -la --color"
 alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
-alias dockerls="docker container ls --format '{{.ID}} -> {{.Names}} ({{.Status}}) :: {{.Ports}}'"
-alias dockerlst="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
+alias dockerls="docker container ls --format '{{.ID}} -> {{.Names}} ({{.Status}}) :: {{.Ports}}' | sort -k 3"
+alias dockerlst="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 
 [ -f .aliases ] && source .aliases
 
