@@ -13,6 +13,10 @@ alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origi
 alias dockerls="docker container ls --format '{{.ID}} -> {{.Names}} ({{.Status}}) :: {{.Ports}}' | sort -k 3"
 alias dockerlst="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 
+endquarantine() {
+    xattr -rd com.apple.quarantine /Applications/$1.app
+}
+
 [ -f .aliases ] && source .aliases
 
 # typewritten prompt theme
