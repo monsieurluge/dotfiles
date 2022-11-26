@@ -961,11 +961,21 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_command"
+                                "key_code": "backslash"
                             },
                             "to": [
                                 {
-                                    "key_code": "left_option"
+                                    "key_code": "delete_or_backspace"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "caps_lock"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "tab"
                                 }
                             ]
                         },
@@ -996,6 +1006,26 @@
                             "to": [
                                 {
                                     "key_code": "right_command"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "tab"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "escape"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_option"
                                 }
                             ]
                         }
@@ -1214,38 +1244,7 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_or_backspace"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "caps_lock"
-                    },
-                    "to": [
-                        {
-                            "key_code": "tab"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "tab"
-                    },
-                    "to": [
-                        {
-                            "key_code": "escape"
-                        }
-                    ]
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,
