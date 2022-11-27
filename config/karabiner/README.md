@@ -18,13 +18,14 @@ The main goal is to reduce the finger traveling distance, typing fatigue and sta
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │   SHIFT   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │   SHIFT    │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
-│ FN  │ CTL │ CMD │ OPT │                             │ OPT │ CMD │  arrows cluster  │
+│ FN  │ OPT │ CTL │ CMD │                             │ OPT │ CMD │  arrows cluster  │
 └─────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴──────────────────┘
 ```
 
-Default layout changes:
+Default layout changes, MacBook internal keyboard only:
 
- - CMD and OPT are swapped on each side
+ - CMD and OPT are swapped on the right side
+ - OPT and CTRL are swapped on the left side
  - BACKSLASH is replaced by DELETE
  - TAB is replaced by ESC
  - CAPS LOCK is replaced by TAB
@@ -32,11 +33,7 @@ Default layout changes:
  - single press on LEFT SHIFT = delete word on the left of the cursor
  - single press on RIGHT SHIFT = delete word on the right of the cursor
 
-Misc:
-
- - press COMMAND+Q twice to quit the current application
-
-# Left Option Layer
+# Left Command Layer - symbols
 
 ```txt
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
@@ -52,13 +49,29 @@ Misc:
 └─────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴──────────────────┘
 ```
 
-# Right Option Layer
+# Left Control Layer - numpad
+
+```txt
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
+│     │     │     │     │     │     │     │     │     │     │     │     │     │      │
+├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
+│      │     │     │     │     │     │     │  7  │  8  │  9  │     │     │     │     │
+├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
+│        │     │     │     │     │     │     │  4  │  5  │  6  │     │     │         │
+├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
+│           │     │     │     │     │     │  0  │  1  │  2  │  3  │     │            │
+├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
+│     │     │░░░░░│     │                             │     │     │  arrows cluster  │
+└─────┴─────┴─────┴─────┴─────────────────────────────┴─────┴─────┴──────────────────┘
+```
+
+# Right Option Layer - navigation and functions
 
 ```txt
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
 │     │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │      │
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
-│      │     │     │     │     │     │     │     │     │     │     │     │     │     │
+│      │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │     │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
 │        │     │     │     │     │     │     │LEFT │DOWN │ UP  │RIGHT│     │         │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
