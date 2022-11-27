@@ -17,7 +17,7 @@
                 },
                 "rules": [
                     {
-                        "description": "SPACEBAR to LEFT_CONTROL if held",
+                        "description": "SPACEBAR to RIGHT_CONTROL if held",
                         "manipulators": [
                             {
                                 "from": {
@@ -30,7 +30,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_control"
+                                        "key_code": "right_control"
                                     }
                                 ],
                                 "to_if_alone": [
