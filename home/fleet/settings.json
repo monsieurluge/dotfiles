@@ -1,0 +1,20 @@
+{
+    "zoomLevel": 1.0,
+    "showEmptyStateOnLastClosedWindow": false,
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 20.0,
+    "editor.lineSpacing": 1.0,
+    "editor.ligatures": false,
+    "editor.alwaysShowVerticalScrollbar": false,
+    "editor.showLineNumbers": false,
+    "editor.showScrollbarMarks": false,
+    "editor.softWrapEnabled": true,
+    "editor.showFileTemplatesSuggestion": false,
+    "editor.renderRunInGutter": false,
+    "editor.showFloatingDebugPanel": true,
+    "editor.showLineStatus": false,
+    "terminal.fontSize": 15.0,
+    "theme": "dark_purple-edited",
+    "editor.showAutoImportWidget": false,
+    "terminal.lineSpacing": 1.2
+}
