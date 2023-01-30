@@ -295,6 +295,62 @@
     {
       "key": "ctrl-e",
       "trigger": "-end"
+    },
+    {
+      "key": "ctrl-k ctrl-h",
+      "trigger": "show-tooltip"
+    },
+    {
+      "key": "alt-return",
+      "trigger": "-quick-fixes"
+    },
+    {
+      "key": "ctrl-k ctrl-a",
+      "trigger": "quick-fixes"
+    },
+    {
+      "key": "alt-numpadenter",
+      "trigger": "-quick-fixes"
+    },
+    {
+      "key": "ctrl-i",
+      "trigger": "optimize-imports"
+    },
+    {
+      "key": "cmd-alt-o",
+      "trigger": "-optimize-imports"
+    },
+    {
+      "key": "ctrl-k ctrl-z",
+      "trigger": "toggle-distraction-free-mode"
+    },
+    {
+      "key": "cmd-shift-p",
+      "trigger": "-show-goto-symbol-panel"
+    },
+    {
+      "key": "ctrl-h",
+      "trigger": "-delete-backward"
+    },
+    {
+      "key": "cmd-shift-o",
+      "trigger": "-show-file-symbols"
+    },
+    {
+      "key": "ctrl-h",
+      "trigger": "show-file-symbols"
+    },
+    {
+      "key": "shift-cmd-w",
+      "trigger": "close-window"
+    },
+    {
+      "key": "cmd-shift-l",
+      "trigger": "-select-all-occurrences"
+    },
+    {
+      "key": "shift-ctrl-d",
+      "trigger": "select-all-occurrences"
     }
   ]
 }

@@ -16,5 +16,11 @@
     "terminal.fontSize": 15.0,
     "theme": "dark_purple-edited",
     "editor.showAutoImportWidget": false,
-    "terminal.lineSpacing": 1.2
+    "terminal.lineSpacing": 1.2,
+    "editor.distractionFreeMode": false,
+    "editor.renderWhitespace": "All",
+    "editor.guides": [],
+    "editor.showCodeVision": false,
+    "editor.semanticHighlighting": true,
+    "goto_panel.showShortcuts": false
 }
