@@ -321,7 +321,7 @@
       "trigger": "-optimize-imports"
     },
     {
-      "key": "ctrl-k ctrl-z",
+      "key": "ctrl-u ctrl-z",
       "trigger": "toggle-distraction-free-mode"
     },
     {
@@ -351,6 +351,10 @@
     {
       "key": "shift-ctrl-d",
       "trigger": "select-all-occurrences"
+    },
+    {
+      "key": "shift-ctrl-p",
+      "trigger": "toggle-recent-workspaces-popup"
     }
   ]
 }
