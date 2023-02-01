@@ -355,6 +355,66 @@
     {
       "key": "shift-ctrl-p",
       "trigger": "toggle-recent-workspaces-popup"
+    },
+    {
+      "key": "ctrl-y",
+      "trigger": "workspace-tree/show-in-files"
+    },
+    {
+      "key": "tab",
+      "trigger": "-focus-next"
+    },
+    {
+      "key": "ctrl-n",
+      "trigger": "-insert-snippet"
+    },
+    {
+      "key": "shift-tab",
+      "trigger": "-focus-prev"
+    },
+    {
+      "key": "cmd-g",
+      "trigger": "-next-occurrence"
+    },
+    {
+      "key": "f3",
+      "trigger": "next-occurrence"
+    },
+    {
+      "key": "shift-return",
+      "trigger": "-find-input-prev-occurrence"
+    },
+    {
+      "key": "shift-numpadenter",
+      "trigger": "-find-input-prev-occurrence"
+    },
+    {
+      "key": "f4",
+      "trigger": "find-input-prev-occurrence"
+    },
+    {
+      "key": "shift-tab",
+      "trigger": "remove-tab"
+    },
+    {
+      "key": "cmd-i",
+      "trigger": "-show-parameter-info"
+    },
+    {
+      "key": "ctrl-k ctrl-p",
+      "trigger": "show-parameter-info"
+    },
+    {
+      "key": "cmd-shift-r",
+      "trigger": "-run/run-at-caret"
+    },
+    {
+      "key": "shift-ctrl-k",
+      "trigger": "add-caret-down"
+    },
+    {
+      "key": "shift-ctrl-l",
+      "trigger": "add-caret-up"
     }
   ]
 }
