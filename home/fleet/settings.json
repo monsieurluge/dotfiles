@@ -14,7 +14,7 @@
     "editor.showFloatingDebugPanel": true,
     "editor.showLineStatus": false,
     "terminal.fontSize": 15.0,
-    "theme": "dark_purple-edited",
+    "theme": "sand_storm",
     "editor.showAutoImportWidget": false,
     "terminal.lineSpacing": 1.2,
     "editor.distractionFreeMode": false,
@@ -22,5 +22,6 @@
     "editor.guides": [],
     "editor.showCodeVision": false,
     "editor.semanticHighlighting": true,
-    "goto_panel.showShortcuts": false
+    "goto_panel.showShortcuts": false,
+    "git.revert.confirm": false
 }
