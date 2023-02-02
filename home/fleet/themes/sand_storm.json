@@ -4,13 +4,41 @@
         "theme.kind": "Dark",
         "theme.version": 1
     },
+    "palette": {
+        "TODO": "ff0000",
+        "Black": "000000",
+        "White": "ffffff",
+        "Transparent": "ffffff00",
+        // peat
+        "Color_Background": "3b3a36",
+        // gray sand
+        "Color_Light_1": "e5ccaf",
+        // sandstorm
+        "Color_Light_2": "bd8b69",
+        // woodsmoke
+        "Color_Light_3": "947764",
+        // radiant yellow
+        "Color_Accent": "fc9e21",
+        // black ink
+        "Color_Dark_1": "44413c",
+        // stone gray
+        "Color_Dark_2": "685e50",
+        // milky blue
+        "Color_Info": "72a8ba",
+        // bud green
+        "Color_Success": "79b465",
+        // dandelion
+        "Color_Warning": "fdd240",
+        // claret red
+        "Color_Error": "c84c61"
+    },
     "colors": {
-        "border": "Black_Ink",
-        "border.@focused": "Black_Ink",
-        "fill": "Black_Ink",
+        "border": "Color_Dark_1",
+        "border.@focused": "Color_Dark_1",
+        "fill": "Color_Dark_1",
         "focusRing": "Transparent",
         "shadow": "00000030",
-        "text": "Gray_Sand",
+        "text": "Color_Light_1",
         "icon": "0c0c0c",
 
         "icon.blue.fill": "4D85FF",
@@ -19,11 +47,11 @@
         "icon.orange.fill": "CABA2D",
         "icon.red.fill": "C63A5D",
 
-        "text.@dimmed": "Woodsmoke",
+        "text.@dimmed": "Color_Light_3",
         "text.@disabled": "646078",
         "text.@error": "White",
-        "text.@placeholder": "Woodsmoke",
-        "text.@secondary": "Woodsmoke",
+        "text.@placeholder": "Color_Light_3",
+        "text.@secondary": "Color_Light_3",
         "text.@success": "25AD6B",
 
         "fill.@dimmed": "Transparent",
@@ -33,30 +61,30 @@
         "fill.@selected": "49415C",
 
         "button.border": "Transparent",
-        "button.fill": "Black_Ink",
-        "button.text": "Gray_Sand",
+        "button.fill": "Color_Dark_1",
+        "button.text": "Color_Light_1",
         "button.border.@disabled": "Transparent",
         "button.fill.@disabled": "00000030",
         "button.text.@disabled": "ff0000",
-        "button.border.@focused": "Woodsmoke",
-        "button.fill.@hovered": "Woodsmoke",
-        "button.text.@hovered": "Gray_Sand",
-        "button.fill.@pressed": "Black_Ink",
-        "button.text.@pressed": "Gray_Sand",
+        "button.border.@focused": "Color_Light_3",
+        "button.fill.@hovered": "Color_Light_3",
+        "button.text.@hovered": "Color_Light_1",
+        "button.fill.@pressed": "Color_Dark_1",
+        "button.text.@pressed": "Color_Light_1",
 
         "checkbox.border": "Transparent",
-        "checkbox.icon": "Gray_Sand",
-        "checkbox.fill": "Black_Ink",
+        "checkbox.icon": "Color_Light_1",
+        "checkbox.fill": "Color_Dark_1",
         "checkbox.border.@disabled": "Transparent",
-        "checkbox.icon.@disabled": "Sandstorm",
-        "checkbox.text.@disabled": "Sandstorm",
+        "checkbox.icon.@disabled": "Color_Light_2",
+        "checkbox.text.@disabled": "Color_Light_2",
         "checkbox.border.@focused": "Transparent",
-        "checkbox.fill.@disabled": "Black_Ink",
-        "checkbox.fill.@hovered": "Woodsmoke",
-        "checkbox.fill.@pressed": "Black_Ink",
+        "checkbox.fill.@disabled": "Color_Dark_1",
+        "checkbox.fill.@hovered": "Color_Light_3",
+        "checkbox.fill.@pressed": "Color_Dark_1",
 
         "completion.match.fill": "Transparent",
-        "completion.match.text": "Radiant_Yellow",
+        "completion.match.text": "Color_Accent",
 
         "parameterInfo.match.text": "ED94FF",
 
@@ -71,70 +99,70 @@
         "dangerous.button.text.@disabled": "646078",
         "dangerous.button.border.@focused": "ED7388",
 
-        "dialog.fill": "Black_Ink",
-        "dialog.editor.fill": "Peat",
-        "dialog.editor.currentLine.fill": "Black_Ink",
-        "dialog.editor.currentLine.fill.@focused": "Black_Ink",
+        "dialog.fill": "Color_Dark_1",
+        "dialog.editor.fill": "Color_Background",
+        "dialog.editor.currentLine.fill": "Color_Dark_1",
+        "dialog.editor.currentLine.fill.@focused": "Color_Dark_1",
         "dialog.tab.fill": "Transparent",
         "dialog.tab.border.@selected": "Transparent",
         "dialog.tab.border.@hovered": "Transparent",
         "dialog.tab.border.@focused.@selected": "Transparent",
         "dialog.tab.fill.@focused.@selected": "Transparent",
         "dialog.tab.fill.@hovered": "Transparent",
-        "dialog.tab.pane.fill": "Black_Ink",
+        "dialog.tab.pane.fill": "Color_Dark_1",
 
         "diff.added.fill": "Transparent",
-        "diff.added.text": "Gray_Sand",
-        "diff.conflict.fill": "Gray_Sand",
+        "diff.added.text": "Color_Light_1",
+        "diff.conflict.fill": "Color_Light_1",
         "diff.conflict.text": "F0507A",
         "diff.deleted.fill": "Transparent",
-        "diff.deleted.text": "Gray_Sand",
+        "diff.deleted.text": "Color_Light_1",
         "diff.modified.fill": "Transparent",
-        "diff.modified.text": "Gray_Sand",
+        "diff.modified.text": "Color_Light_1",
 
         "git.blame.fill": "B5791F",
 
         "dnd.fill": "FFFFFF20%",
 
         "interline.block.fill": "00000030",
-        "interline.editor.currentLine.fill": "Black_Ink",
-        "interline.editor.currentLine.fill.@focused": "Black_Ink",
+        "interline.editor.currentLine.fill": "Color_Dark_1",
+        "interline.editor.currentLine.fill.@focused": "Color_Dark_1",
 
-        "editor.fill": "Peat",
-        "editor.text": "Gray_Sand",
+        "editor.fill": "Color_Background",
+        "editor.text": "Color_Light_1",
         "editor.braceHighlight.fill": "Transparent",
         "editor.caret.fill": "White",
-        "editor.currentLine.fill": "Black_Ink",
-        "editor.currentLine.fill.@focused": "Black_Ink",
-        "editor.lineNumber.text": "Gray_Sand_Faded",
-        "editor.lineNumber.text.@selected": "Gray_Sand",
-        "editor.whitespace.text": "Peat",
+        "editor.currentLine.fill": "Color_Dark_1",
+        "editor.currentLine.fill.@focused": "Color_Dark_1",
+        "editor.lineNumber.text": "Color_Dark_2",
+        "editor.lineNumber.text.@selected": "Color_Light_1",
+        "editor.whitespace.text": "Color_Background",
 
-        "header.fill": "Black_Ink",
+        "header.fill": "Color_Dark_1",
 
         "icon.button.border": "Transparent",
         "icon.button.fill": "Transparent",
-        "icon.button.text": "Sandstorm",
-        "icon.button.text.@disabled": "Sandstorm",
+        "icon.button.text": "Color_Light_2",
+        "icon.button.text.@disabled": "Color_Light_2",
         "icon.button.border.@focused": "Transparent",
         "icon.button.fill.@hovered": "ffffff10",
         "icon.button.fill.@pressed": "ffffff20",
-        "icon.button.fill.@selected": "Radiant_Yellow",
-        "icon.button.text.@hovered": "Gray_Sand",
-        "icon.button.text.@selected": "Peat",
+        "icon.button.fill.@selected": "Color_Accent",
+        "icon.button.text.@hovered": "Color_Light_1",
+        "icon.button.text.@selected": "Color_Background",
         "icon.button.fill.@selected.@disabled": "323245",
         "icon.button.border.@selected.@focused": "814F9E",
         "icon.button.fill.@selected.@focused": "49415C",
         "icon.button.fill.@selected.@focused.@hovered": "49415C",
-        "icon.button.fill.@selected.@hovered": "Radiant_Yellow",
-        "icon.button.text.@selected.@hovered": "Peat",
+        "icon.button.fill.@selected.@hovered": "Color_Accent",
+        "icon.button.text.@selected.@hovered": "Color_Background",
         "icon.button.text.@selected.@pressed": "B279F2",
 
         "input.border.@disabled": "45405C",
         "input.fill.@disabled": "Transparent",
         "input.text.@disabled": "646078",
         "input.border.@error": "993750",
-        "input.border.@focused": "Sandstorm",
+        "input.border.@focused": "Color_Light_2",
         "input.border.@error.@focused": "D4677A",
         "input.focusRing.@error.@focused": "993750",
 
@@ -167,9 +195,9 @@
         "selection.fill.@dimmed": "ffffff10",
         "selection.fill.@hovered": "ffffff10",
 
-        "separator.border": "Black_Ink",
+        "separator.border": "Color_Dark_1",
 
-        "mainSplit.separator.border": "Black_Ink",
+        "mainSplit.separator.border": "Color_Dark_1",
 
         "simpleToggle.circle.fill.@disabled": "D0D0D9",
         "simpleToggle.circle.fill": "D0D0D9",
@@ -178,20 +206,20 @@
         "simpleToggle.strip.fill": "6B388F",
 
         "match.fill": "Transparent",
-        "match.text": "Radiant_Yellow",
+        "match.text": "Color_Accent",
 
         "tab.border": "Transparent",
-        "tab.pane.fill": "Peat",
-        "tab.text": "Woodsmoke",
-        "tab.text.@selected": "Radiant_Yellow",
-        "tab.text.@hovered": "Gray_Sand",
-        "tab.fill": "Peat",
-        "tab.fill.@hovered": "Peat",
-        "tab.fill.@selected": "Peat",
-        "tab.fill.@focused.@selected": "Peat",
-        "tab.border.@hovered": "Gray_Sand",
-        "tab.border.@selected": "Radiant_Yellow",
-        "tab.border.@focused.@selected": "Radiant_Yellow",
+        "tab.pane.fill": "Color_Background",
+        "tab.text": "Color_Light_3",
+        "tab.text.@selected": "Color_Accent",
+        "tab.text.@hovered": "Color_Light_1",
+        "tab.fill": "Color_Background",
+        "tab.fill.@hovered": "Color_Background",
+        "tab.fill.@selected": "Color_Background",
+        "tab.fill.@focused.@selected": "Color_Background",
+        "tab.border.@hovered": "Color_Light_1",
+        "tab.border.@selected": "Color_Accent",
+        "tab.border.@focused.@selected": "Color_Accent",
 
         "terminal.ansiBlack.fill": "484848",
         "terminal.ansiBlack.text": "B3B3B3",
@@ -244,10 +272,10 @@
         "toggle.fill.@selected.@focused.@hovered": "744496",
         "toggle.fill.@selected.@focused.@pressed": "784A99",
 
-        "tool.fill": "Peat",
+        "tool.fill": "Color_Background",
 
-        "tooltip.fill": "Sandstorm",
-        "tooltip.text": "Peat",
+        "tooltip.fill": "Color_Light_2",
+        "tooltip.text": "Color_Background",
 
         "tree.cursor.border": "904AC2",
         "tree.border.@focused": "904AC2",
@@ -259,23 +287,23 @@
     },
     "text-attributes": {
         "editor.selection": {
-            "bgColor": "Radiant_Yellow",
-            "fgColor": "Peat",
+            "bgColor": "Color_Accent",
+            "fgColor": "Color_Background",
             "layer": 2000
         },
         "editor.text.scheme": {
-            "fgColor": "Gray_Sand"
+            "fgColor": "Color_Light_1"
         },
         "editor.text.composable": {
             "decoration": {
-                "color": "Gray_Sand"
+                "color": "Color_Light_1"
             }
         },
         "editor.search.results": {
             "bgColor": "Transparent",
             "layer": 100,
             "decoration": {
-                "color": "Radiant_Yellow",
+                "color": "Color_Accent",
                 "style": "BORDER"
             }
         },
@@ -293,15 +321,15 @@
             }
         },
         "comment": {
-            "fgColor": "Gray_Sand_Faded",
+            "fgColor": "Color_Dark_2",
             "layer": 5
         },
         "comment.parameter": {
-            "fgColor": "Woodsmoke",
+            "fgColor": "Color_Light_3",
             "layer": 5
         },
         "comment.parameter.value": {
-            "fgColor": "Woodsmoke",
+            "fgColor": "Color_Light_3",
             "layer": 5
         },
         "link": {
@@ -318,39 +346,39 @@
             }
         },
         "keyword": {
-            "fgColor": "Radiant_Yellow",
+            "fgColor": "Color_Accent",
             "layer": 20
         },
         "keyword.typeModifier": {
-            "fgColor": "Radiant_Yellow",
+            "fgColor": "Color_Accent",
             "layer": 20
         },
         "metadata": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 25
         },
         "number": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 10
         },
         "boolean": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 10
         },
         "string": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 15
         },
         "string.binary": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 15
         },
         "string.escape": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 25
         },
         "string.escape.unicode": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 25
         },
         "string.escape.alternative": {
@@ -358,7 +386,7 @@
             "layer": 25
         },
         "string.formatItem": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 25
         },
         "string.regexp": {
@@ -366,15 +394,15 @@
             "layer": 25
         },
         "identifier": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 10
         },
         "identifier.this": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.this.mutable": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.underCaret": {
@@ -386,78 +414,78 @@
             "layer": 20
         },
         "identifier.constant.predefined": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.variable.local": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.variable.local.reassigned": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20,
             "decoration": {
                 "color": "A6A6A6"
             }
         },
         "identifier.parameter": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.declaration": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.declaration.js": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.call": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.call.js": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.call.suspend": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.function.call.package": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.method.static": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.type": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.field": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.field.static": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.interface": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.type.class": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.type.enum": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.type.struct": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.type.valueType": {
@@ -465,15 +493,15 @@
             "layer": 20
         },
         "identifier.typeParameter": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.namedArgument": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
         "identifier.other": {
-            "fgColor": "Sandstorm",
+            "fgColor": "Color_Light_2",
             "layer": 20
         },
 
@@ -483,22 +511,22 @@
         },
 
         "attributeValue.html": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "entityReference.html": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "tag.html": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "tagName.html": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "tagName.custom.html": {
@@ -507,40 +535,40 @@
         },
 
         "attributeName.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "hex.css": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "identifier.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "identifier.function.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "identifier.variable.css": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "interpolation.css": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
 
         "jsCodeDelimiter.css": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "jsCodeInjection.css": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
 
@@ -557,21 +585,21 @@
             "layer": 20
         },
         "keyword.important.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "mixin.css": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
 
         "number.css": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
         "number.unit.css": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
@@ -581,43 +609,43 @@
         },
 
         "propertyValue.css": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "punctuation.css": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
 
         "selector.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "selector.id.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "selector.class.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "selector.pseudo.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
         "selector.tag.css": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "string.css": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "url.css": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
 
@@ -626,15 +654,15 @@
             "layer": 20
         },
         "markup.bold": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "markup.italic": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "markup.code.block": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 20
         },
         "markup.href": {
@@ -644,11 +672,11 @@
             }
         },
         "punctuation": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "punctuation.operator": {
-            "fgColor": "Gray_Sand",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "snippet": {
@@ -742,23 +770,23 @@
         },
 
         "problem.error": {
-            "fgColor": "Claret_Red",
-            "stripeColor": "Claret_Red",
+            "fgColor": "Color_Error",
+            "stripeColor": "Color_Error",
             "layer": 70
         },
         "problem.error.badCharacter": {
-            "fgColor": "Claret_Red",
-            "stripeColor": "Claret_Red",
+            "fgColor": "Color_Error",
+            "stripeColor": "Color_Error",
             "layer": 70
         },
         "problem.warning": {
-            "fgColor": "Claret_Red",
-            "stripeColor": "Buttercup_Yellow",
+            "fgColor": "Color_Error",
+            "stripeColor": "Color_Warning",
             "layer": 60
         },
         "problem.warning.weak": {
-            "fgColor": "Claret_Red",
-            "stripeColor": "Gray_Sand_Faded",
+            "fgColor": "Color_Error",
+            "stripeColor": "Color_Dark_2",
         },
         "problem.deprecated": {
             "decoration": {
@@ -768,17 +796,17 @@
             "layer": 30
         },
         "problem.info": {
-            "stripeColor": "Milky_Blue",
-            "stripeColor": "Milky_Blue",
+            "stripeColor": "Color_Info",
+            "stripeColor": "Color_Info",
             "layer": 50
         },
         "problem.unknown": {
-            "fgColor": "Claret_Red",
-            "stripeColor": "Claret_Red",
+            "fgColor": "Color_Error",
+            "stripeColor": "Color_Error",
             "layer": 50
         },
         "problem.unused": {
-            "fgColor": "Claret_Red",
+            "fgColor": "Color_Error",
             "decoration": {
                 "color": "ffffff50",
                 "position": "THROUGH"
@@ -789,20 +817,20 @@
         },
 
         "comment.buildConstraint.go": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 5
         },
 
         "identifier.methodReceiver.go": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
         "identifier.package.go": {
-            "fgColor": "Lime",
+            "fgColor": "TODO",
             "layer": 20
         },
         "identifier.typeDeclaration.go": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.typeReference.go": {
@@ -815,15 +843,15 @@
         },
 
         "metadata.structTag.arbitraryText.go": {
-            "fgColor": "Gray Dark",
+            "fgColor": "TODO",
             "layer": 25
         },
         "metadata.structTag.key.go": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 25
         },
         "metadata.structTag.value.go": {
-            "fgColor": "Green",
+            "fgColor": "TODO",
             "layer": 25
         },
 
@@ -832,56 +860,32 @@
             "layer": 20
         },
         "identifier.field.yaml": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
         "identifier.alias.yaml": {
-            "fgColor": "Yellow",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "punctuation.operator.merge.yaml": {
-            "fgColor": "Blue",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "schema.yaml": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
 
         "key.yaml": {
-            "fgColor": "Orange",
+            "fgColor": "TODO",
             "layer": 20
         },
 
         "value.yaml": {
-            "fgColor": "Gray",
+            "fgColor": "Color_Light_1",
             "layer": 20
         }
-    },
-    "palette": {
-        "Black": "000000",
-        "Blue": "4dacf0",
-        "Gray": "c9c9d1",
-        "Gray Dark": "676773",
-        "Yellow": "c7a65d",
-        "Green": "62a362",
-        "Lime": "afbf7e",
-        "Orange": "e0957b",
-        "Violet": "93a6f5",
-        "White": "ffffff",
-        "Transparent": "ffffff0%",
-        "Peat": "3b3a36",
-        "Gray_Sand": "e5ccaf",
-        "Gray_Sand_Faded": "e5ccaf20",
-        "Radiant_Yellow": "fc9e21",
-        "Sandstorm": "bd8b69",
-        "Woodsmoke": "947764",
-        "Black_Ink": "44413c",
-        "Bud_Green": "79b465",
-        "Milky_Blue": "72a8ba",
-        "Claret_Red": "c84c61",
-        "Buttercup_Yellow": "fae03c",
     }
 }
