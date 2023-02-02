@@ -35,37 +35,15 @@
     "colors": {
         "border": "Color_Dark_1",
         "border.@focused": "Color_Dark_1",
-        "fill": "Color_Dark_1",
         "focusRing": "Transparent",
         "shadow": "00000030",
-        "text": "Color_Light_1",
-        "icon": "0c0c0c",
-
-        "icon.blue.fill": "4D85FF",
-        "icon.gray.fill": "A4A1B3",
-        "icon.green.fill": "25AD6B",
-        "icon.orange.fill": "CABA2D",
-        "icon.red.fill": "C63A5D",
-
-        "text.@dimmed": "Color_Light_3",
-        "text.@disabled": "646078",
-        "text.@error": "White",
-        "text.@placeholder": "Color_Light_3",
-        "text.@secondary": "Color_Light_3",
-        "text.@success": "25AD6B",
-
-        "fill.@dimmed": "Transparent",
-        "fill.@disabled": "Transparent",
-        "fill.@error": "DD3962",
-        "fill.@hovered": "d5d5d5",
-        "fill.@selected": "49415C",
 
         "button.border": "Transparent",
         "button.fill": "Color_Dark_1",
         "button.text": "Color_Light_1",
         "button.border.@disabled": "Transparent",
         "button.fill.@disabled": "00000030",
-        "button.text.@disabled": "ff0000",
+        "button.text.@disabled": "TODO",
         "button.border.@focused": "Color_Light_3",
         "button.fill.@hovered": "Color_Light_3",
         "button.text.@hovered": "Color_Light_1",
@@ -86,18 +64,16 @@
         "completion.match.fill": "Transparent",
         "completion.match.text": "Color_Accent",
 
-        "parameterInfo.match.text": "ED94FF",
-
-        "dangerous.button.fill": "DD3962",
-        "dangerous.button.focusRing": "A72A3F",
+        "dangerous.button.fill": "Color_Error",
+        "dangerous.button.focusRing": "TODO",
         "dangerous.button.text": "White",
         "dangerous.button.border": "Transparent",
-        "dangerous.button.fill.@hovered": "DF476D",
-        "dangerous.button.fill.@pressed": "E14F73",
-        "dangerous.button.border.@disabled": "45405C",
+        "dangerous.button.fill.@hovered": "TODO",
+        "dangerous.button.fill.@pressed": "TODO",
+        "dangerous.button.border.@disabled": "TODO",
         "dangerous.button.fill.@disabled": "Transparent",
-        "dangerous.button.text.@disabled": "646078",
-        "dangerous.button.border.@focused": "ED7388",
+        "dangerous.button.text.@disabled": "TODO",
+        "dangerous.button.border.@focused": "TODO",
 
         "dialog.fill": "Color_Dark_1",
         "dialog.editor.fill": "Color_Background",
@@ -114,19 +90,13 @@
         "diff.added.fill": "Transparent",
         "diff.added.text": "Color_Light_1",
         "diff.conflict.fill": "Color_Light_1",
-        "diff.conflict.text": "F0507A",
+        "diff.conflict.text": "Color_Error",
         "diff.deleted.fill": "Transparent",
         "diff.deleted.text": "Color_Light_1",
         "diff.modified.fill": "Transparent",
         "diff.modified.text": "Color_Light_1",
 
-        "git.blame.fill": "B5791F",
-
-        "dnd.fill": "FFFFFF20%",
-
-        "interline.block.fill": "00000030",
-        "interline.editor.currentLine.fill": "Color_Dark_1",
-        "interline.editor.currentLine.fill.@focused": "Color_Dark_1",
+        "dnd.fill": "Color_Dark_1",
 
         "editor.fill": "Color_Background",
         "editor.text": "Color_Light_1",
@@ -138,8 +108,23 @@
         "editor.lineNumber.text.@selected": "Color_Light_1",
         "editor.whitespace.text": "Color_Background",
 
+        "fill": "Color_Dark_1",
+        "fill.@dimmed": "Transparent",
+        "fill.@disabled": "Transparent",
+        "fill.@error": "Color_Error",
+        "fill.@hovered": "TODO",
+        "fill.@selected": "TODO",
+
+        "git.blame.fill": "Color_Light_3",
+
         "header.fill": "Color_Dark_1",
 
+        "icon": "TODO",
+        "icon.blue.fill": "Color_Info",
+        "icon.gray.fill": "Color_Light_1",
+        "icon.green.fill": "Color_Success",
+        "icon.orange.fill": "Color_Warning",
+        "icon.red.fill": "Color_Error",
         "icon.button.border": "Transparent",
         "icon.button.fill": "Transparent",
         "icon.button.text": "Color_Light_2",
@@ -150,46 +135,57 @@
         "icon.button.fill.@selected": "Color_Accent",
         "icon.button.text.@hovered": "Color_Light_1",
         "icon.button.text.@selected": "Color_Background",
-        "icon.button.fill.@selected.@disabled": "323245",
-        "icon.button.border.@selected.@focused": "814F9E",
-        "icon.button.fill.@selected.@focused": "49415C",
-        "icon.button.fill.@selected.@focused.@hovered": "49415C",
+        "icon.button.fill.@selected.@disabled": "TODO",
+        "icon.button.border.@selected.@focused": "TODO",
+        "icon.button.fill.@selected.@focused": "TODO",
+        "icon.button.fill.@selected.@focused.@hovered": "TODO",
         "icon.button.fill.@selected.@hovered": "Color_Accent",
         "icon.button.text.@selected.@hovered": "Color_Background",
-        "icon.button.text.@selected.@pressed": "B279F2",
+        "icon.button.text.@selected.@pressed": "TODO",
 
-        "input.border.@disabled": "45405C",
+        "input.border.@disabled": "TODO",
         "input.fill.@disabled": "Transparent",
-        "input.text.@disabled": "646078",
-        "input.border.@error": "993750",
+        "input.text.@disabled": "TODO",
+        "input.border.@error": "TODO",
         "input.border.@focused": "Color_Light_2",
-        "input.border.@error.@focused": "D4677A",
-        "input.focusRing.@error.@focused": "993750",
+        "input.border.@error.@focused": "TODO",
+        "input.focusRing.@error.@focused": "TODO",
 
-        "link.text": "7094ff",
-        "link.focusRing": "814F9E",
+        "interline.block.fill": "00000030",
+        "interline.editor.currentLine.fill": "Color_Dark_1",
+        "interline.editor.currentLine.fill.@focused": "Color_Dark_1",
 
-        "list.cursor.border": "904AC2",
+        "link.text": "Color_Info",
+        "link.focusRing": "Transparent",
+
+        "list.cursor.border": "TODO",
+
+        "mainSplit.separator.border": "Color_Dark_1",
+
+        "match.fill": "Transparent",
+        "match.text": "Color_Accent",
+
+        "parameterInfo.match.text": "TODO",
 
         "popup.border": "Transparent",
 
-        "primary.button.fill": "6B388F",
-        "primary.button.focusRing": "784299",
-        "primary.button.border": "7C519C",
-        "primary.button.fill.@hovered": "744496",
-        "primary.button.fill.@pressed": "784A99",
-        "primary.button.border.@disabled": "45405C",
+        "primary.button.fill": "Color_Light_3",
+        "primary.button.focusRing": "TODO",
+        "primary.button.border": "Color_Light_2",
+        "primary.button.fill.@hovered": "Color_Light_2",
+        "primary.button.fill.@pressed": "Color_Light_3",
+        "primary.button.border.@disabled": "TODO",
         "primary.button.fill.@disabled": "Transparent",
-        "primary.button.text.@disabled": "646078",
-        "primary.button.border.@focused": "8465A6",
+        "primary.button.text.@disabled": "TODO",
+        "primary.button.border.@focused": "TODO",
 
-        "progress.fill": "A85ED6",
-        "progress.container.fill": "1D1D26",
-        "progress.fill.@indeterminate.@gradient": "674182",
+        "progress.fill": "Color_Accent",
+        "progress.container.fill": "Color_Dark_1",
+        "progress.fill.@indeterminate.@gradient": "TODO",
 
-        "scrollbar.fill": "FFFFFF30%",
-        "scrollbar.fill.@dimmed": "FFFFFF20%",
-        "scrollbar.fill.@hovered": "FFFFFF40%",
+        "scrollbar.fill": "FFFFFF30",
+        "scrollbar.fill.@dimmed": "FFFFFF20",
+        "scrollbar.fill.@hovered": "FFFFFF40",
 
         "selection.fill": "ffffff20",
         "selection.fill.@dimmed": "ffffff10",
@@ -197,16 +193,11 @@
 
         "separator.border": "Color_Dark_1",
 
-        "mainSplit.separator.border": "Color_Dark_1",
-
-        "simpleToggle.circle.fill.@disabled": "D0D0D9",
-        "simpleToggle.circle.fill": "D0D0D9",
-        "simpleToggle.strip.fill.@disabled.@hovered": "666380",
-        "simpleToggle.strip.fill.@disabled": "666380",
-        "simpleToggle.strip.fill": "6B388F",
-
-        "match.fill": "Transparent",
-        "match.text": "Color_Accent",
+        "simpleToggle.circle.fill.@disabled": "TODO",
+        "simpleToggle.circle.fill": "TODO",
+        "simpleToggle.strip.fill.@disabled.@hovered": "TODO",
+        "simpleToggle.strip.fill.@disabled": "TODO",
+        "simpleToggle.strip.fill": "TODO",
 
         "tab.border": "Transparent",
         "tab.pane.fill": "Color_Background",
@@ -254,31 +245,39 @@
         "terminal.ansiYellow.fill": "80653E",
         "terminal.ansiYellow.text": "FAD075",
 
-        "toggle.border": "544F70",
-        "toggle.fill": "45405C",
+        "text": "Color_Light_1",
+        "text.@dimmed": "Color_Light_3",
+        "text.@disabled": "TODO",
+        "text.@error": "White",
+        "text.@placeholder": "Color_Light_3",
+        "text.@secondary": "Color_Light_3",
+        "text.@success": "Color_Success",
+
+        "toggle.border": "Color_Dark_2",
+        "toggle.fill": "Color_Dark_1",
         "toggle.fill.@disabled": "Transparent",
-        "toggle.text.@disabled": "646078",
-        "toggle.border.@focused": "814F9E",
-        "toggle.fill.@hovered": "4C4766",
-        "toggle.fill.@pressed": "565073",
-        "toggle.fill.@selected": "6B388F",
+        "toggle.text.@disabled": "TODO",
+        "toggle.border.@focused": "TODO",
+        "toggle.fill.@hovered": "TODO",
+        "toggle.fill.@pressed": "TODO",
+        "toggle.fill.@selected": "TODO",
         "toggle.border.@disabled": "Transparent",
-        "toggle.border.@selected": "7C519C",
-        "toggle.fill.@selected.@disabled": "2C2C3B",
-        "toggle.border.@selected.@focused": "8465A6",
-        "toggle.fill.@selected.@focused": "6B388F",
-        "toggle.fill.@selected.@hovered": "744496",
-        "toggle.fill.@selected.@pressed": "784A99",
-        "toggle.fill.@selected.@focused.@hovered": "744496",
-        "toggle.fill.@selected.@focused.@pressed": "784A99",
+        "toggle.border.@selected": "TODO",
+        "toggle.fill.@selected.@disabled": "TODO",
+        "toggle.border.@selected.@focused": "TODO",
+        "toggle.fill.@selected.@focused": "TODO",
+        "toggle.fill.@selected.@hovered": "TODO",
+        "toggle.fill.@selected.@pressed": "TODO",
+        "toggle.fill.@selected.@focused.@hovered": "TODO",
+        "toggle.fill.@selected.@focused.@pressed": "TODO",
 
         "tool.fill": "Color_Background",
 
         "tooltip.fill": "Color_Light_2",
         "tooltip.text": "Color_Background",
 
-        "tree.cursor.border": "904AC2",
-        "tree.border.@focused": "904AC2",
+        "tree.cursor.border": "TODO",
+        "tree.border.@focused": "TODO",
 
         "windows.close.button.fill.@hovered": "C42B1C",
         "windows.close.button.text.@hovered": "White",
@@ -286,6 +285,22 @@
         "windows.close.button.text.@pressed": "EDBEBB"
     },
     "text-attributes": {
+        "comment": {
+            "fgColor": "Color_Dark_2",
+            "layer": 5
+        },
+        "comment.buildConstraint.go": {
+            "fgColor": "Color_Light_1",
+            "layer": 5
+        },
+        "comment.parameter": {
+            "fgColor": "Color_Light_3",
+            "layer": 5
+        },
+        "comment.parameter.value": {
+            "fgColor": "Color_Light_3",
+            "layer": 5
+        },
         "editor.selection": {
             "bgColor": "Color_Accent",
             "fgColor": "Color_Background",
@@ -320,18 +335,6 @@
                 "style": "BORDER"
             }
         },
-        "comment": {
-            "fgColor": "Color_Dark_2",
-            "layer": 5
-        },
-        "comment.parameter": {
-            "fgColor": "Color_Light_3",
-            "layer": 5
-        },
-        "comment.parameter.value": {
-            "fgColor": "Color_Light_3",
-            "layer": 5
-        },
         "link": {
         },
         "link.always.visible": {
@@ -345,54 +348,22 @@
                 "color": "4D7F99"
             }
         },
-        "keyword": {
-            "fgColor": "Color_Accent",
+        "punctuation": {
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
-        "keyword.typeModifier": {
-            "fgColor": "Color_Accent",
+        "punctuation.operator": {
+            "fgColor": "Color_Light_1",
             "layer": 20
         },
-        "metadata": {
-            "fgColor": "Color_Light_1",
-            "layer": 25
+        "snippet": {
+            "bgColor": "TODO",
+            "showEmptyIntervals": true,
+            "borderRadius": 4.0
         },
-        "number": {
-            "fgColor": "Color_Light_1",
-            "layer": 10
-        },
-        "boolean": {
-            "fgColor": "Color_Light_1",
-            "layer": 10
-        },
-        "string": {
-            "fgColor": "Color_Light_1",
-            "layer": 15
-        },
-        "string.binary": {
-            "fgColor": "Color_Light_1",
-            "layer": 15
-        },
-        "string.escape": {
-            "fgColor": "TODO",
-            "layer": 25
-        },
-        "string.escape.unicode": {
-            "fgColor": "TODO",
-            "layer": 25
-        },
-        "string.escape.alternative": {
-            "fgColor": "FF8D1C",
-            "layer": 25
-        },
-        "string.formatItem": {
-            "fgColor": "TODO",
-            "layer": 25
-        },
-        "string.regexp": {
-            "fgColor": "6897BB",
-            "layer": 25
-        },
+
+        // ---------- IDENTIFIERS
+
         "identifier": {
             "fgColor": "Color_Light_1",
             "layer": 10
@@ -504,192 +475,59 @@
             "fgColor": "Color_Light_2",
             "layer": 20
         },
-
-        "attributeName.html": {
-            "fgColor": "White",
+        "keyword": {
+            "fgColor": "Color_Accent",
+            "layer": 20
+        },
+        "keyword.typeModifier": {
+            "fgColor": "Color_Accent",
             "layer": 20
         },
 
-        "attributeValue.html": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
+        // ---------- TYPES
 
-        "entityReference.html": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "tag.html": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "tagName.html": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "tagName.custom.html": {
-            "fgColor": "26BDA4",
-            "layer": 20
-        },
-
-        "attributeName.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "hex.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "identifier.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "identifier.function.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "identifier.variable.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "interpolation.css": {
+        "metadata": {
             "fgColor": "Color_Light_1",
-            "layer": 20
+            "layer": 25
         },
-
-        "jsCodeDelimiter.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "jsCodeInjection.css": {
+        "number": {
             "fgColor": "Color_Light_1",
-            "layer": 20
+            "layer": 10
         },
-
-        "keyword.css": {
-            "fgColor": "Radiant Yellow",
-            "layer": 20
-        },
-        "keyword.extend.css": {
-            "fgColor": "Radiant Yellow",
-            "layer": 20
-        },
-        "keyword.global.css": {
-            "fgColor": "Radiant Yellow",
-            "layer": 20
-        },
-        "keyword.important.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "mixin.css": {
+        "boolean": {
             "fgColor": "Color_Light_1",
-            "layer": 20
+            "layer": 10
         },
-
-        "number.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "number.unit.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "propertyName.css": {
-            "fgColor": "White",
-            "layer": 20
-        },
-
-        "propertyValue.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "punctuation.css": {
+        "string": {
             "fgColor": "Color_Light_1",
-            "layer": 20
+            "layer": 15
         },
-
-        "selector.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "selector.id.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "selector.class.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "selector.pseudo.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "selector.tag.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "string.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "url.css": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-
-        "markup.heading": {
-            "fgColor": "Radiant Yellow",
-            "layer": 20
-        },
-        "markup.bold": {
+        "string.binary": {
             "fgColor": "Color_Light_1",
-            "layer": 20
+            "layer": 15
         },
-        "markup.italic": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
-        },
-        "markup.code.block": {
+        "string.escape": {
             "fgColor": "TODO",
-            "layer": 20
+            "layer": 25
         },
-        "markup.href": {
-            "fgColor": "50AFDE",
-            "layer": 20,
-            "decoration": {
-            }
+        "string.escape.unicode": {
+            "fgColor": "TODO",
+            "layer": 25
         },
-        "punctuation": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
+        "string.escape.alternative": {
+            "fgColor": "FF8D1C",
+            "layer": 25
         },
-        "punctuation.operator": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
+        "string.formatItem": {
+            "fgColor": "TODO",
+            "layer": 25
         },
-        "snippet": {
-            "bgColor": "214283",
-            "showEmptyIntervals": true,
-            "borderRadius": 4.0
+        "string.regexp": {
+            "fgColor": "6897BB",
+            "layer": 25
         },
 
-        "debug.currentFrame": {
-            "bgColor": "4B2C7A",
-            "layer": -68,
-            "fullLine": true
-        },
+        // ---------- VCS
 
         "diff.added": {
             "bgColor": "1D2E25",
@@ -769,6 +607,8 @@
             }
         },
 
+        // ---------- DEBUG & PROBLEMS
+
         "problem.error": {
             "fgColor": "Color_Error",
             "stripeColor": "Color_Error",
@@ -813,79 +653,189 @@
             },
             "layer": 60
         },
-        "transparent": {
-        },
 
-        "comment.buildConstraint.go": {
-            "fgColor": "Color_Light_1",
-            "layer": 5
-        },
+        // ---------- LANGUAGE: MARKUP
 
-        "identifier.methodReceiver.go": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "identifier.package.go": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
-        "identifier.typeDeclaration.go": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
-        },
-        "identifier.typeReference.go": {
-            "fgColor": "6FAFBD",
-            "layer": 20
-        },
-        "identifier.variable.shadowing.go": {
-            "fgColor": "7DBDA2",
-            "layer": 20
-        },
+//        "markup.heading": {
+//            "fgColor": "Radiant Yellow",
+//            "layer": 20
+//        },
+//        "markup.bold": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "markup.italic": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "markup.code.block": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "markup.href": {
+//            "fgColor": "Color_Info",
+//            "layer": 20
+//        },
 
-        "metadata.structTag.arbitraryText.go": {
-            "fgColor": "TODO",
-            "layer": 25
-        },
-        "metadata.structTag.key.go": {
-            "fgColor": "Color_Light_1",
-            "layer": 25
-        },
-        "metadata.structTag.value.go": {
-            "fgColor": "TODO",
-            "layer": 25
-        },
+        // ---------- LANGUAGE: YAML
 
-        "identifier.anchor.yaml": {
-            "fgColor": "Radiant Yellow",
-            "layer": 20
-        },
-        "identifier.field.yaml": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
-        },
-        "identifier.alias.yaml": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
+//        "identifier.anchor.yaml": {
+//            "fgColor": "Radiant Yellow",
+//            "layer": 20
+//        },
+//        "identifier.field.yaml": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "identifier.alias.yaml": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "punctuation.operator.merge.yaml": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "schema.yaml": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "key.yaml": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "value.yaml": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        }
 
-        "punctuation.operator.merge.yaml": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
+        // ---------- LANGUAGE: HTML
 
-        "schema.yaml": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
-        },
+//        "attributeName.html": {
+//            "fgColor": "White",
+//            "layer": 20
+//        },
+//        "attributeValue.html": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "entityReference.html": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "tag.html": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "tagName.html": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "tagName.custom.html": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
 
-        "key.yaml": {
-            "fgColor": "TODO",
-            "layer": 20
-        },
+        // ---------- LANGUAGE: CSS
 
-        "value.yaml": {
-            "fgColor": "Color_Light_1",
-            "layer": 20
-        }
+//        "attributeName.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "hex.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "identifier.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "identifier.function.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "identifier.variable.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "interpolation.css": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "jsCodeDelimiter.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "jsCodeInjection.css": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "keyword.css": {
+//            "fgColor": "Radiant Yellow",
+//            "layer": 20
+//        },
+//        "keyword.extend.css": {
+//            "fgColor": "Radiant Yellow",
+//            "layer": 20
+//        },
+//        "keyword.global.css": {
+//            "fgColor": "Radiant Yellow",
+//            "layer": 20
+//        },
+//        "keyword.important.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "mixin.css": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "number.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "number.unit.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "propertyName.css": {
+//            "fgColor": "White",
+//            "layer": 20
+//        },
+//        "propertyValue.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "punctuation.css": {
+//            "fgColor": "Color_Light_1",
+//            "layer": 20
+//        },
+//        "selector.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "selector.id.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "selector.class.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "selector.pseudo.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "selector.tag.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "string.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
+//        "url.css": {
+//            "fgColor": "TODO",
+//            "layer": 20
+//        },
     }
 }
