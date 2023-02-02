@@ -415,6 +415,14 @@
     {
       "key": "shift-ctrl-l",
       "trigger": "add-caret-up"
+    },
+    {
+      "key": "ctrl-down",
+      "trigger": "-go-to-next-symbol"
+    },
+    {
+      "key": "ctrl-up",
+      "trigger": "-go-to-prev-symbol"
     }
   ]
 }
