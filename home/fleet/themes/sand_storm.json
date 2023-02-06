@@ -620,6 +620,7 @@
         "problem.warning.weak": {
             "fgColor": "Color_Error",
             "stripeColor": "Color_Dark_2",
+            "layer": 30
         },
         "problem.deprecated": {
             "decoration": {
