@@ -423,6 +423,30 @@
     {
       "key": "ctrl-up",
       "trigger": "-go-to-prev-symbol"
+    },
+    {
+      "key": "ctrl-k ctrl-n",
+      "trigger": "next-error"
+    },
+    {
+      "key": "ctrl-u ctrl-w",
+      "trigger": "toggle-soft-wrap"
+    },
+    {
+      "key": "shift-return",
+      "trigger": "-wrap-line"
+    },
+    {
+      "key": "numpadenter",
+      "trigger": "-wrap-line"
+    },
+    {
+      "key": "return",
+      "trigger": "-wrap-line"
+    },
+    {
+      "key": "shift-numpadenter",
+      "trigger": "-wrap-line"
     }
   ]
 }
