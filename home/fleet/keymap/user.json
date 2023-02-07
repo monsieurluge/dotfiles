@@ -447,6 +447,14 @@
     {
       "key": "shift-numpadenter",
       "trigger": "-wrap-line"
+    },
+    {
+      "key": "ctrl-g ctrl-a",
+      "trigger": "-git/blame"
+    },
+    {
+      "key": "ctrl-u ctrl-g",
+      "trigger": "git/blame"
     }
   ]
 }
