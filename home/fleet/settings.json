@@ -23,5 +23,6 @@
     "editor.showCodeVision": false,
     "editor.semanticHighlighting": true,
     "goto_panel.showShortcuts": false,
-    "git.revert.confirm": false
+    "git.revert.confirm": false,
+    "files.toggleFolderMode": "singleClick"
 }
