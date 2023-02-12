@@ -282,16 +282,12 @@
             "fgColor": "Color_Dark_2",
             "layer": 5
         },
-        "comment.buildConstraint.go": {
-            "fgColor": "Color_Light_1",
-            "layer": 5
-        },
         "comment.parameter": {
-            "fgColor": "Color_Light_3",
+            "fgColor": "Color_Dark_2",
             "layer": 5
         },
         "comment.parameter.value": {
-            "fgColor": "Color_Light_3",
+            "fgColor": "Color_Dark_2",
             "layer": 5
         },
         "editor.selection": {
@@ -704,23 +700,23 @@
 
         // ---------- LANGUAGE: HTML
 
-//        "attributeName.html": {
-//            "fgColor": "White",
-//            "layer": 20
-//        },
-//        "attributeValue.html": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
+        "attributeName.html": {
+            "fgColor": "Color_Light_2",
+            "layer": 20
+        },
+        "attributeValue.html": {
+            "fgColor": "Color_Light_1",
+            "layer": 20
+        },
+        "tag.html": {
+            "fgColor": "Color_Accent",
+            "layer": 20
+        },
+        "tagName.html": {
+            "fgColor": "Color_Accent",
+            "layer": 20
+        },
 //        "entityReference.html": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
-//        "tag.html": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
-//        "tagName.html": {
 //            "fgColor": "TODO",
 //            "layer": 20
 //        },
@@ -731,18 +727,18 @@
 
         // ---------- LANGUAGE: CSS
 
-//        "attributeName.css": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
+        "attributeName.css": {
+            "fgColor": "TODO",
+            "layer": 20
+        },
 //        "hex.css": {
 //            "fgColor": "TODO",
 //            "layer": 20
 //        },
-//        "identifier.css": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
+        "identifier.css": {
+            "fgColor": "Color_Accent",
+            "layer": 20
+        },
 //        "identifier.function.css": {
 //            "fgColor": "TODO",
 //            "layer": 20
@@ -775,10 +771,10 @@
 //            "fgColor": "Radiant Yellow",
 //            "layer": 20
 //        },
-//        "keyword.important.css": {
-//            "fgColor": "TODO",
-//            "layer": 20
-//        },
+        "keyword.important.css": {
+            "fgColor": "Color_Error",
+            "layer": 20
+        },
 //        "mixin.css": {
 //            "fgColor": "Color_Light_1",
 //            "layer": 20
@@ -791,18 +787,18 @@
 //            "fgColor": "TODO",
 //            "layer": 20
 //        },
-//        "propertyName.css": {
-//            "fgColor": "White",
-//            "layer": 20
-//        },
+        "propertyName.css": {
+            "fgColor": "Color_Light_2",
+            "layer": 20
+        },
 //        "propertyValue.css": {
 //            "fgColor": "TODO",
 //            "layer": 20
 //        },
-//        "punctuation.css": {
-//            "fgColor": "Color_Light_1",
-//            "layer": 20
-//        },
+        "punctuation.css": {
+            "fgColor": "Color_Accent",
+            "layer": 20
+        },
 //        "selector.css": {
 //            "fgColor": "TODO",
 //            "layer": 20
