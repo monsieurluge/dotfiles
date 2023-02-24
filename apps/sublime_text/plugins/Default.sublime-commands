@@ -1,0 +1,29 @@
+[
+    // {
+    //     "caption": "Package: What to do",
+    //     "command": "what_to_do_command",
+    //     "args": {"key": "value"}
+    // },
+    {
+        "caption": "LSP: code actions",
+        "command": "lsp_code_actions",
+    },
+    {
+        "caption": "Snippet: new snippet",
+        "command": "new_snippet",
+    },
+    {
+        "caption": "Project: open project",
+        "command": "prompt_open_project_or_workspace",
+    },
+    {
+        "caption": "Indentation: tab width 2",
+        "command": "set_setting",
+        "args": {"setting": "tab_size", "value": 2},
+    },
+    {
+        "caption": "Indentation: tab width 4",
+        "command": "set_setting",
+        "args": {"setting": "tab_size", "value": 4},
+    },
+]

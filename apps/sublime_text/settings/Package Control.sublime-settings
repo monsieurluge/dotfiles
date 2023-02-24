@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"debug": false,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"AutoCloseEmptyGroup",
+		"Dockerfile Syntax Highlighting",
+		"DotENV",
+		"Edit Command Palette",
+		"EditorConfig",
+		"Git",
+		"ImportHelper",
+		"LSP",
+		"LSP-dockerfile",
+		"LSP-eslint",
+		"LSP-json",
+		"LSP-typescript",
+		"LSP-volar",
+		"LSP-yaml",
+		"Node Completions",
+		"Nord",
+		"Open Finder",
+		"Open in Default Application",
+		"Package Control",
+		"Pretty JSON",
+		"Quick File Move",
+		"ScopeHunter",
+		"Svelte",
+		"Vue Syntax Highlight",
+	],
+	"in_process_packages":
+	[
+	],
+}

@@ -1,0 +1,50 @@
+[
+    // general
+    { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+    { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
+    { "keys": ["alt+g"], "command": "new_pane" },
+    { "keys": ["alt+b"], "command": "close_pane" },
+    { "keys": ["f11"], "command": "toggle_distraction_free" },
+
+    // editing
+    { "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+r"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+h"], "command": "duplicate_line" },
+    { "keys": ["ctrl+l"], "command": "swap_line_up" },
+    { "keys": ["ctrl+k"], "command": "swap_line_down" },
+    { "keys": ["ctrl+e"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+e"], "command": "toggle_comment", "args": { "block": true } },
+    { "keys": ["ctrl+j"], "command": "fold" },
+    { "keys": ["ctrl+;"], "command": "unfold" },
+    { "keys": ["ctrl+shift+l"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+shift+k"], "command": "select_lines", "args": {"forward": true} },
+
+    // navigation
+    { "keys": ["f6"], "command": "goto_definition" },
+    { "keys": ["shift+f6"], "command": "goto_reference" },
+    { "keys": ["f8"], "command": "new_pane" },
+    { "keys": ["shift+f8"], "command": "close_pane" },
+    { "keys": ["f9"], "command": "focus_neighboring_group", "args": {"forward": false} },
+    { "keys": ["shift+f9"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+    { "keys": ["f10"], "command": "focus_neighboring_group" },
+    { "keys": ["shift+f10"], "command": "move_to_neighboring_group" },
+
+    // find and replace
+    { "keys": ["ctrl+shift+d"], "command": "find_all_under" },
+    { "keys": ["f4"], "command": "find_prev" },
+    { "keys": ["f5"], "command": "find_under" },
+
+    // plugin: file browser
+    {
+      "keys": ["ctrl+t"],
+      "command": "dired",
+      "args": {
+        "immediate": true,
+        "single_pane": true,
+        "other_group": "left",
+        "project": true
+      }
+    },
+]

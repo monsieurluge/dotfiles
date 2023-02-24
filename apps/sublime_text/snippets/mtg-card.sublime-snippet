@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+{
+    "id": $1,
+    "name": "$2",
+    "rarity": "$3",
+    "type": "$4",
+    "subtypes": [$5],
+    "colors": [$6],
+    "cost": {
+        "black": ${7:0},
+        "blue": ${8:0},
+        "green": ${9:0},
+        "red": ${10:0},
+        "white": ${11:0},
+        "colorless": ${12:0},
+        "x-colorless": ${13:0},
+        "life": ${14:0}
+    }
+}$15
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mtg-card</tabTrigger>
+</snippet>

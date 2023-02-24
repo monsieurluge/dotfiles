@@ -1,0 +1,166 @@
+[
+    // ----------------------------------------------------------------- general
+
+    { "keys": ["ctrl+q"], "command": "pass" },
+    { "keys": ["ctrl+shift+q"], "command": "exit" },
+    { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["ctrl+shift+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["ctrl+h"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+    { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+    { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
+    { "keys": ["ctrl+t"], "command": "new_file" },
+    { "keys": ["shift", "shift"], "command": "auto_complete" },
+    {
+        "keys": ["shift", "shift"],
+        "command": "replace_completion_with_auto_complete",
+        "context": [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true },
+        ]
+    },
+
+    { "keys": ["ctrl+u", "ctrl+h"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
+    { "keys": ["ctrl+f3"], "command": "next_misspelling" },
+    { "keys": ["ctrl+shift+f3"], "command": "prev_misspelling" },
+
+    // ----------------------------------------------------------------- editing
+
+    { "keys": ["ctrl+e"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+shift+e"], "command": "duplicate_line" },
+    { "keys": ["ctrl+up"], "command": "swap_line_up" },
+    { "keys": ["ctrl+down"], "command": "swap_line_down" },
+    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl", "ctrl", "s"], "command": "sort_lines", "args": {"case_sensitive": true} },
+
+    // -------------------------------------------------------------- navigation
+
+    // UI panes
+    { "keys": ["ctrl+u", "ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+u", "ctrl+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["ctrl+u", "ctrl+d"], "command": "toggle_distraction_free" },
+    { "keys": ["ctrl+u", "ctrl+g"], "command": "toggle_setting", "args": {"setting": "gutter"} },
+    { "keys": ["ctrl+u", "ctrl+m"], "command": "toggle_minimap" },
+    { "keys": ["ctrl+u", "ctrl+s"], "command": "show_panel", "args": {"panel": "status_bar"} },
+    { "keys": ["ctrl+u", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+
+    // display & goto
+    { "keys": ["ctrl+y"], "command": "reveal_in_side_bar"},
+    { "keys": ["f5"], "command": "goto_definition" },
+    { "keys": ["shift+f5"], "command": "goto_reference" },
+
+    // panes & focus
+    { "keys": ["f8"], "command": "new_pane" },
+    { "keys": ["f9"], "command": "change_view", "args": {"reverse": true} },
+    { "keys": ["f10"], "command": "change_view" },
+    { "keys": ["ctrl+tab"], "command": "focus_neighboring_group" },
+    { "keys": ["ctrl+shift+tab"], "command": "focus_neighboring_group", "args": {"forward": false} },
+    { "keys": ["ctrl+;"], "command": "focus_side_bar" },
+
+    // -------------------------------------------------------- find and replace
+
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+d"], "command": "find_under_expand" },
+    { "keys": ["ctrl+shift+d"], "command": "find_all_under" },
+    { "keys": ["f3"], "command": "find_under" },
+    { "keys": ["f4"], "command": "find_prev" },
+    {
+        "keys": ["ctrl+enter"],
+        "command": "replace_all",
+        "args": {"close_panel": true},
+        "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+    },
+    {
+        "keys": ["ctrl+enter"],
+        "command": "replace_all",
+        "context": [{"key": "panel", "operand": "find_in_files"}, {"key": "panel_has_focus"}]
+    },
+    {
+        "keys": ["alt+s"],
+        "command": "toggle_in_selection",
+        "context": [{"key": "panel_type", "operand": "find"}, {"key": "panel_has_focus"}],
+    },
+
+    // ----------------------------------------------------------------- plugins
+
+    // VAlign
+    { "keys": ["ctrl", "ctrl", "a"], "command": "valign" },
+    {
+        "keys": ["f5"],
+        "command": "double_click_at_caret",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "text.find-in-files", "match_all": true }],
+    },
+
+    // XDebug
+    { "keys": ["ctrl+f1"], "command": "xdebug_session_start" },
+    { "keys": ["ctrl+f2"], "command": "xdebug_session_stop" },
+    { "keys": ["ctrl+f3"], "command": "xdebug_breakpoint" },
+    { "keys": ["ctrl+f5"], "command": "xdebug_run_to_line"},
+    { "keys": ["ctrl+f6"], "command": "xdebug_continue", "args": {"command": "step_over"}},
+    { "keys": ["ctrl+f7"], "command": "xdebug_continue", "args": {"command": "run"}},
+
+    // move tab
+    { "keys": ["f8"], "command": "move_tab" },
+    { "keys": ["shift+f8"], "command": "move_tab", "args": {"backward": true} },
+    { "keys": ["shift+f9"], "command": "move_tab", "args": {"same_group": true, "backward": true} },
+    { "keys": ["shift+f10"], "command": "move_tab", "args": {"same_group": true} },
+
+    // LSP
+    { "keys": ["ctrl+shift+i"], "command": "show_panel", "args": {"panel": "output.diagnostics"} },
+    {
+        "keys": ["f12"],
+        "command": "lsp_symbol_references",
+        "context": [{"key": "lsp.session_with_capability","operator": "equal", "operand": "referencesProvider"},]
+    },
+    {
+        "keys": ["ctrl+i"],
+        "command": "lsp_execute",
+        "args": {
+            "session_name": "LSP-typescript",
+            "command_name": "_typescript.organizeImports",
+            "command_args": ["${file}"]
+        }
+    },
+    {
+        "keys": ["ctrl+shift+a"],
+        "command": "lsp_code_actions",
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "codeActionProvider"
+            }
+        ]
+    },
+    {
+        "command": "lsp_symbol_rename",
+        "keys": ["f2"],
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "renameProvider"
+            }
+        ]
+    },
+    {
+        "command": "lsp_symbol_implementation",
+        "args": {"side_by_side": true},
+        "keys": ["f6"],
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "implementationProvider"
+            },
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": false
+            }
+        ]
+    },
+]

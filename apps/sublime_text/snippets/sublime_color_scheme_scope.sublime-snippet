@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+{
+    "name": "${1:scope name}",
+    "scope": "${2:scope.definition}",
+    "foreground": "${3:red}",
+},
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>scope</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.sublime-color-scheme</scope> -->
+</snippet>

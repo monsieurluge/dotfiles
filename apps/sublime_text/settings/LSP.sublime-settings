@@ -1,0 +1,18 @@
+{
+    "document_highlight_style": "",
+    "show_view_status": false,
+    "show_diagnostics_panel_on_save": 0,
+    "show_diagnostics_in_view_status": false,
+    "show_diagnostics_count_in_view_status": true,
+    "show_code_actions": "",
+    "show_code_actions_in_hover": false,
+    "show_code_lens": "phantom",
+    "diagnostics_highlight_style": {
+      "error": "underline",
+      "warning": "underline",
+      "info": "underline",
+      "hint": "underline"
+    },
+    "diagnostics_delay_ms": 500,
+    "link_highlight_style": "disabled",
+}
