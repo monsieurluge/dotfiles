@@ -2,17 +2,15 @@
 
 These are my personal config files.
 
-# Content
+# What's inside
 
-## Home Folder
-
- - .zsh
- - .gitignore
- - .gitconfig
-
-## Config Folder
-
- - karabiner-elements config
+- JetBrains Fleet IDE
+- Git
+- Karabiner Elements
+- MacOS keybindigs
+- NeoVim
+- Sublime Text
+- zsh
 
 # Resources
 
