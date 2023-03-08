@@ -12,8 +12,7 @@ unalias -m '*'
 alias ll="ls -l --color"
 alias lla="ls -la --color"
 alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
-alias dockerls="docker container ls --format '{{.ID}} -> {{.Names}} ({{.Status}}) :: {{.Ports}}' | sort -k 3"
-alias dockerlst="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
+alias dockerls="docker container ls --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 
 endquarantine() {
     xattr -rd com.apple.quarantine /Applications/$1.app
