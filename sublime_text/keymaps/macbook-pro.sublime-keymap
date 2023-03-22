@@ -73,8 +73,8 @@
     // panes & focus
     { "keys": ["ctrl+shift+tab"], "command": "change_view", "args": {"reverse": true} },
     { "keys": ["ctrl+tab"], "command": "change_view" },
-    { "keys": ["ctrl+n"], "command": "focus_neighboring_group" },
-    { "keys": ["ctrl+shift+n"], "command": "focus_neighboring_group", "args": {"forward": false} },
+    { "keys": ["ctrl+shift+."], "command": "focus_neighboring_group" },
+    { "keys": ["ctrl+shift+,"], "command": "focus_neighboring_group", "args": {"forward": false} },
     { "keys": ["ctrl+shift+y"], "command": "focus_side_bar" },
 
     // -------------------------------------------------------- find and replace
@@ -89,8 +89,8 @@
     { "keys": ["ctrl+enter"], "command": "replace_all",
          "context": [{"key": "panel", "operand": "find_in_files"}, {"key": "panel_has_focus"}]
     },
-    { "keys": ["f3"], "command": "find_under" },
-    { "keys": ["f4"], "command": "find_prev" },
+    { "keys": ["ctrl+n"], "command": "find_under" },
+    { "keys": ["ctrl+shift+n"], "command": "find_prev" },
 
     // ----------------------------------------------------------------- plugins
 
