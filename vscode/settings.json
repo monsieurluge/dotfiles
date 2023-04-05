@@ -86,5 +86,6 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "git.openRepositoryInParentFolders": "never"
 }
