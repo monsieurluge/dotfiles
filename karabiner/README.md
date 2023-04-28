@@ -10,11 +10,11 @@ The main goal is to reduce the finger traveling distance, typing fatigue and sta
 
 ```txt
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┐
-│ ESC │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │DELETE│
+│ ESC │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │BACKSP│
 ├─────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬─────┤
-│ ESC  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │ DEL │
+│ ESC  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │ BSP │ BSP │ BSP │
 ├──────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│  TAB   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │ RETURN  │
+│  TAB   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │ RET │ RETURN  │
 ├────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴─────────┤
 │   SHIFT   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │   SHIFT    │
 ├─────┬─────┼─────┼─────┼─────┴─────┴─────┴─────┴─────┼─────┼─────┼─────┴────────────┤
@@ -26,8 +26,9 @@ Default layout changes, MacBook internal keyboard only:
 
  - CMD and OPT are swapped on the right side
  - OPT and CTRL are swapped on the left side
- - BACKSLASH is replaced by DELETE
- - TAB is replaced by ESC
+ - add many BACKSPACE keys on the right side
+ - add many ESCAPE keys on the left side
+ - add a RETURN key on the right side
  - CAPS LOCK is replaced by TAB
  - long press on SPACEBAR = CONTROL
  - single press on LEFT SHIFT = delete word on the left of the cursor
