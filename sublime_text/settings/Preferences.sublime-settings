@@ -1,5 +1,4 @@
 {
-
 	"always_show_minimap_viewport": false,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete": false,
@@ -77,7 +76,7 @@
 	"font_size": 17,
 	"gutter": false,
 	"hide_tab_scrolling_buttons": true,
-	"enable_tab_scrolling": false,
+	"enable_tab_scrolling": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
