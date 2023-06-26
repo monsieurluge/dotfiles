@@ -1,0 +1,8 @@
+{
+    "initializationOptions": {
+        "preferences": {
+            "disableSuggestions": true,
+            "quotePreference": "single"
+        }
+    }
+}

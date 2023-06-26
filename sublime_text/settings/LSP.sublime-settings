@@ -7,6 +7,8 @@
     "show_code_actions": "",
     "show_code_actions_in_hover": false,
     "show_code_lens": "phantom",
+    "show_inlay_hints": false,
+    "show_diagnostics_severity_level": 2,
     "diagnostics_highlight_style": {
       "error": "underline",
       "warning": "underline",
@@ -14,5 +16,5 @@
       "hint": "underline"
     },
     "diagnostics_delay_ms": 500,
-    "link_highlight_style": "disabled",
+    "link_highlight_style": "disabled"
 }
