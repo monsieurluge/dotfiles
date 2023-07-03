@@ -15,6 +15,7 @@ alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origi
 alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias gitlog="git log --max-count=8 --oneline"
+alias opensublime="open -a Sublime\ Text ."
 
 endquarantine() {
     xattr -rd com.apple.quarantine /Applications/$1.app
