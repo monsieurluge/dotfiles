@@ -14,7 +14,7 @@ const todoMessage = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>
 ]]></content>
     <tabTrigger>vue3</tabTrigger>
     <scope>text.html.vue</scope>
