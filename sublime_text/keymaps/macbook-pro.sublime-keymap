@@ -60,7 +60,8 @@
     { "keys": ["ctrl+y"], "command": "reveal_in_side_bar"},
     { "keys": ["ctrl+shift+y"], "command": "focus_side_bar" },
     { "keys": ["ctrl+;"], "command": "goto_definition" },
-    // { "keys": ["ctrl+k", "ctrl+r"], "command": "goto_reference" },
+    { "keys": ["ctrl+left"], "command": "move", "args": {"by": "words", "forward": false} },
+    { "keys": ["ctrl+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
 
     // panes & focus
     { "keys": ["ctrl+shift+tab"], "command": "change_view", "args": {"reverse": true} },
@@ -176,5 +177,10 @@
                 "operand": "hoverProvider"
             }
         ]
+    },
+    {
+        "command": "lsp_next_diagnostic",
+        "keys": ["ctrl+k", "ctrl+n"],
+        "context": [{ "key": "setting.lsp_active" }]
     },
 ]
