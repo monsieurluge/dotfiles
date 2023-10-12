@@ -72,7 +72,7 @@
 		"node_modules",
 		"logs"
 	],
-	"font_face": "Gabriele Light Ribbon FG",
+	"font_face": "Ubuntu Mono",
 	"font_size": 18,
 	"gutter": false,
 	"hide_tab_scrolling_buttons": true,

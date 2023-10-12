@@ -183,4 +183,11 @@
         "keys": ["ctrl+k", "ctrl+n"],
         "context": [{ "key": "setting.lsp_active" }]
     },
+    {
+        "command": "copilot_ask_completions",
+        "keys": ["ctrl+k", "ctrl+c"],
+        "context": [
+            { "key": "copilot.is_authorized" }
+        ]
+    },
 ]
