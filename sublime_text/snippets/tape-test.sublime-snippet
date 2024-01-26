@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+test('${1:something}', assert => {
+    const something = { run: () => true }
+
+    const result = something.run()
+
+    assert.equal(result, true, 'should run as expected')
+    assert.end()
+})
+
+]]></content>
+    <tabTrigger>tape:test</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
