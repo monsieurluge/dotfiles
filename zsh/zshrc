@@ -14,7 +14,7 @@ alias lla="ls -la --color"
 alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
 alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
-alias gitlog="git log --max-count=8 --oneline"
+alias gitlog="git log --max-count=5 --oneline | cat"
 alias openinsublime="open -a Sublime\ Text ."
 
 endquarantine() {
