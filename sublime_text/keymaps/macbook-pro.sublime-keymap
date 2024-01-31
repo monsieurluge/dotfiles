@@ -190,4 +190,19 @@
             { "key": "copilot.is_authorized" }
         ]
     },
+
+    {
+        "keys": ["left"],
+        "command": "copilot_previous_completion",
+        "context": [
+            { "key": "setting.copilot.completion.is_visible" }
+        ]
+    },
+    {
+        "keys": ["right"],
+        "command": "copilot_next_completion",
+        "context": [
+            { "key": "setting.copilot.completion.is_visible" }
+        ]
+    },
 ]
