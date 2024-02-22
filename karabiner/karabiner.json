@@ -44,48 +44,6 @@
                         ]
                     },
                     {
-                        "description": "LEFT SHIFT to delete previous word, RIGHT SHIFT to delete the next one",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": "left_option"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "left_option",
-                                            "fn"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "backspace and suppr keys (top row)",
                         "manipulators": [
                             {
