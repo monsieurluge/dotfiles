@@ -5,10 +5,6 @@
     //     "args": {"key": "value"}
     // },
     {
-        "caption": "LSP: code actions",
-        "command": "lsp_code_actions",
-    },
-    {
         "caption": "Snippet: new snippet",
         "command": "new_snippet",
     },
