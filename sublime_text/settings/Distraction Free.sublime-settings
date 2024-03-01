@@ -1,4 +1,5 @@
 {
+    "draw_centered": true,
     "line_numbers": true,
     "wrap_width": 80,
 }
