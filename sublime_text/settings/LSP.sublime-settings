@@ -6,7 +6,7 @@
     "show_diagnostics_count_in_view_status": true,
     "show_code_actions": "",
     "show_code_actions_in_hover": false,
-    "show_code_lens": "phantom",
+    "show_code_lens": "annotation",
     "show_inlay_hints": false,
     "show_diagnostics_severity_level": 2,
     "diagnostics_highlight_style": {
@@ -16,5 +16,7 @@
       "hint": "underline"
     },
     "diagnostics_delay_ms": 500,
+    "inhibit_snippet_completions": false,
+    "inhibit_word_completions": false,
     "link_highlight_style": "disabled"
 }
