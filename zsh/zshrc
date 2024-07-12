@@ -16,6 +16,7 @@ alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.St
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias gitlog="git log --max-count=5 --oneline | cat"
 alias openinsublime="open -a Sublime\ Text ."
+alias rmr="rm -r"
 
 endquarantine() {
     xattr -rd com.apple.quarantine /Applications/$1.app
