@@ -87,7 +87,6 @@
       "enter": "editor::Newline",
       "pagedown": "editor::NextInlineCompletion",
       "pageup": "editor::PreviousInlineCompletion",
-      "right": "editor::ConfirmCompletion",
       "tab": "editor::ConfirmCompletion"
     }
   },
