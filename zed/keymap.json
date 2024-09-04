@@ -46,7 +46,7 @@
       "ctrl-shift-l": "editor::AddSelectionAbove",
       "ctrl-shift-left": "editor::SelectToPreviousWordStart",
       "ctrl-shift-n": "editor::GoToPrevDiagnostic",
-      "ctrl-shift-p": "zed::NoAction",
+      "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
       "ctrl-shift-right": "editor::SelectToNextWordEnd",
       "ctrl-shift-y": "project_panel::ToggleFocus"
     }
@@ -68,7 +68,7 @@
       "cmd-k shift-up": ["workspace::SwapPaneInDirection", "Up"],
       "cmd-shift-f": ["pane::DeploySearch", {"replace_enabled": true}],
       "cmd-shift-m": "diagnostics::Deploy",
-      "ctrl-shift-p": "projects::OpenRecent",
+      "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
       "ctrl-shift-tab": "pane::ActivatePrevItem",
       "ctrl-u ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-u ctrl-c": "workspace::ToggleCenteredLayout",
