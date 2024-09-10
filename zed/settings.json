@@ -33,14 +33,14 @@
         "inline_completion_provider": "copilot"
     },
     // The name of a font to use for rendering text in the editor
-    "buffer_font_family": "Zed Mono",
+    "buffer_font_family": "Ubuntu Mono",
     // The OpenType features to enable for text in the editor.
     "buffer_font_features": {
         // Disable ligatures:
         "calt": false
     },
     // The default font size for text in the editor
-    "buffer_font_size": 16,
+    "buffer_font_size": 19,
     // The weight of the editor font in standard CSS units from 100 to 900.
     "buffer_font_weight": 400,
     // Set the buffer's line height.
@@ -53,7 +53,7 @@
     //         "line_height": {
     //           "custom": 2
     //         },
-    "buffer_line_height": "comfortable",
+    "buffer_line_height": "standard",
     // The name of a font to use for rendering text in the UI
     "ui_font_family": ".SystemUIFont",
     // The OpenType features to enable for text in the UI
@@ -149,7 +149,7 @@
     // Whether to automatically add matching closing characters when typing
     // opening parenthesis, bracket, brace, single or double quote characters.
     // For example, when you type (, Zed will add a closing ) at the correct position.
-    "use_autoclose": true,
+    "use_autoclose": false,
     // Controls how the editor handles the autoclosed characters.
     // When set to `false`(default), skipping over and auto-removing of the closing characters
     // happen only for auto-inserted characters.
