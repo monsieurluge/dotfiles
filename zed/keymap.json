@@ -31,6 +31,10 @@
       "ctrl-u ctrl-shift-f": "editor::UnfoldLines",
       "ctrl-u ctrl-l": "editor::ToggleLineNumbers",
       "ctrl-u ctrl-w": "editor::ToggleSoftWrap",
+      "ctrl-u left": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-u right": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-u shift-left": "pane::SplitLeft",
+      "ctrl-u shift-right": "pane::SplitRight",
       "ctrl-k ctrl-a": "editor::ToggleCodeActions",
       "ctrl-k ctrl-d": "diagnostics::Deploy",
       "ctrl-k ctrl-h": "editor::Hover",
@@ -72,7 +76,9 @@
       "ctrl-shift-tab": "pane::ActivatePrevItem",
       "ctrl-u ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-u ctrl-c": "workspace::ToggleCenteredLayout",
-      "ctrl-u ctrl-z": "workspace::ToggleZoom"
+      "ctrl-u ctrl-z": "workspace::ToggleZoom",
+      "ctrl-u ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-u ctrl-e": "workspace::ToggleEditorFocus"
     }
   },
   {
