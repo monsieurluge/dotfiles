@@ -37,14 +37,16 @@
       "ctrl-u shift-right": "pane::SplitRight",
       "ctrl-k ctrl-a": "editor::ToggleCodeActions",
       "ctrl-k ctrl-d": "diagnostics::Deploy",
+      "ctrl-k ctrl-f": "editor::Format",
       "ctrl-k ctrl-h": "editor::Hover",
+      "ctrl-k ctrl-k": "editor::OpenExcerpts",
       "ctrl-k ctrl-s": "editor::SortLinesCaseSensitive",
       "ctrl-k ctrl-tab": "workspace::ActivateNextPane",
       "ctrl-k ctrl-shift-tab": "workspace::ActivatePreviousPane",
-      "ctrl-shift-;": "editor::GoToTypeDefinition",
       "ctrl-shift-d": "editor::SelectAllMatches",
       "ctrl-shift-e": "editor::DuplicateLineDown",
       "ctrl-shift-enter": "editor::NewlineAbove",
+      "ctrl-shift-f": "editor::FindAllReferences",
       "ctrl-shift-j": "copilot::Suggest",
       "ctrl-shift-k": "editor::AddSelectionBelow",
       "ctrl-shift-l": "editor::AddSelectionAbove",
@@ -78,7 +80,7 @@
       "ctrl-u ctrl-c": "workspace::ToggleCenteredLayout",
       "ctrl-u ctrl-z": "workspace::ToggleZoom",
       "ctrl-u ctrl-t": "terminal_panel::ToggleFocus",
-      "ctrl-u ctrl-e": "workspace::ToggleEditorFocus"
+      "ctrl-u ctrl-e": "project_panel::ToggleFocus"
     }
   },
   {
