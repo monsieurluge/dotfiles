@@ -4,8 +4,8 @@
     "bindings": {
       "pagedown": "editor::MovePageDown",
       "pageup": "editor::MovePageUp",
-      "shift-pagedown": "editor::SelectPageDown",
-      "shift-pageup": "editor::SelectPageUp",
+      "shift-pagedown": "editor::MoveToEnd",
+      "shift-pageup": "editor::MoveToBeginning",
       "ctrl-left": "editor::MoveToPreviousWordStart",
       "ctrl-right": "editor::MoveToNextWordEnd",
       "ctrl-down": "editor::MoveLineDown",
@@ -27,14 +27,7 @@
       "ctrl-r": "editor::Rename",
       "ctrl-t": "zed::NoAction",
       "ctrl-y": "pane::RevealInProjectPanel",
-      "ctrl-u ctrl-f": "editor::Fold",
-      "ctrl-u ctrl-shift-f": "editor::UnfoldLines",
-      "ctrl-u ctrl-l": "editor::ToggleLineNumbers",
-      "ctrl-u ctrl-w": "editor::ToggleSoftWrap",
-      "ctrl-u left": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-u right": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-u shift-left": "pane::SplitLeft",
-      "ctrl-u shift-right": "pane::SplitRight",
+      // EDITOR COMMANDS
       "ctrl-k ctrl-a": "editor::ToggleCodeActions",
       "ctrl-k ctrl-d": "diagnostics::Deploy",
       "ctrl-k ctrl-f": "editor::Format",
@@ -54,7 +47,17 @@
       "ctrl-shift-n": "editor::GoToPrevDiagnostic",
       "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
       "ctrl-shift-right": "editor::SelectToNextWordEnd",
-      "ctrl-shift-y": "project_panel::ToggleFocus"
+      "ctrl-shift-y": "project_panel::ToggleFocus",
+      // UI COMMANDS
+      "ctrl-u ctrl-f": "editor::Fold",
+      "ctrl-u ctrl-shift-f": "editor::UnfoldLines",
+      "ctrl-u ctrl-i": "editor::ToggleInlayHints",
+      "ctrl-u ctrl-l": "editor::ToggleLineNumbers",
+      "ctrl-u ctrl-w": "editor::ToggleSoftWrap",
+      "ctrl-u left": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-u right": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-u shift-left": "pane::SplitLeft",
+      "ctrl-u shift-right": "pane::SplitRight"
     }
   },
   {
@@ -129,7 +132,9 @@
     "context": "ProjectPanel",
     "bindings": {
       "tab": "project_panel::OpenPermanent",
-      "enter": "project_panel::Rename"
+      "enter": "project_panel::Rename",
+      "cmd-shift-n": "project_panel::NewDirectory",
+      "cmd-r": "project_panel::RevealInFileManager"
     }
   },
   {
