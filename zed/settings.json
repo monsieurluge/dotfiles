@@ -470,7 +470,8 @@
         "**/Thumbs.db",
         "**/.classpath",
         "**/.settings",
-        "**/node_modules"
+        "**/node_modules",
+        "**/dist"
     ],
     // Git gutter behavior configuration.
     "git": {
