@@ -10,7 +10,7 @@
     },
     "theme": {
       "mode": "system",
-      "light": "Sandcastle",
+      "light": "Solarized Light",
       "dark": "Sandcastle"
     },
     //
@@ -595,7 +595,7 @@
         //         "line_height": {
         //           "custom": 2
         //         },
-        "line_height": "comfortable",
+        "line_height": "standard",
         // Activate the python virtual environment, if one is found, in the
         // terminal's working directory (as resolved by the working_directory
         // setting). Set this to "off" to disable this behavior.
@@ -612,10 +612,10 @@
         "toolbar": {
             // Whether to display the terminal title in its toolbar.
             "title": true
-        }
+        },
         // Set the terminal's font size. If this option is not included,
         // the terminal will default to matching the buffer's font size.
-        // "font_size": 15,
+        "font_size": 18
         // Set the terminal's font family. If this option is not included,
         // the terminal will default to matching the buffer's font family.
         // "font_family": "Zed Mono",
