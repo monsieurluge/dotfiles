@@ -47,6 +47,7 @@
                         "description": "backspace and suppr keys (top row)",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
@@ -66,6 +67,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": {
@@ -93,6 +95,7 @@
                         "description": "backspace bonus keys",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "open_bracket",
                                     "modifiers": {
@@ -109,6 +112,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "close_bracket",
                                     "modifiers": {
@@ -130,6 +134,7 @@
                         "description": "enter bonus keys",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "quote",
                                     "modifiers": {
@@ -146,6 +151,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "backslash",
                                     "modifiers": {
@@ -167,6 +173,7 @@
                         "description": "navigation cluster",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -186,6 +193,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -205,6 +213,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -224,6 +233,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "semicolon",
                                     "modifiers": {
@@ -243,6 +253,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
@@ -263,6 +274,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "comma",
                                     "modifiers": {
@@ -282,6 +294,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "period",
                                     "modifiers": {
@@ -301,6 +314,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "slash",
                                     "modifiers": {
@@ -326,6 +340,7 @@
                         "description": "symbols (top row)",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
@@ -346,6 +361,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "w",
                                     "modifiers": {
@@ -366,6 +382,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
@@ -386,6 +403,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "r",
                                     "modifiers": {
@@ -406,6 +424,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "t",
                                     "modifiers": {
@@ -426,6 +445,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "y",
                                     "modifiers": {
@@ -446,6 +466,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
@@ -466,6 +487,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": {
@@ -486,6 +508,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": {
@@ -506,6 +529,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": {
@@ -531,6 +555,7 @@
                         "description": "symbols (home row)",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
@@ -550,6 +575,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "s",
                                     "modifiers": {
@@ -569,6 +595,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "d",
                                     "modifiers": {
@@ -589,6 +616,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "f",
                                     "modifiers": {
@@ -609,6 +637,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "g",
                                     "modifiers": {
@@ -629,6 +658,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -649,6 +679,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -669,6 +700,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -688,6 +720,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -708,6 +741,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "semicolon",
                                     "modifiers": {
@@ -732,6 +766,7 @@
                         "description": "symbols (bottom row)",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "v",
                                     "modifiers": {
@@ -751,6 +786,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
@@ -770,6 +806,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "slash",
                                     "modifiers": {
@@ -794,6 +831,7 @@
                         "description": "function keys (with numbers row)",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "1",
                                     "modifiers": {
@@ -813,6 +851,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "2",
                                     "modifiers": {
@@ -832,6 +871,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "3",
                                     "modifiers": {
@@ -851,6 +891,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "4",
                                     "modifiers": {
@@ -870,6 +911,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "5",
                                     "modifiers": {
@@ -889,6 +931,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "6",
                                     "modifiers": {
@@ -908,6 +951,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "7",
                                     "modifiers": {
@@ -927,6 +971,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "8",
                                     "modifiers": {
@@ -946,6 +991,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "9",
                                     "modifiers": {
@@ -965,6 +1011,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "0",
                                     "modifiers": {
@@ -984,6 +1031,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "hyphen",
                                     "modifiers": {
@@ -1003,6 +1051,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "equal_sign",
                                     "modifiers": {
@@ -1027,6 +1076,7 @@
                         "description": "numpad",
                         "manipulators": [
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
@@ -1046,6 +1096,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": {
@@ -1065,6 +1116,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": {
@@ -1084,6 +1136,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -1103,6 +1156,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -1122,6 +1176,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -1141,6 +1196,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
@@ -1160,6 +1216,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "comma",
                                     "modifiers": {
@@ -1179,6 +1236,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "period",
                                     "modifiers": {
@@ -1198,6 +1256,7 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [{ "type": "device_if", "identifiers": [{ "is_built_in_keyboard": true } ] }],
                                 "from": {
                                     "key_code": "n",
                                     "modifiers": {
