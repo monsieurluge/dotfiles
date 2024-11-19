@@ -1,0 +1,89 @@
+{
+    "vcomponent": {
+        "body": [
+            "<template>",
+            "    <quote>todo: component</quote>",
+            "</template>",
+            "",
+            "<script setup>",
+            "    $0",
+            "</script>",
+            "",
+            "<style scoped>",
+            "</style>"
+        ],
+        "description": "vue component - basic",
+        "prefix": "vcomponent"
+    },
+    "vtscomponent": {
+        "body": [
+            "<script setup lang=\"ts\">",
+            "    $0",
+            "</script>",
+            "",
+            "<template>",
+            "</template>",
+            "",
+            "<style lang=\"scss\" scoped>",
+            "</style>"
+        ],
+        "description": "vue component - TypeScript",
+        "prefix": "vtscomponent"
+    },
+    "vcomponent-example": {
+        "body": [
+            "<script setup>",
+            "    import { ref } from 'vue'",
+            "    import MyComponent from './MyComponent.vue'",
+            "",
+            "    const props = defineProps({",
+            "        foo: String",
+            "    })",
+            "    const emit = defineEmits(['change', 'delete'])",
+            "    const count = ref(0)",
+            "    $0",
+            "</script>",
+            "",
+            "<template>",
+            "    <MyComponent />",
+            "    <button @click=\"count++\">{{ count }}</button>",
+            "</template>",
+            "",
+            "<style lang=\"scss\" scoped>",
+            "</style>"
+        ],
+        "description": "vue component example",
+        "prefix": "vcomponent-example"
+    },
+    "vemit": {
+        "body": [
+            "const emit = defineEmits<{",
+            "    change: [id: number],",
+            "    update: [value: string],",
+            "    $0",
+            "}>()"
+        ],
+        "description": "vue emits declaration",
+        "prefix": "vemit"
+    },
+    "vfor": {
+        "body": [
+            "<div v-for=\"(item, index)$0 in items\" :key=\"index\">",
+            "    {{ item }}",
+            "</div>"
+        ],
+        "description": "vue for loop",
+        "prefix": "vfor"
+    },
+    "vprops": {
+        "body": [
+            "const props = defineProps({",
+            "    foo: string,",
+            "    bar?: number,",
+            "    $0",
+            "})"
+        ],
+        "description": "vue props declaration",
+        "prefix": "vprops"
+    }
+}
