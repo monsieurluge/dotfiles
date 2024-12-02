@@ -38,6 +38,6 @@ export PATH=/Users/laurent/.volta/bin:$PATH
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-# misc
+# other services or applications
 
-source /Users/laurent/.docker/init-zsh.sh || true # Added by Docker Desktop
+source ~/.zsh_apps
