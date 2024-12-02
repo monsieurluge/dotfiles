@@ -49,15 +49,16 @@
       "ctrl-shift-right": "editor::SelectToNextWordEnd",
       "ctrl-shift-y": "project_panel::ToggleFocus",
       // UI COMMANDS
+      "ctrl-u ctrl-d": "editor::ToggleHunkDiff",
       "ctrl-u ctrl-f": "editor::Fold",
       "ctrl-u ctrl-shift-f": "editor::UnfoldLines",
       "ctrl-u ctrl-i": "editor::ToggleInlayHints",
       "ctrl-u ctrl-l": "editor::ToggleLineNumbers",
       "ctrl-u ctrl-w": "editor::ToggleSoftWrap",
-      "ctrl-u left": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-u right": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-u shift-left": "pane::SplitLeft",
-      "ctrl-u shift-right": "pane::SplitRight"
+      "ctrl-u ctrl-j": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-u ctrl-;": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-u ctrl-m": "pane::SplitLeft",
+      "ctrl-u ctrl-/": "pane::SplitRight"
     }
   },
   {
