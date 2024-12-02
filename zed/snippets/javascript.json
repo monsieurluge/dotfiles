@@ -1,0 +1,92 @@
+{
+    "array to object": {
+        "body": "const arrayToObject = (arr, keyField) => Object.fromEntries(arr.map(item => [item[keyField], item]))",
+        "description": "array to object",
+        "prefix": "_arraytoobject"
+    },
+    "capitalize": {
+        "body": "const capitalize = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`",
+        "description": "capitalize a string",
+        "prefix": "_capitalize"
+    },
+    "flatten an array": {
+        "body": "const flattenedArray = arr => [].concat(...arr)",
+        "description": "flatten an array",
+        "prefix": "_flatten"
+    },
+    "insert at specific index": {
+        "body": "const insert = (items, index, newItem) => [...items.slice(0, index), newItem, ...items.slice(index)]",
+        "description": "insert at specific index",
+        "prefix": "_insertindex"
+    },
+    "is empty object": {
+        "body": "const isEmptyObject = obj => Object.keys(obj).length === 0",
+        "description": "is empty object",
+        "prefix": "_isemptyobject"
+    },
+    "is equal": {
+        "body": "const isEqual = (a, b) => JSON.stringify(a) === JSON.stringify(b)",
+        "description": "is equal",
+        "prefix": "_isequal"
+    },
+    "count occurrences": {
+        "body": "const countOccurrences = (items, value) => items.reduce((a, v) => (v === value ? a + 1 : a), 0)",
+        "description": "count occurrences",
+        "prefix": "_occurrences"
+    },
+    "calculate percent": {
+        "body": "const calculatePercent = (value, total) => Math.round((value / total) * 100)",
+        "description": "calculate percent",
+        "prefix": "_percent"
+    },
+    "pluck": {
+        "body": "const pluck = (objs, key) => objs.map((obj) => obj[key])",
+        "description": "pluck",
+        "prefix": "_pluck"
+    },
+    "random integer between two values": {
+        "body": "const randomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min",
+        "description": "random integer between two values",
+        "prefix": "_randombetween"
+    },
+    "random hex color": {
+        "body": "const randomColor = '#' + (~~(Math.random() * 8**8)).toString(16).padStart(6,0)",
+        "description": "random hex color",
+        "prefix": "_randomhexcolor"
+    },
+    "random item": {
+        "body": "const randomItem = items =>  items[Math.floor(Math.random() * items.length)]",
+        "description": "random item",
+        "prefix": "_randomitem"
+    },
+    "random string": {
+        "body": "const randomString = length => [...Array(length)].map(() => Math.random().toString(36)[2]).join('')",
+        "description": "random string",
+        "prefix": "_randomstring"
+    },
+    "remove duplicates": {
+        "body": "const removeDuplicates = items => [...new Set(items)]",
+        "description": "remove duplicates",
+        "prefix": "_removeduplicates"
+    },
+    "reverse a string": {
+        "body": "const reversedString = str => str.split('').reverse().join('')",
+        "description": "reverse a string",
+        "prefix": "_reversestring"
+    },
+    "shuffle an array": {
+        "body": "const shuffleArray = items => items.sort(() => Math.random() - 0.5)",
+        "description": "shuffle an array",
+        "prefix": "_shuffle"
+    },
+    "sort by": {
+        "body": "const sortBy = (items, key) => items.sort((a, b) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0)",
+        "description": "sort by",
+        "prefix": "_sortby"
+    },
+    "wait some milliseconds": {
+        "body": "const wait = async milliseconds => new Promise((resolve) => setTimeout(resolve, milliseconds))",
+        "description": "wait some milliseconds",
+        "prefix": "_wait"
+    },
+}
