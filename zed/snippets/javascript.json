@@ -88,5 +88,5 @@
         "body": "const wait = async milliseconds => new Promise((resolve) => setTimeout(resolve, milliseconds))",
         "description": "wait some milliseconds",
         "prefix": "_wait"
-    },
+    }
 }
