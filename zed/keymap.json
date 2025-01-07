@@ -46,7 +46,7 @@
       "ctrl-shift-k": "editor::AddSelectionBelow",
       "ctrl-shift-l": "editor::AddSelectionAbove",
       "ctrl-shift-left": "editor::SelectToPreviousWordStart",
-      "ctrl-shift-n": "editor::GoToPrevDiagnostic",
+      "ctrl-shift-n": "editor::GoToDiagnostic",
       "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
       "ctrl-shift-right": "editor::SelectToNextWordEnd",
       "ctrl-shift-y": "project_panel::ToggleFocus",
