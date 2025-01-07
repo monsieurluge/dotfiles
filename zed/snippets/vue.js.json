@@ -1,5 +1,5 @@
 {
-    "vcomponent": {
+    "basic component": {
         "body": [
             "<template>",
             "    <quote>todo: component</quote>",
@@ -13,9 +13,9 @@
             "</style>"
         ],
         "description": "vue component - basic",
-        "prefix": "vcomponent"
+        "prefix": "_component"
     },
-    "vtscomponent": {
+    "basic component using TypeScript": {
         "body": [
             "<script setup lang=\"ts\">",
             "    $0",
@@ -28,9 +28,9 @@
             "</style>"
         ],
         "description": "vue component - TypeScript",
-        "prefix": "vtscomponent"
+        "prefix": "_component-ts"
     },
-    "vcomponent-example": {
+    "full component example": {
         "body": [
             "<script setup>",
             "    import { ref } from 'vue'",
@@ -53,9 +53,9 @@
             "</style>"
         ],
         "description": "vue component example",
-        "prefix": "vcomponent-example"
+        "prefix": "_component-example"
     },
-    "vemit": {
+    "emits declaration": {
         "body": [
             "const emit = defineEmits<{",
             "    change: [id: number],",
@@ -64,18 +64,18 @@
             "}>()"
         ],
         "description": "vue emits declaration",
-        "prefix": "vemit"
+        "prefix": "_emit"
     },
-    "vfor": {
+    "for loop": {
         "body": [
             "<div v-for=\"(item, index)$0 in items\" :key=\"index\">",
             "    {{ item }}",
             "</div>"
         ],
         "description": "vue for loop",
-        "prefix": "vfor"
+        "prefix": "_for"
     },
-    "vprops": {
+    "props declaration": {
         "body": [
             "const props = defineProps({",
             "    foo: string,",
@@ -84,6 +84,6 @@
             "})"
         ],
         "description": "vue props declaration",
-        "prefix": "vprops"
+        "prefix": "_props"
     }
 }
