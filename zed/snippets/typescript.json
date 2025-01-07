@@ -1,0 +1,78 @@
+{
+    "JEST: top level test template": {
+        "body": [
+            "describe('${0:name}', () => {",
+            "    // add a test here",
+            "})"
+        ],
+        "description": "JEST test top level template",
+        "prefix": "_jestbase"
+    },
+    "JEST: test suite template": {
+        "body": [
+            "describe('${2:name}', () => {",
+            "    it('should ${1:do_something} when ${0:asked_for_something}', () => {",
+            "        // GIVEN (arrange)",
+            "        // todo",
+            "        // WHEN (act)",
+            "        // todo",
+            "        // THEN (assert)",
+            "        // todo",
+            "    })",
+            ")}"
+        ],
+        "description": "JEST test suite template",
+        "prefix": "_jesttestsuite"
+    },
+    "JEST: test template": {
+        "body": [
+            "it('should ${1:do_something} when ${0:asked_for_something}', () => {",
+            "    // GIVEN (arrange)",
+            "    // todo",
+            "    // WHEN (act)",
+            "    // todo",
+            "    // THEN (assert)",
+            "    // todo",
+            "})"
+        ],
+        "description": "JEST test template",
+        "prefix": "_jesttest"
+    },
+    "JEST: mock interface": {
+        "body": [
+            "const mockedService = { someMethod: jest.fn(() => value) } as jest.Mocked<ServiceInterface>",
+            "expect(mockedService.someMethod.mock.calls).toHaveLength(1)"
+        ],
+        "description": "JEST mock interface",
+        "prefix": "_jestmockinterface"
+    },
+    "NEST testing: beforeEach": {
+        "body": [
+            "let someService = null",
+            "beforeEach(async () => {",
+            "    const moduleRef = await Test.createTestingModule({",
+            "        providers: [SomeService],",
+            "    }).compile()",
+            "    someService = moduleRef.get(SomeService)",
+            "})"
+        ],
+        "description": "NEST testing: beforeEach",
+        "prefix": "_nestbeforeeach"
+    },
+    "NEST testing: create testing module": {
+        "body": [
+            "let someService = null",
+            "const moduleRef = await Test.createTestingModule({",
+            "    providers: [SomeService],",
+            "}).compile()",
+            "someService = moduleRef.get(SomeService)"
+        ],
+        "description": "NEST testing: create testing service",
+        "prefix": "_nestcreatetestingservice"
+    },
+    "name": {
+        "body": "xxxxx",
+        "description": "name",
+        "prefix": "_xxxxx"
+    }
+}
