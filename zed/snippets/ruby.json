@@ -1,0 +1,7 @@
+{
+    "frozen string literal comment": {
+        "body": "# frozen_string_literal: true",
+        "description": "frozen string literal comment",
+        "prefix": "_frozen"
+    }
+}
