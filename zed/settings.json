@@ -41,6 +41,7 @@
     "drop_target_size": 0.2,
     "when_closing_with_no_tabs": "platform_default",
     "cursor_blink": true,
+    "cursor_shape": "block",
     "current_line_highlight": "all",
     "show_completions_on_input": false,
     "show_completion_documentation": true,
@@ -72,12 +73,12 @@
         "quick_actions": false
     },
     "scrollbar": {
-        "show": "system",
+        "show": "never",
         "cursors": true,
         "git_diff": false,
         "search_results": true,
         "selected_symbol": true,
-        "diagnostics": true
+        "diagnostics": "error"
     },
     "double_click_in_multibuffer": "select",
     "gutter": {
@@ -115,7 +116,7 @@
         "indent_guides": {
             "show": "never"
         },
-        "auto_reveal_entries": true,
+        "auto_reveal_entries": false,
         "auto_fold_dirs": false,
         "scrollbar": {
             "show": null
@@ -123,7 +124,7 @@
     },
     "collaboration_panel": {
         // Whether to show the collaboration panel button in the status bar.
-        "button": false,
+        "button": true,
         "dock": "left",
         "default_width": 240
     },
