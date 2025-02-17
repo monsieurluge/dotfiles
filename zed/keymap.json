@@ -1,187 +1,223 @@
 [
-  {
-    "context": "Editor",
-    "bindings": {
-      "pagedown": "editor::MovePageDown",
-      "pageup": "editor::MovePageUp",
-      "shift-pagedown": "editor::MoveToEnd",
-      "shift-pageup": "editor::MoveToBeginning",
-      "ctrl-left": "editor::MoveToPreviousWordStart",
-      "ctrl-right": "editor::MoveToNextWordEnd",
-      "ctrl-down": "editor::MoveLineDown",
-      "ctrl-up": "editor::MoveLineUp",
-      "ctrl-enter": "editor::NewlineBelow",
-      "ctrl-;": "editor::GoToDefinition",
-      "ctrl-/": "editor::ToggleComments",
-      "ctrl-d": ["editor::SelectNext", {"replace_newest": false}],
-      "ctrl-e": "editor::DeleteLine",
-      "ctrl-f": "project_symbols::Toggle",
-      "ctrl-g": "file_finder::Toggle",
-      "ctrl-h": "outline::Toggle",
-      "ctrl-j": "editor::ShowCompletions",
-      "ctrl-k": "zed::NoAction",
-      "ctrl-l": "go_to_line::Toggle",
-      "ctrl-m": "editor::MoveToEnclosingBracket",
-      "ctrl-n": ["editor::SelectNext", {"replace_newest": true}],
-      "ctrl-p": "command_palette::Toggle",
-      "ctrl-r": "editor::Rename",
-      "ctrl-t": "zed::NoAction",
-      "ctrl-y": "pane::RevealInProjectPanel",
-      // EDITOR COMMANDS
-      "ctrl-delete": "editor::DeleteToNextWordEnd",
-      "ctrl-backspace": "editor::DeleteToPreviousWordStart",
-      "ctrl-k ctrl-a": "editor::ToggleCodeActions",
-      "ctrl-k ctrl-d": "diagnostics::Deploy",
-      "ctrl-k ctrl-f": "editor::Format",
-      "ctrl-k ctrl-h": "editor::Hover",
-      "ctrl-k ctrl-k": "editor::OpenExcerpts",
-      "ctrl-k ctrl-r": "editor::FindAllReferences",
-      "ctrl-k ctrl-s": "editor::SortLinesCaseSensitive",
-      "ctrl-k ctrl-tab": "workspace::ActivateNextPane",
-      "ctrl-k ctrl-shift-tab": "workspace::ActivatePreviousPane",
-      "ctrl-shift-d": "editor::SelectAllMatches",
-      "ctrl-shift-e": "editor::DuplicateLineDown",
-      "ctrl-shift-enter": "editor::NewlineAbove",
-      "ctrl-shift-j": "copilot::Suggest",
-      "ctrl-shift-k": "editor::AddSelectionBelow",
-      "ctrl-shift-l": "editor::AddSelectionAbove",
-      "ctrl-shift-left": "editor::SelectToPreviousWordStart",
-      "ctrl-shift-n": "editor::GoToDiagnostic",
-      "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
-      "ctrl-shift-right": "editor::SelectToNextWordEnd",
-      "ctrl-shift-y": "project_panel::ToggleFocus",
-      // UI COMMANDS
-      "ctrl-u ctrl-d": "editor::ToggleHunkDiff",
-      "ctrl-u ctrl-f": "editor::Fold",
-      "ctrl-u ctrl-shift-f": "editor::UnfoldLines",
-      "ctrl-u ctrl-i": "editor::ToggleInlayHints",
-      "ctrl-u ctrl-l": "editor::ToggleLineNumbers",
-      "ctrl-u ctrl-w": "editor::ToggleSoftWrap",
-      "ctrl-u ctrl-j": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-u ctrl-;": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-u ctrl-m": "pane::SplitLeft",
-      "ctrl-u ctrl-/": "pane::SplitRight"
+    {
+        "context": "Editor",
+        "bindings": {
+            "pagedown": "editor::MovePageDown",
+            "pageup": "editor::MovePageUp",
+            "shift-pagedown": "editor::MoveToEnd",
+            "shift-pageup": "editor::MoveToBeginning",
+            "ctrl-left": "editor::MoveToPreviousWordStart",
+            "ctrl-right": "editor::MoveToNextWordEnd",
+            "ctrl-down": "editor::MoveLineDown",
+            "ctrl-up": "editor::MoveLineUp",
+            "ctrl-enter": "editor::NewlineBelow",
+            "ctrl-;": "editor::GoToDefinition",
+            "ctrl-/": "editor::ToggleComments",
+            "ctrl-a": null,
+            "ctrl-d": [
+                "editor::SelectNext",
+                {
+                    "replace_newest": false
+                }
+            ],
+            "ctrl-e": "editor::DeleteLine",
+            "ctrl-f": "project_symbols::Toggle",
+            "ctrl-g": "file_finder::Toggle",
+            "ctrl-h": "outline::Toggle",
+            "ctrl-j": "editor::ShowCompletions",
+            "ctrl-k": null,
+            "ctrl-l": "go_to_line::Toggle",
+            "ctrl-m": "editor::MoveToEnclosingBracket",
+            "ctrl-n": [
+                "editor::SelectNext",
+                {
+                    "replace_newest": true
+                }
+            ],
+            "ctrl-p": "command_palette::Toggle",
+            "ctrl-r": "editor::Rename",
+            "ctrl-t": null,
+            "ctrl-y": "pane::RevealInProjectPanel",
+            // EDITOR COMMANDS
+            "ctrl-delete": "editor::DeleteToNextWordEnd",
+            "ctrl-backspace": "editor::DeleteToPreviousWordStart",
+            "ctrl-k a": "editor::ToggleCodeActions",
+            "ctrl-k d": "diagnostics::Deploy",
+            "ctrl-k f": "editor::Format",
+            "ctrl-k h": "editor::Hover",
+            "ctrl-k k": "editor::OpenExcerpts",
+            "ctrl-k r": "editor::FindAllReferences",
+            "ctrl-k s": "editor::SortLinesCaseSensitive",
+            "ctrl-k tab": "workspace::ActivateNextPane",
+            "ctrl-k shift-tab": "workspace::ActivatePreviousPane",
+            "ctrl-shift-d": "editor::SelectAllMatches",
+            "ctrl-shift-e": "editor::DuplicateLineDown",
+            "ctrl-shift-enter": "editor::NewlineAbove",
+            "ctrl-shift-j": "copilot::Suggest",
+            "ctrl-shift-k": "editor::AddSelectionBelow",
+            "ctrl-shift-l": "editor::AddSelectionAbove",
+            "ctrl-shift-left": "editor::SelectToPreviousWordStart",
+            "ctrl-shift-n": "editor::GoToDiagnostic",
+            "ctrl-shift-p": [
+                "projects::OpenRecent",
+                {
+                    "create_new_window": false
+                }
+            ],
+            "ctrl-shift-right": "editor::SelectToNextWordEnd",
+            "ctrl-shift-y": "project_panel::ToggleFocus",
+            // UI COMMANDS
+            "ctrl-u d": "editor::ToggleSelectedDiffHunks",
+            "ctrl-u f": "editor::Fold",
+            "ctrl-u u": "editor::UnfoldLines",
+            "ctrl-u i": "editor::ToggleInlayHints",
+            "ctrl-u l": "editor::ToggleLineNumbers",
+            "ctrl-u w": "editor::ToggleSoftWrap",
+            "ctrl-u left": "workspace::ActivatePaneLeft",
+            "ctrl-u right": "workspace::ActivatePaneRight",
+            "ctrl-u shift-left": "pane::SplitLeft",
+            "ctrl-u shift-right": "pane::SplitRight"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-f": "pane::DeploySearch",
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-g": "file_finder::Toggle",
+            "ctrl-p": "command_palette::Toggle",
+            "cmd-k cmd-down": "workspace::ActivatePaneDown",
+            "cmd-k cmd-left": "workspace::ActivatePaneLeft",
+            "cmd-k cmd-right": "workspace::ActivatePaneRight",
+            "cmd-k cmd-up": "workspace::ActivatePaneUp",
+            "cmd-k shift-down": "workspace::SwapPaneDown",
+            "cmd-k shift-left": "workspace::SwapPaneLeft",
+            "cmd-k shift-right": "workspace::SwapPaneRight",
+            "cmd-k shift-up": "workspace::SwapPaneUp",
+            "cmd-shift-f": [
+                "pane::DeploySearch",
+                {
+                    "replace_enabled": true
+                }
+            ],
+            "cmd-shift-m": "diagnostics::Deploy",
+            "ctrl-shift-p": [
+                "projects::OpenRecent",
+                {
+                    "create_new_window": false
+                }
+            ],
+            "ctrl-shift-tab": "pane::ActivatePrevItem",
+            "ctrl-u b": "workspace::ToggleLeftDock",
+            "ctrl-u c": "collab_panel::ToggleFocus",
+            "ctrl-u e": "project_panel::ToggleFocus",
+            "ctrl-u t": "terminal_panel::ToggleFocus",
+            "ctrl-u z": "workspace::ToggleCenteredLayout"
+        }
+    },
+    {
+        "context": "Editor && renaming",
+        "bindings": {
+            "enter": "editor::ConfirmRename"
+        }
+    },
+    {
+        "context": "Editor && showing_completions",
+        "bindings": {
+            "enter": "editor::Newline",
+            "pagedown": "editor::NextEditPrediction",
+            "pageup": "editor::PreviousEditPrediction",
+            "tab": "editor::ConfirmCompletion"
+        }
+    },
+    {
+        "context": "Editor && edit_prediction && !showing_completions",
+        "bindings": {
+            "enter": "editor::Newline",
+            "pagedown": "editor::NextEditPrediction",
+            "pageup": "editor::PreviousEditPrediction",
+            "right": "editor::ConfirmCompletion",
+            "tab": "editor::AcceptEditPrediction"
+        }
+    },
+    {
+        "context": "Editor && showing_code_actions",
+        "bindings": {
+            "enter": "editor::ConfirmCodeAction"
+        }
+    },
+    {
+        "context": "Editor && (showing_code_actions || showing_completions)",
+        "bindings": {
+            "down": "editor::ContextMenuNext",
+            "up": "editor::ContextMenuPrev",
+            "pagedown": "editor::ContextMenuLast",
+            "pageup": "editor::ContextMenuFirst",
+            "ctrl-n": "editor::ContextMenuNext",
+            "ctrl-p": "editor::ContextMenuPrev"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "tab": "project_panel::OpenPermanent",
+            "enter": "project_panel::Rename",
+            "cmd-shift-n": "project_panel::NewDirectory",
+            "cmd-r": "project_panel::RevealInFileManager"
+        }
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "space": "project_panel::Open"
+        }
+    },
+    {
+        "context": "CollabPanel && not_editing",
+        "bindings": {
+            "ctrl-backspace": "collab_panel::Remove",
+            "space": "menu::Confirm"
+        }
+    },
+    {
+        "context": "(CollabPanel && editing) > Editor",
+        "bindings": {
+            "space": "collab_panel::InsertSpace"
+        }
+    },
+    {
+        "context": "ChannelModal",
+        "bindings": {
+            "tab": "channel_modal::ToggleMode"
+        }
+    },
+    {
+        "context": "ChannelModal > Picker > Editor",
+        "bindings": {
+            "tab": "channel_modal::ToggleMode"
+        }
+    },
+    {
+        "context": "FileFinder",
+        "bindings": {
+            "cmd-shift-p": "file_finder::SelectPrev"
+        }
+    },
+    {
+        "context": "TabSwitcher",
+        "bindings": {
+            "ctrl-up": "menu::SelectPrev",
+            "ctrl-down": "menu::SelectNext",
+            "ctrl-shift-tab": "menu::SelectPrev",
+            "ctrl-backspace": "tab_switcher::CloseSelectedItem"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-a c": "search::ToggleCaseSensitive",
+            "ctrl-a w": "search::ToggleWholeWord",
+            "ctrl-a r": "search::ToggleRegex"
+        }
     }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "cmd-f": "pane::DeploySearch",
-      "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-g": "file_finder::Toggle",
-      "ctrl-p": "command_palette::Toggle",
-      "cmd-k cmd-down": ["workspace::ActivatePaneInDirection", "Down"],
-      "cmd-k cmd-left": ["workspace::ActivatePaneInDirection", "Left"],
-      "cmd-k cmd-right": ["workspace::ActivatePaneInDirection", "Right"],
-      "cmd-k cmd-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "cmd-k shift-down": ["workspace::SwapPaneInDirection", "Down"],
-      "cmd-k shift-left": ["workspace::SwapPaneInDirection", "Left"],
-      "cmd-k shift-right": ["workspace::SwapPaneInDirection", "Right"],
-      "cmd-k shift-up": ["workspace::SwapPaneInDirection", "Up"],
-      "cmd-shift-f": ["pane::DeploySearch", {"replace_enabled": true}],
-      "cmd-shift-m": "diagnostics::Deploy",
-      "ctrl-shift-p": ["projects::OpenRecent", {"create_new_window": false }],
-      "ctrl-shift-tab": "pane::ActivatePrevItem",
-      "ctrl-u ctrl-b": "workspace::ToggleLeftDock",
-      "ctrl-u ctrl-c": "workspace::ToggleCenteredLayout",
-      "ctrl-u ctrl-z": "workspace::ToggleZoom",
-      "ctrl-u ctrl-t": "terminal_panel::ToggleFocus",
-      "ctrl-u ctrl-e": "project_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "Editor && renaming",
-    "bindings": {
-      "enter": "editor::ConfirmRename"
-    }
-  },
-  {
-    "context": "Editor && showing_completions",
-    "bindings": {
-      "enter": "editor::Newline",
-      "pagedown": "editor::NextInlineCompletion",
-      "pageup": "editor::PreviousInlineCompletion",
-      "tab": "editor::ConfirmCompletion"
-    }
-  },
-  {
-    "context": "Editor && inline_completion && !showing_completions",
-    "bindings": {
-      "enter": "editor::Newline",
-      "pagedown": "editor::NextInlineCompletion",
-      "pageup": "editor::PreviousInlineCompletion",
-      "right": "editor::ConfirmCompletion",
-      "tab": "editor::AcceptInlineCompletion"
-    }
-  },
-  {
-    "context": "Editor && showing_code_actions",
-    "bindings": {
-      "enter": "editor::ConfirmCodeAction"
-    }
-  },
-  {
-    "context": "Editor && (showing_code_actions || showing_completions)",
-    "bindings": {
-      "down": "editor::ContextMenuNext",
-      "up": "editor::ContextMenuPrev",
-      "pagedown": "editor::ContextMenuLast",
-      "pageup": "editor::ContextMenuFirst",
-      "ctrl-n": "editor::ContextMenuNext",
-      "ctrl-p": "editor::ContextMenuPrev"
-    }
-  },
-  {
-    "context": "ProjectPanel",
-    "bindings": {
-      "tab": "project_panel::OpenPermanent",
-      "enter": "project_panel::Rename",
-      "cmd-shift-n": "project_panel::NewDirectory",
-      "cmd-r": "project_panel::RevealInFileManager"
-    }
-  },
-  {
-    "context": "ProjectPanel && not_editing",
-    "bindings": {
-      "space": "project_panel::Open"
-    }
-  },
-  {
-    "context": "CollabPanel && not_editing",
-    "bindings": {
-      "ctrl-backspace": "collab_panel::Remove",
-      "space": "menu::Confirm"
-    }
-  },
-  {
-    "context": "(CollabPanel && editing) > Editor",
-    "bindings": {
-      "space": "collab_panel::InsertSpace"
-    }
-  },
-  {
-    "context": "ChannelModal",
-    "bindings": {
-      "tab": "channel_modal::ToggleMode"
-    }
-  },
-  {
-    "context": "ChannelModal > Picker > Editor",
-    "bindings": {
-      "tab": "channel_modal::ToggleMode"
-    }
-  },
-  {
-    "context": "FileFinder",
-    "bindings": { "cmd-shift-p": "file_finder::SelectPrev" }
-  },
-  {
-    "context": "TabSwitcher",
-    "bindings": {
-      "ctrl-up": "menu::SelectPrev",
-      "ctrl-down": "menu::SelectNext",
-      "ctrl-shift-tab": "menu::SelectPrev",
-      "ctrl-backspace": "tab_switcher::CloseSelectedItem"
-    }
-  }
 ]
