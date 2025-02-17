@@ -3,5 +3,28 @@
         "body": "# frozen_string_literal: true",
         "description": "frozen string literal comment",
         "prefix": "_frozen"
+    },
+    "RSPEC template for Rails Job": {
+        "body": [
+            "require \"rails_helper\"",
+            "",
+            "RSpec.describe SomeModule::SomeJob, type: :job do",
+            "  describe \"#perform_later\" do",
+            "    it \"do something useful\" do",
+            "      ActiveJob::Base.queue_adapter = :test",
+            "      expect {",
+            "        described_class.perform_later(\"payload\")",
+            "      }.to have_enqueued_job",
+            "    end",
+            "  end",
+            "end"
+        ],
+        "description": "RSPEC template for Rails Job",
+        "prefix": "_rspecrailsjob"
+    },
+    "debug breaking point": {
+        "body": "binding.break",
+        "description": "debug breaking point",
+        "prefix": "_breakingpoint"
     }
 }
