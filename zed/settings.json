@@ -247,7 +247,9 @@
         "font_size": 18
     },
     "code_actions_on_format": {},
-    "file_types": {},
+    "file_types": {
+        "Ruby": ["jb"]
+    },
     "auto_install_extensions": {
         "html": true
     },
