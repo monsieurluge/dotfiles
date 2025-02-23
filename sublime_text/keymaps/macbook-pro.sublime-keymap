@@ -30,11 +30,11 @@
     { "keys": ["ctrl+shift+e"], "command": "duplicate_line" },
     { "keys": ["ctrl+up"], "command": "swap_line_up" },
     { "keys": ["ctrl+down"], "command": "swap_line_down" },
-    { "keys": ["ctrl+k", "ctrl+s"], "command": "sort_lines", "args": { "case_sensitive": true} },
+    { "keys": ["ctrl+k", "s"], "command": "sort_lines", "args": { "case_sensitive": true} },
 
     // misc
-    { "keys": ["ctrl+k", "ctrl+f"], "command": "fold" },
-    { "keys": ["ctrl+k", "ctrl+shift+f"], "command": "unfold" },
+    { "keys": ["ctrl+k", "f"], "command": "fold" },
+    { "keys": ["ctrl+k", "shift+f"], "command": "unfold" },
     { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }, "context":
         [
             { "key": "overlay_has_focus", "operator": "equal", "operand": false },
@@ -46,15 +46,15 @@
 
     // ---------------------------------------------------------------------- ui
 
-    { "keys": ["ctrl+u", "ctrl+b"], "command": "toggle_side_bar" },
-    { "keys": ["ctrl+u", "ctrl+c"], "command": "show_panel", "args": { "panel": "console", "toggle": true} },
-    { "keys": ["ctrl+u", "ctrl+g"], "command": "toggle_setting", "args": { "setting": "gutter" } },
-    { "keys": ["ctrl+u", "ctrl+m"], "command": "toggle_minimap" },
-    { "keys": ["ctrl+u", "ctrl+p"], "command": "clear_missing_recent_projects_and_workspaces" },
-    { "keys": ["ctrl+u", "ctrl+s"], "command": "toggle_status_bar" },
-    { "keys": ["ctrl+u", "ctrl+t"], "command": "toggle_tabs" },
-    { "keys": ["ctrl+u", "ctrl+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-    { "keys": ["ctrl+u", "ctrl+z"], "command": "toggle_distraction_free" },
+    { "keys": ["ctrl+u", "b"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+u", "c"], "command": "show_panel", "args": { "panel": "console", "toggle": true} },
+    { "keys": ["ctrl+u", "g"], "command": "toggle_setting", "args": { "setting": "gutter" } },
+    { "keys": ["ctrl+u", "m"], "command": "toggle_minimap" },
+    { "keys": ["ctrl+u", "p"], "command": "clear_missing_recent_projects_and_workspaces" },
+    { "keys": ["ctrl+u", "s"], "command": "toggle_status_bar" },
+    { "keys": ["ctrl+u", "t"], "command": "toggle_tabs" },
+    { "keys": ["ctrl+u", "w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
+    { "keys": ["ctrl+u", "z"], "command": "toggle_distraction_free" },
 
     // -------------------------------------------------------------- navigation
 
@@ -99,14 +99,14 @@
     // move tab
     { "keys": ["ctrl+shift+j"], "command": "move_tab", "args": { "same_group": true, "backward": true} },
     { "keys": ["ctrl+shift+;"], "command": "move_tab", "args": { "same_group": true} },
-    { "keys": ["ctrl+u", "ctrl+l"], "command": "move_tab", "args": { "same_group": false, "backward": true} },
-    { "keys": ["ctrl+u", "ctrl+r"], "command": "move_tab", "args": { "same_group": false} },
+    { "keys": ["ctrl+u", "l"], "command": "move_tab", "args": { "same_group": false, "backward": true} },
+    { "keys": ["ctrl+u", "r"], "command": "move_tab", "args": { "same_group": false} },
 
     // LSP
-    { "keys": ["ctrl+u", "ctrl+d"], "command": "show_panel", "args": { "panel": "output.diagnostics" } },
+    { "keys": ["ctrl+u", "d"], "command": "show_panel", "args": { "panel": "output.diagnostics" } },
     {
         "command": "lsp_symbol_references",
-        "keys": ["ctrl+k", "ctrl+r"],
+        "keys": ["ctrl+k", "r"],
         "args": { "side_by_side": true, "force_group": true, "fallback": false, "group": -1},
         "context": [
             { "key": "lsp.session_with_capability", "operand": "referencesProvider" }
@@ -132,7 +132,7 @@
     },
     {
         "command": "lsp_symbol_type_definition",
-        "keys": ["ctrl+k", "ctrl+d"],
+        "keys": ["ctrl+k", "d"],
         "args": { "side_by_side": false, "force_group": true, "group": -1},
         "context": [
             { "key": "lsp.session_with_capability", "operand": "typeDefinitionProvider" },
@@ -141,7 +141,7 @@
     },
     {
         "command": "lsp_code_actions",
-        "keys": ["ctrl+k", "ctrl+a"],
+        "keys": ["ctrl+k", "a"],
         "context": [
             {
                 "key": "lsp.session_with_capability",
@@ -153,7 +153,7 @@
     {
         "command": "lsp_code_actions",
         "args": { "only_kinds": ["source"] },
-        "keys": ["ctrl+k", "ctrl+k"],
+        "keys": ["ctrl+k", "k"],
         "context": [
             {
                 "key": "lsp.session_with_capability",
@@ -176,7 +176,7 @@
     {
         "command": "lsp_symbol_implementation",
         "args": { "side_by_side": true},
-        "keys": ["ctrl+k", "ctrl+i"],
+        "keys": ["ctrl+k", "i"],
         "context": [
             {
                 "key": "lsp.session_with_capability",
@@ -192,7 +192,7 @@
     },
     {
         "command": "lsp_hover",
-        "keys": ["ctrl+k", "ctrl+h"],
+        "keys": ["ctrl+k", "h"],
         "context": [
             {
                 "key": "lsp.session_with_capability",
@@ -203,13 +203,13 @@
     },
     {
         "command": "lsp_next_diagnostic",
-        "keys": ["ctrl+k", "ctrl+n"],
+        "keys": ["ctrl+k", "n"],
         "context": [{ "key": "setting.lsp_active" }]
     },
 
     // Copilot
     {
-        "keys": ["ctrl+k", "ctrl+j"],
+        "keys": ["ctrl+k", "j"],
         "command": "copilot_get_panel_completions",
         "context": [
             {
