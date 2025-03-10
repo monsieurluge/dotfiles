@@ -217,7 +217,8 @@
         "bindings": {
             "ctrl-a c": "search::ToggleCaseSensitive",
             "ctrl-a w": "search::ToggleWholeWord",
-            "ctrl-a r": "search::ToggleRegex"
+            "ctrl-a r": "search::ToggleRegex",
+            "ctrl-a f": "project_search::ToggleFilters"
         }
     }
 ]
