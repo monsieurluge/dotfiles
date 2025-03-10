@@ -26,5 +26,78 @@
         "body": "binding.break",
         "description": "debug breaking point",
         "prefix": "_breakingpoint"
+    },
+    "rails: interactor base": {
+        "body": [
+            "class InteractorExample",
+            "  include Interactor",
+            "",
+            "  before :do_something",
+            "  after :do_something_else",
+            "",
+            "around do |interactor|",
+            "  context.some_property = some_value",
+            "  interactor.call",
+            "  context.other_property = other_value",
+            "end",
+            "",
+            "  def call",
+            "    # TODO",
+            "  end",
+            "end"
+        ],
+        "description": "rails: interactor base",
+        "prefix": "_railsinteractor"
+    },
+    "rails: interactor organizer": {
+        "body": [
+            "class PlaceOrder",
+            "include Interactor::Organizer",
+            "",
+            "organize ChargeCard, SendThankYou, FulfillOrder",
+            "end"
+        ],
+        "description": "rails: interactor organizer",
+        "prefix": "_railsorganizer"
+    },
+    "rails: interactor concern": {
+        "body": [
+            "module InteractorConcernExample",
+            "  extend ActiveSupport::Concern",
+            "",
+            "  included do",
+            "    around do |interactor|",
+            "      context.start_time = Time.now",
+            "      interactor.call",
+            "      context.finish_time = Time.now",
+            "    end",
+            "  end",
+            "end"
+        ],
+        "description": "rails: interactor concern",
+        "prefix": "_railsinteractorconcern"
+    },
+    "rails: concern": {
+        "body": [
+            "module Visible",
+            "  extend ActiveSupport::Concern",
+            "",
+            "  # instance methods",
+            "  included do",
+            "    def toggle_visibility",
+            "      toggle!(:is_visible)",
+            "    end",
+            "  end",
+            "",
+            "  # class methods",
+            "  class_methods do",
+            "    def get_all_visible",
+            "      all.select { |item| item.is_visible? }",
+            "    end",
+            "  end",
+            "end"
+        ],
+        "description": "rails: concern",
+        "prefix": "_railsconcern"
     }
 }
