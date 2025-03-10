@@ -107,7 +107,7 @@
                     "create_new_window": false
                 }
             ],
-            "ctrl-shift-tab": "pane::ActivatePrevItem",
+            "ctrl-shift-tab": "pane::ActivatePreviousItem",
             "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u c": "collab_panel::ToggleFocus",
             "ctrl-u e": "project_panel::ToggleFocus",
@@ -150,11 +150,11 @@
         "context": "Editor && (showing_code_actions || showing_completions)",
         "bindings": {
             "down": "editor::ContextMenuNext",
-            "up": "editor::ContextMenuPrev",
+            "up": "editor::ContextMenuPrevious",
             "pagedown": "editor::ContextMenuLast",
             "pageup": "editor::ContextMenuFirst",
             "ctrl-n": "editor::ContextMenuNext",
-            "ctrl-p": "editor::ContextMenuPrev"
+            "ctrl-p": "editor::ContextMenuPrevious"
         }
     },
     {
@@ -200,15 +200,15 @@
     {
         "context": "FileFinder",
         "bindings": {
-            "cmd-shift-p": "file_finder::SelectPrev"
+            "cmd-shift-p": "file_finder::SelectPrevious"
         }
     },
     {
         "context": "TabSwitcher",
         "bindings": {
-            "ctrl-up": "menu::SelectPrev",
+            "ctrl-up": "menu::SelectPrevious",
             "ctrl-down": "menu::SelectNext",
-            "ctrl-shift-tab": "menu::SelectPrev",
+            "ctrl-shift-tab": "menu::SelectPrevious",
             "ctrl-backspace": "tab_switcher::CloseSelectedItem"
         }
     },
