@@ -28,6 +28,7 @@
     },
     "ui_font_weight": 400,
     "ui_font_size": 16,
+    "unnecessary_code_fade": 0.7,
     "active_pane_magnification": 1.0,
     "centered_layout": {
         "left_padding": 0.25,
