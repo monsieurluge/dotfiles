@@ -71,7 +71,7 @@
             "ctrl-u f": "editor::Fold",
             "ctrl-u u": "editor::UnfoldLines",
             "ctrl-u i": "editor::ToggleInlayHints",
-            "ctrl-u l": "editor::ToggleLineNumbers",
+            "ctrl-u g": "editor::ToggleLineNumbers",
             "ctrl-u w": "editor::ToggleSoftWrap",
             "ctrl-u left": "workspace::ActivatePaneLeft",
             "ctrl-u right": "workspace::ActivatePaneRight",
