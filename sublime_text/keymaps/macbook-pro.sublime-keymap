@@ -66,8 +66,8 @@
     { "keys": ["ctrl+right"], "command": "move", "args": { "by": "word_ends", "forward": true} },
 
     // panes & focus
-    { "keys": ["ctrl+shift+tab"], "command": "change_view", "args": { "reverse": true} },
-    { "keys": ["ctrl+tab"], "command": "change_view" },
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
     { "keys": ["ctrl+shift+."], "command": "focus_neighboring_group" },
     { "keys": ["ctrl+shift+,"], "command": "focus_neighboring_group", "args": { "forward": false} },
     { "keys": ["ctrl+shift+y"], "command": "focus_side_bar" },
