@@ -210,6 +210,15 @@
     // Copilot
     {
         "keys": ["ctrl+k", "j"],
+        "command": "copilot_ask_completions",
+        "context": [
+            {
+                "key": "copilot.is_authorized",
+            }
+        ]
+    },
+    {
+        "keys": ["ctrl+k", "c"],
         "command": "copilot_get_panel_completions",
         "context": [
             {
