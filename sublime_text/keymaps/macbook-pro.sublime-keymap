@@ -64,6 +64,7 @@
     { "keys": ["ctrl+;"], "command": "goto_definition" },
     { "keys": ["ctrl+left"], "command": "move", "args": { "by": "words", "forward": false} },
     { "keys": ["ctrl+right"], "command": "move", "args": { "by": "word_ends", "forward": true} },
+    { "keys": ["ctrl+k", "k"], "command": "current_result" },
 
     // panes & focus
     { "keys": ["ctrl+tab"], "command": "next_view" },
@@ -88,13 +89,6 @@
     { "keys": ["ctrl+shift+n"], "command": "find_prev" },
 
     // ----------------------------------------------------------------- plugins
-
-    // custom
-    {
-        "keys": ["ctrl+k", "k"],
-        "command": "double_click_at_caret",
-        "context": [{ "key": "selector", "operator": "equal", "operand": "text.find-in-files", "match_all": true }],
-    },
 
     // move tab
     { "keys": ["shift+ctrl+j"], "command": "move_tab", "args": { "same_group": true, "backward": true} },
@@ -153,7 +147,7 @@
     {
         "command": "lsp_code_actions",
         "args": { "only_kinds": ["source"] },
-        "keys": ["ctrl+k", "k"],
+        "keys": ["ctrl+k", "a"],
         "context": [
             {
                 "key": "lsp.session_with_capability",
