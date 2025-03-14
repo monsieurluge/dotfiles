@@ -33,8 +33,8 @@
     { "keys": ["ctrl+k", "s"], "command": "sort_lines", "args": { "case_sensitive": true} },
 
     // misc
-    { "keys": ["ctrl+k", "f"], "command": "fold" },
-    { "keys": ["ctrl+k", "shift+f"], "command": "unfold" },
+    { "keys": ["ctrl+u", "f"], "command": "fold" },
+    { "keys": ["ctrl+u", "shift+f"], "command": "unfold" },
     { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }, "context":
         [
             { "key": "overlay_has_focus", "operator": "equal", "operand": false },
@@ -68,8 +68,8 @@
     // panes & focus
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-    { "keys": ["ctrl+shift+."], "command": "focus_neighboring_group" },
-    { "keys": ["ctrl+shift+,"], "command": "focus_neighboring_group", "args": { "forward": false} },
+    { "keys": ["ctrl+shift+/"], "command": "focus_neighboring_group" },
+    { "keys": ["ctrl+shift+m"], "command": "focus_neighboring_group", "args": { "forward": false} },
     { "keys": ["ctrl+shift+y"], "command": "focus_side_bar" },
 
     // -------------------------------------------------------- find and replace
@@ -91,16 +91,16 @@
 
     // custom
     {
-        "keys": ["ctrl+;"],
+        "keys": ["ctrl+k", "k"],
         "command": "double_click_at_caret",
         "context": [{ "key": "selector", "operator": "equal", "operand": "text.find-in-files", "match_all": true }],
     },
 
     // move tab
-    { "keys": ["ctrl+shift+j"], "command": "move_tab", "args": { "same_group": true, "backward": true} },
-    { "keys": ["ctrl+shift+;"], "command": "move_tab", "args": { "same_group": true} },
-    { "keys": ["ctrl+u", "l"], "command": "move_tab", "args": { "same_group": false, "backward": true} },
-    { "keys": ["ctrl+u", "r"], "command": "move_tab", "args": { "same_group": false} },
+    { "keys": ["shift+ctrl+j"], "command": "move_tab", "args": { "same_group": true, "backward": true} },
+    { "keys": ["shift+ctrl+;"], "command": "move_tab", "args": { "same_group": true} },
+    { "keys": ["ctrl+u", "l"], "command": "move_tab", "args": { "same_group": true, "backward": true} },
+    { "keys": ["ctrl+u", "r"], "command": "move_tab", "args": { "same_group": true} },
 
     // LSP
     { "keys": ["ctrl+u", "d"], "command": "show_panel", "args": { "panel": "output.diagnostics" } },
