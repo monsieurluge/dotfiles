@@ -31,7 +31,7 @@ def horizontal_layout(groups):
     ]
     max_groups = len(layouts)
     if (groups < 0 or groups > max_groups - 1):
-        raise AttributeError(f'only {max_groups} groups are handled by this layout ; given: {groups}')
+        raise AttributeError('only {} groups are handled by this layout ; given: {}'.format(max_groups, groups))
     return layouts[groups]
 
 
@@ -64,7 +64,7 @@ def vertical_layout(groups):
     ]
     max_groups = len(layouts)
     if (groups < 0 or groups > max_groups - 1):
-        raise AttributeError(f'only {max_groups} groups are handled by this layout ; given: {groups}')
+        raise AttributeError('only {} groups are handled by this layout ; given: {}'.format(max_groups, groups))
     return layouts[groups]
 
 
