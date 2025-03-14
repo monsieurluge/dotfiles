@@ -116,6 +116,7 @@
 	"show_project_first": true,
 	"show_sidebar_button": false,
 	"show_tab_close_buttons": false,
+	"show_git_status_in_status_bar": false,
 	"tab_completion": false,
 	"theme": "sandstorm.sublime-theme",
 	"translate_tabs_to_spaces": true,
