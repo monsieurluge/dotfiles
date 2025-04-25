@@ -86,7 +86,7 @@
         "line_numbers": false,
         "code_actions": false,
         "folds": false,
-        "runnables": true
+        "runnables": false
     },
     "indent_guides": {
         "enabled": false,
