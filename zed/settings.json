@@ -92,7 +92,7 @@
         "enabled": false,
         "line_width": 1,
         "coloring": "fixed",
-        "background_coloring": "disabled"
+        "background_coloring": "indent_aware"
     },
     "vertical_scroll_margin": 5,
     "scroll_sensitivity": 1.0,
