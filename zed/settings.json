@@ -130,7 +130,7 @@
         "default_width": 240
     },
     "chat_panel": {
-        "button": false,
+        "button": "never",
         "dock": "left",
         "default_width": 240
     },
