@@ -6,8 +6,8 @@
     },
     "theme": {
         "mode": "system",
-        "light": "Solarized Light",
-        "dark": "Sandcastle"
+        "light": "NeoSolarized Light",
+        "dark": "NeoSolarized Dark"
     },
     "base_keymap": "SublimeText",
     "features": {
@@ -18,16 +18,17 @@
         // Disable ligatures:
         "calt": false
     },
-    "buffer_font_size": 19,
+    "buffer_font_size": 18.0,
     "buffer_font_weight": 400,
     "buffer_line_height": "standard",
+    "inline_code_actions": false,
     "ui_font_family": ".SystemUIFont",
     "ui_font_features": {
         // Disable ligatures:
         "calt": false
     },
     "ui_font_weight": 400,
-    "ui_font_size": 16,
+    "ui_font_size": 14,
     "unnecessary_code_fade": 0.7,
     "active_pane_magnification": 1.0,
     "centered_layout": {
@@ -90,9 +91,9 @@
     },
     "indent_guides": {
         "enabled": false,
-        "line_width": 1,
+        "line_width": 3,
         "coloring": "fixed",
-        "background_coloring": "indent_aware"
+        "background_coloring": "disabled"
     },
     "vertical_scroll_margin": 5,
     "scroll_sensitivity": 1.0,
@@ -106,8 +107,17 @@
         "edit_debounce_ms": 700,
         "scroll_debounce_ms": 50
     },
+    "search": {
+      "button": false
+    },
+    "git_panel": {
+      "button": false
+    },
+    "outline_panel": {
+      "button": false
+    },
     "project_panel": {
-        "button": false,
+        "button": true,
         "default_width": 240,
         "dock": "left",
         "file_icons": false,
@@ -123,37 +133,24 @@
             "show": null
         }
     },
-    "collaboration_panel": {
-        // Whether to show the collaboration panel button in the status bar.
-        "button": true,
-        "dock": "left",
-        "default_width": 240
-    },
     "chat_panel": {
-        "button": "never",
-        "dock": "left",
-        "default_width": 240
+      "dock": "left"
     },
     "message_editor": {
         "auto_replace_emoji_shortcode": true
     },
     "notification_panel": {
-        "button": false,
-        "dock": "left",
-        "default_width": 380
+        "button": false
     },
-    "assistant": {
+    "agent": {
         "default_model": {
-            "provider": "openai",
-            "model": "gpt-4o"
+            "provider": "copilot_chat",
+            "model": "gpt-4.1"
         },
         "version": "2",
-        "enabled": false,
-        "button": false,
-        "dock": "right",
-        "default_width": 640,
-        "default_height": 640.0,
-        "provider": null
+        "enabled": true,
+        "button": true,
+        "dock": "right"
     },
     "show_call_status_icon": true,
     "enable_language_server": true,
@@ -163,7 +160,8 @@
     "autosave": "on_focus_change",
     "tab_bar": {
         "show": true,
-        "show_nav_history_buttons": false
+        "show_nav_history_buttons": false,
+        "show_tab_bar_buttons": false
     },
     "tabs": {
         "git_status": false,
