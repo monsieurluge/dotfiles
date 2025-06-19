@@ -5,34 +5,19 @@
             "    <quote>todo: component</quote>",
             "</template>",
             "",
-            "<script setup>",
+            "<script setup lang=\"ts\">",
             "    $0",
             "</script>",
             "",
             "<style scoped>",
             "</style>"
         ],
-        "description": "vue component - basic",
+        "description": "vue component",
         "prefix": "_component"
-    },
-    "basic component using TypeScript": {
-        "body": [
-            "<script setup lang=\"ts\">",
-            "    $0",
-            "</script>",
-            "",
-            "<template>",
-            "</template>",
-            "",
-            "<style lang=\"scss\" scoped>",
-            "</style>"
-        ],
-        "description": "vue component - TypeScript",
-        "prefix": "_component-ts"
     },
     "full component example": {
         "body": [
-            "<script setup>",
+            "<script setup lang=\"ts\">",
             "    import { ref } from 'vue'",
             "    import MyComponent from './MyComponent.vue'",
             "",
@@ -85,5 +70,19 @@
         ],
         "description": "vue props declaration",
         "prefix": "_props"
+    },
+    "props with defaults declaration": {
+        "body": [
+            "withDefaults(",
+            "  defineProps<{",
+            "    layout: 'horizontal' | 'vertical'",
+            "  }>(),",
+            "  {",
+            "    layout: 'vertical',",
+            "  }",
+            ")"
+        ],
+        "description": "vue props with defaults",
+        "prefix": "_propsdefaults"
     }
 }
