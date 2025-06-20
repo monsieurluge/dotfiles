@@ -13,7 +13,7 @@
     "features": {
         "edit_prediction_provider": "copilot"
     },
-    "buffer_font_family": "Ubuntu Mono",
+    "buffer_font_family": "Hack",
     "buffer_font_features": {
         // Disable ligatures:
         "calt": false
