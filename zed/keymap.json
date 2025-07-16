@@ -66,6 +66,8 @@
             "ctrl-u w": "editor::ToggleSoftWrap",
             "ctrl-u left": "workspace::ActivatePaneLeft",
             "ctrl-u right": "workspace::ActivatePaneRight",
+            "ctrl-u up": "workspace::ActivatePaneUp",
+            "ctrl-u down": "workspace::ActivatePaneDown",
             "ctrl-u shift-left": "pane::SplitLeft",
             "ctrl-u shift-right": "pane::SplitRight"
         }
