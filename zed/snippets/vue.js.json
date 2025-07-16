@@ -84,5 +84,16 @@
         ],
         "description": "vue props with defaults",
         "prefix": "_propsdefaults"
+    },
+    "reactive model initialization": {
+        "body": [
+            "const rolesModel = reactive({",
+            "  ...Object.fromEntries(",
+            "      adminRoles.map((role) => [role, toValue(userGroup).roles.includes(role)])",
+            "  ),",
+            "})"
+        ],
+        "description": "reactive model initialization",
+        "prefix": "_modelreactive"
     }
 }
