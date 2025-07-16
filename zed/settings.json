@@ -1,7 +1,9 @@
 {
+    "active_pane_modifiers": {
+      "border_size": 4.0
+    },
     "language_models": {
         "openai": {
-            "version": "1"
         }
     },
     "theme": {
@@ -21,6 +23,7 @@
     "buffer_font_size": 18.0,
     "buffer_font_weight": 400,
     "buffer_line_height": "standard",
+    "lsp_document_colors": "none",
     "inline_code_actions": false,
     "ui_font_family": ".SystemUIFont",
     "ui_font_features": {
@@ -30,7 +33,6 @@
     "ui_font_weight": 400,
     "ui_font_size": 14,
     "unnecessary_code_fade": 0.7,
-    "active_pane_magnification": 1.0,
     "centered_layout": {
         "left_padding": 0.25,
         "right_padding": 0.25
@@ -47,7 +49,6 @@
     "current_line_highlight": "all",
     "show_completions_on_input": false,
     "show_completion_documentation": true,
-    "completion_documentation_secondary_query_debounce": 500,
     "show_wrap_guides": false,
     "wrap_guides": [],
     // Hide the values of in variables from visual display in private files
@@ -85,7 +86,6 @@
     "double_click_in_multibuffer": "select",
     "gutter": {
         "line_numbers": false,
-        "code_actions": false,
         "folds": false,
         "runnables": false
     },
@@ -147,7 +147,6 @@
             "provider": "copilot_chat",
             "model": "gpt-4.1"
         },
-        "version": "2",
         "enabled": true,
         "button": true,
         "dock": "right"
@@ -240,9 +239,6 @@
                 "activate_script": "default"
             }
         },
-        "toolbar": {
-            "title": true
-        },
         "font_size": 18
     },
     "code_actions_on_format": {},
@@ -255,19 +251,6 @@
         "html": true
     },
     "languages": {
-        "Astro": {
-            "prettier": {
-                "allowed": true,
-                "plugins": [
-                    "prettier-plugin-astro"
-                ]
-            }
-        },
-        "Blade": {
-            "prettier": {
-                "allowed": true
-            }
-        },
         "C": {
             "format_on_save": "off"
         },
@@ -279,46 +262,14 @@
                 "allowed": true
             }
         },
-        "Elixir": {
-            "language_servers": [
-                "elixir-ls",
-                "!next-ls",
-                "!lexical",
-                "..."
-            ]
-        },
-        "Gleam": {
-            "tab_size": 2
-        },
         "Go": {
             "code_actions_on_format": {
                 "source.organizeImports": true
             }
         },
-        "GraphQL": {
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "HEEX": {
-            "language_servers": [
-                "elixir-ls",
-                "!next-ls",
-                "!lexical",
-                "..."
-            ]
-        },
         "HTML": {
             "prettier": {
                 "allowed": true
-            }
-        },
-        "Java": {
-            "prettier": {
-                "allowed": true,
-                "plugins": [
-                    "prettier-plugin-java"
-                ]
             }
         },
         "JavaScript": {
@@ -332,9 +283,6 @@
                 "allowed": true
             }
         },
-        "Make": {
-            "hard_tabs": true
-        },
         "Markdown": {
             "show_edit_predictions": false,
             "format_on_save": "off",
@@ -342,22 +290,13 @@
                 "allowed": true
             }
         },
-        "PHP": {
-            "prettier": {
-                "allowed": true,
-                "plugins": [
-                    "@prettier/plugin-php"
-                ]
-            }
-        },
-        "Prisma": {
-            "tab_size": 2
-        },
         "Ruby": {
             "language_servers": [
                 "ruby-lsp",
                 "rubocop",
                 "!solargraph",
+                "!steep",
+                "!sorbet",
                 "..."
             ],
             "tab_size": 2
@@ -375,20 +314,7 @@
                 ]
             }
         },
-        "Svelte": {
-            "prettier": {
-                "allowed": true,
-                "plugins": [
-                    "prettier-plugin-svelte"
-                ]
-            }
-        },
         "TSX": {
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "Twig": {
             "prettier": {
                 "allowed": true
             }
@@ -401,14 +327,6 @@
         "Vue.js": {
             "prettier": {
                 "allowed": true
-            }
-        },
-        "XML": {
-            "prettier": {
-                "allowed": true,
-                "plugins": [
-                    "@prettier/plugin-xml"
-                ]
             }
         },
         "YAML": {
@@ -440,16 +358,12 @@
     },
     "vim": {
         "use_system_clipboard": "always",
-        "use_multiline_find": false,
         "use_smartcase_find": false
     },
     "preview": {},
     "nightly": {},
     "stable": {},
     "dev": {},
-    "task": {
-        "show_status_indicator": true
-    },
     "line_indicator_format": "long",
     "proxy": null
 }
