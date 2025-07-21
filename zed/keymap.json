@@ -69,7 +69,9 @@
             "ctrl-u up": "workspace::ActivatePaneUp",
             "ctrl-u down": "workspace::ActivatePaneDown",
             "ctrl-u shift-left": "pane::SplitLeft",
-            "ctrl-u shift-right": "pane::SplitRight"
+            "ctrl-u shift-right": "pane::SplitRight",
+            "ctrl-u shift-up": "pane::SplitUp",
+            "ctrl-u shift-down": "pane::SplitDown"
         }
     },
     {
