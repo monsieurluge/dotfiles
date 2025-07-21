@@ -1,81 +1,13 @@
 {
-    "frozen string literal comment": {
-        "body": "# frozen_string_literal: true",
-        "description": "frozen string literal comment",
-        "prefix": "_frozen"
-    },
-    "RSPEC template for Rails Job": {
-        "body": [
-            "require \"rails_helper\"",
-            "",
-            "RSpec.describe SomeModule::SomeJob, type: :job do",
-            "  describe \"#perform_later\" do",
-            "    it \"do something useful\" do",
-            "      ActiveJob::Base.queue_adapter = :test",
-            "      expect {",
-            "        described_class.perform_later(\"payload\")",
-            "      }.to have_enqueued_job",
-            "    end",
-            "  end",
-            "end"
-        ],
-        "description": "RSPEC template for Rails Job",
-        "prefix": "_rspecrailsjob"
-    },
     "debug breaking point": {
         "body": "binding.break",
         "description": "debug breaking point",
         "prefix": "_breakingpoint"
     },
-    "rails: interactor base": {
-        "body": [
-            "class InteractorExample",
-            "  include Interactor",
-            "",
-            "  before :do_something",
-            "  after :do_something_else",
-            "",
-            "around do |interactor|",
-            "  context.some_property = some_value",
-            "  interactor.call",
-            "  context.other_property = other_value",
-            "end",
-            "",
-            "  def call",
-            "    # TODO",
-            "  end",
-            "end"
-        ],
-        "description": "rails: interactor base",
-        "prefix": "_railsinteractor"
-    },
-    "rails: interactor organizer": {
-        "body": [
-            "class PlaceOrder",
-            "include Interactor::Organizer",
-            "",
-            "organize ChargeCard, SendThankYou, FulfillOrder",
-            "end"
-        ],
-        "description": "rails: interactor organizer",
-        "prefix": "_railsorganizer"
-    },
-    "rails: interactor concern": {
-        "body": [
-            "module InteractorConcernExample",
-            "  extend ActiveSupport::Concern",
-            "",
-            "  included do",
-            "    around do |interactor|",
-            "      context.start_time = Time.now",
-            "      interactor.call",
-            "      context.finish_time = Time.now",
-            "    end",
-            "  end",
-            "end"
-        ],
-        "description": "rails: interactor concern",
-        "prefix": "_railsinteractorconcern"
+    "frozen string literal comment": {
+        "body": "# frozen_string_literal: true",
+        "description": "frozen string literal comment",
+        "prefix": "_frozen"
     },
     "rails: concern": {
         "body": [
@@ -99,5 +31,83 @@
         ],
         "description": "rails: concern",
         "prefix": "_railsconcern"
+    },
+    "rails: interactor base": {
+        "body": [
+            "class InteractorExample",
+            "  include Interactor",
+            "",
+            "  before :do_something",
+            "  after :do_something_else",
+            "",
+            "around do |interactor|",
+            "  context.some_property = some_value",
+            "  interactor.call",
+            "  context.other_property = other_value",
+            "end",
+            "",
+            "  def call",
+            "    # TODO",
+            "  end",
+            "end"
+        ],
+        "description": "rails: interactor base",
+        "prefix": "_railsinteractor"
+    },
+    "rails: interactor concern": {
+        "body": [
+            "module InteractorConcernExample",
+            "  extend ActiveSupport::Concern",
+            "",
+            "  included do",
+            "    around do |interactor|",
+            "      context.start_time = Time.now",
+            "      interactor.call",
+            "      context.finish_time = Time.now",
+            "    end",
+            "  end",
+            "end"
+        ],
+        "description": "rails: interactor concern",
+        "prefix": "_railsinteractorconcern"
+    },
+    "rails: interactor organizer": {
+        "body": [
+            "class PlaceOrder",
+            "include Interactor::Organizer",
+            "",
+            "organize ChargeCard, SendThankYou, FulfillOrder",
+            "end"
+        ],
+        "description": "rails: interactor organizer",
+        "prefix": "_railsorganizer"
+    },
+    "rails: long message": {
+        "body": [
+            "Rails.logger.warn(<<~MESSAGE)",
+            "         Deprecated method `OauthToken#refresh` use OauthClient.new instead.",
+            "         #{caller.join(\"\n\")}",
+            "       MESSAGE"
+        ],
+        "description": "rails: long message",
+        "prefix": "_railslongmessage"
+    },
+    "RSPEC template for Rails Job": {
+        "body": [
+            "require \"rails_helper\"",
+            "",
+            "RSpec.describe SomeModule::SomeJob, type: :job do",
+            "  describe \"#perform_later\" do",
+            "    it \"do something useful\" do",
+            "      ActiveJob::Base.queue_adapter = :test",
+            "      expect {",
+            "        described_class.perform_later(\"payload\")",
+            "      }.to have_enqueued_job",
+            "    end",
+            "  end",
+            "end"
+        ],
+        "description": "RSPEC template for Rails Job",
+        "prefix": "_rspecrailsjob"
     }
 }
