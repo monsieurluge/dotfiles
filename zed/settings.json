@@ -121,21 +121,21 @@
       "button": false
     },
     "project_panel": {
-        "button": true,
-        "default_width": 240,
-        "dock": "left",
+        "auto_fold_dirs": false,
+        "auto_reveal_entries": false,
+        "button": false,
         "file_icons": false,
         "folder_icons": false,
-        "git_status": true,
+        "hide_root": true,
         "indent_size": 12,
         "indent_guides": {
             "show": "never"
         },
-        "auto_reveal_entries": false,
-        "auto_fold_dirs": false,
         "scrollbar": {
             "show": null
-        }
+        },
+        "show_diagnostics": "errors",
+        "sticky_scroll": false
     },
     "chat_panel": {
       "dock": "left"
