@@ -18,5 +18,18 @@
     "diagnostics_delay_ms": 500,
     "inhibit_snippet_completions": false,
     "inhibit_word_completions": false,
-    "link_highlight_style": "disabled"
+    "link_highlight_style": "disabled",
+    "clients": {
+      "ruby-lsp": {
+            "enabled": true,
+            "command": ["ruby-lsp"],
+            "selector": "source.ruby | text.html.ruby",
+            "initializationOptions": {
+                "enabledFeatures": {
+                    "diagnostics": true
+                },
+                "experimentalFeaturesEnabled": true
+            }
+        }
+    }
 }
