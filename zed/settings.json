@@ -76,6 +76,9 @@
         "mute_on_join": false,
         "share_on_join": false
     },
+    "title_bar": {
+      "show_user_picture": false
+    },
     "toolbar": {
         "breadcrumbs": false,
         "quick_actions": false
@@ -181,8 +184,8 @@
     "ensure_final_newline_on_save": true,
     "format_on_save": "off",
     "formatter": "auto",
-    "soft_wrap": "prefer_line",
-    "preferred_line_length": 80,
+    "soft_wrap": "bounded",
+    "preferred_line_length": 100,
     "hard_tabs": false,
     "tab_size": 4,
     "telemetry": {
