@@ -7,8 +7,7 @@
         "git_status": false
     },
     "language_models": {
-        "openai": {
-        }
+        "openai": {}
     },
     "theme": {
         "mode": "system",
@@ -24,7 +23,7 @@
         // Disable ligatures:
         "calt": false
     },
-    "buffer_font_size": 18.0,
+    "buffer_font_size": 15.0,
     "buffer_font_weight": 400,
     "buffer_line_height": "standard",
     "lsp_document_colors": "none",
@@ -34,7 +33,7 @@
         // Disable ligatures:
         "calt": false
     },
-    "ui_font_weight": 400,
+    "ui_font_weight": 200,
     "ui_font_size": 14,
     "unnecessary_code_fade": 0.7,
     "use_system_path_prompts": false,
@@ -106,7 +105,6 @@
     "vertical_scroll_margin": 5,
     "scroll_sensitivity": 1.0,
     "relative_line_numbers": false,
-    "seed_search_query_from_cursor": "always",
     "inlay_hints": {
         "enabled": false,
         "show_type_hints": true,
