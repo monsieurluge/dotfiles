@@ -1,0 +1,17 @@
+# nvm
+
+export NVM_DIR="$HOME/.nvm"
+# this loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# this loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# ruby
+
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+ export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+ export PATH=/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH
+ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
+ export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+ export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+fi
