@@ -43,7 +43,7 @@
             "ctrl-shift-d": "editor::SelectAllMatches",
             "ctrl-shift-e": "editor::DuplicateLineDown",
             "ctrl-shift-enter": "editor::NewlineAbove",
-            "ctrl-shift-j": "copilot::Suggest",
+            "ctrl-shift-j": "editor::ShowEditPrediction",
             "ctrl-shift-k": "editor::AddSelectionBelow",
             "ctrl-shift-l": "editor::AddSelectionAbove",
             "ctrl-shift-left": "editor::SelectToPreviousWordStart",
@@ -57,6 +57,7 @@
             "ctrl-shift-right": "editor::SelectToNextWordEnd",
             "ctrl-shift-y": "project_panel::ToggleFocus",
             // UI COMMANDS
+            "ctrl-u b": "git::Blame",
             "ctrl-u d": "editor::ToggleSelectedDiffHunks",
             "ctrl-u f": "editor::Fold",
             "ctrl-u g": "editor::ToggleLineNumbers",
@@ -103,9 +104,9 @@
                 }
             ],
             "ctrl-shift-tab": "pane::ActivatePreviousItem",
-            "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u c": "collab_panel::ToggleFocus",
             "ctrl-u e": "project_panel::ToggleFocus",
+            "ctrl-u p": "workspace::ToggleLeftDock",
             "ctrl-u t": "terminal_panel::ToggleFocus",
             "ctrl-u z": "workspace::ToggleCenteredLayout"
         }
