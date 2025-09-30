@@ -217,7 +217,6 @@
         }
     },
     "edit_predictions": {
-        "mode": "eager",
         "disabled_globs": [
             ".env"
         ]
