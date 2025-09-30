@@ -135,6 +135,12 @@
         }
     },
     {
+      "context": "Editor && !edit_prediction",
+      "bindings": {
+        "ctrl-shift-j": "editor::ShowEditPrediction"
+      }
+    },
+    {
         "context": "Editor && showing_code_actions",
         "bindings": {
             "enter": "editor::ConfirmCodeAction"
