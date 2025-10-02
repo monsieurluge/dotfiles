@@ -255,7 +255,8 @@
     "file_types": {
         "Ruby": [
             "jb"
-        ]
+        ],
+        "Lua": ["*.p8"]
     },
     "auto_install_extensions": {
         "html": true
