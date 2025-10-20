@@ -7,41 +7,45 @@
         "git_status": false
     },
     "experimental.theme_overrides": {
-        "background": "#00000000",
-        "background.appearance": "blurred",
         "border": "#00000000",
-        "border.variant": "#00000000",
-        "editor.active_line.background": "#00000030",
-        "editor.background": "#00000000",
-        "editor.gutter.background": "#00000000",
-        "panel.background": "#00000000",
-        "scrollbar.track.border": "#00000000",
-        "status_bar.background": "#00000000",
-        "tab.active_background": "#00000030",
-        "tab.inactive_background": "#00000000",
-        "tab_bar.background": "#00000000",
-        "terminal.background": "#00000030",
-        "title_bar.background": "#00000000",
-        "toolbar.background": "#00000030"
+        "border.variant": "#00000000"
     },
+    // "experimental.theme_overrides": {
+    //     "background": "#00000000",
+    //     "background.appearance": "blurred",
+    //     "border": "#00000000",
+    //     "border.variant": "#00000000",
+    //     "editor.active_line.background": "#00000030",
+    //     "editor.background": "#00000000",
+    //     "editor.gutter.background": "#00000000",
+    //     "panel.background": "#00000000",
+    //     "scrollbar.track.border": "#00000000",
+    //     "status_bar.background": "#00000000",
+    //     "tab.active_background": "#00000030",
+    //     "tab.inactive_background": "#00000000",
+    //     "tab_bar.background": "#00000000",
+    //     "terminal.background": "#00000030",
+    //     "title_bar.background": "#00000000",
+    //     "toolbar.background": "#00000030"
+    // },
     "language_models": {
         "openai": {}
     },
     "theme": {
         "mode": "system",
-        "light": "Gruvbox Dark Hard",
+        "light": "Gruvbox Light Soft",
         "dark": "Gruvbox Dark Soft"
     },
     "base_keymap": "SublimeText",
     "features": {
         "edit_prediction_provider": "copilot"
     },
-    "buffer_font_family": "Hack",
+    "buffer_font_family": "Ubuntu Mono",
     "buffer_font_features": {
         // Disable ligatures:
         "calt": false
     },
-    "buffer_font_size": 15.0,
+    "buffer_font_size": 16.0,
     "buffer_font_weight": 400,
     "buffer_line_height": "standard",
     "lsp_document_colors": "none",
