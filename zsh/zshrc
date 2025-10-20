@@ -1,16 +1,9 @@
-# theme
-
-ZSH_THEME="theunraveler" # set by `omz`
-
-export ZSH="$HOME/.oh-my-zsh"
-
-source $ZSH/oh-my-zsh.sh
-
 # aliases
 
 unalias -m '*'
-alias ll="ls -l --color"
-alias lla="ls -la --color"
+
+alias ll="ls -l -G"
+alias lla="ls -la -G"
 alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
 alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
@@ -20,25 +13,16 @@ alias openinmerge="open -a Sublime\ Merge ."
 alias openinzed="open -a Zed ."
 alias rmr="rm -r"
 
+[[ -f "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
+
+# other services or applications
+
 endquarantine() {
     xattr -rd com.apple.quarantine /Applications/$1.app
 }
 
-[ -f .aliases ] && source .aliases
+[[ -f "$HOME/.zsh_apps" ]] && source "$HOME/.zsh_apps"
 
-# paths
+# end message (to avoid unrelated error code)
 
-fpath=($fpath "$HOME/.zfunctions")
-autoload -U promptinit; promptinit
-
-fpath=($fpath "/Users/laurent/.zfunctions")
-
-# volta
-
-export PATH=/Users/laurent/.volta/bin:$PATH
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-# other services or applications
-
-source ~/.zsh_apps
+echo "zshrc sourced"
