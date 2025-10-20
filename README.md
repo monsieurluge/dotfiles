@@ -4,15 +4,15 @@ These are my personal config files.
 
 # What's inside
 
-- JetBrains Fleet IDE
 - Git
+- JetBrains Fleet IDE
 - Karabiner Elements
 - MacOS keybindigs
 - NeoVim
-- Sublime Text
+- Sublime Text Editor
+- Zed Editor
 - zsh
 
 # Resources
 
 [typewritten zsh prompt theme](https://typewritten.dev)
-
