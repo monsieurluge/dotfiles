@@ -1,17 +1,24 @@
+[core]
+    excludesfile = ~/.gitignore
+[diff]
+    colorMoved = zebra
+    tool = nvim
+[fetch]
+    all = true
+    prune = true
+    pruneTags = true
+[init]
+    defaultBranch = main
 [pager]
     branch = false
-[diff]
-    tool = nvim
-	colorMoved = zebra
-
-[user]
-	name = monsieurluge
-	email = monsieurluge@gmail.com
 [pull]
-	rebase = true
-[fetch]
-	prune = true
-[init]
-	defaultBranch = main
-[core]
-	excludesfile = ~/.gitignore
+    rebase = true
+[push]
+    autoSetupRemote = true
+    default = simple
+    followTags = true
+[rebase]
+    updateRefs = true
+[user]
+    email = monsieurluge@gmail.com
+    name = monsieurluge
