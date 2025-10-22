@@ -162,9 +162,6 @@
         "show_diagnostics": "errors",
         "sticky_scroll": false
     },
-    "chat_panel": {
-      "dock": "left"
-    },
     "message_editor": {
         "auto_replace_emoji_shortcode": true
     },
