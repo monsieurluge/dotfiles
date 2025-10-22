@@ -8,7 +8,7 @@
     },
     "experimental.theme_overrides": {
         "border": "#00000000",
-        "border.variant": "#00000000"
+        "border.variant": "#00000020"
     },
     // "experimental.theme_overrides": {
     //     "background": "#00000000",
