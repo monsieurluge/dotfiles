@@ -1,4 +1,11 @@
 {
+    "delay": {
+        "body": [
+            "await new Promise((resolve) => setTimeout(resolve, 3000))"
+        ],
+        "description": "add delay",
+        "prefix": "_delay"
+    },
     "JEST: top level test template": {
         "body": [
             "describe('${0:name}', () => {",
