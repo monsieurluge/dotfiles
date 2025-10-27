@@ -43,7 +43,6 @@
             "ctrl-k d": "diagnostics::Deploy",
             "ctrl-k f": "editor::Format",
             "ctrl-k h": "editor::Hover",
-            "ctrl-k k": "editor::OpenExcerpts", // go to ?????
             "ctrl-k s": "editor::SortLinesCaseSensitive",
             "ctrl-k tab": "workspace::ActivateNextPane",
             "ctrl-k shift-tab": "workspace::ActivatePreviousPane",
@@ -116,6 +115,12 @@
         "context": "Editor && renaming",
         "bindings": {
             "enter": "editor::ConfirmRename"
+        }
+    },
+    {
+        "context": "Editor && multibuffer",
+        "bindings": {
+            "ctrl-g g": "editor::OpenExcerpts"
         }
     },
     {
