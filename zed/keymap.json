@@ -2,10 +2,10 @@
     {
         "context": "Editor",
         "bindings": {
-            "pagedown": "editor::MoveToEndOfParagraph",
-            "pageup": "editor::MoveToStartOfParagraph",
-            "shift-pagedown": "editor::MovePageDown",
-            "shift-pageup": "editor::MovePageUp",
+            "pagedown": "editor::MovePageDown",
+            "pageup": "editor::MovePageUp",
+            "shift-pagedown": "editor::MoveToEndOfParagraph",
+            "shift-pageup": "editor::MoveToStartOfParagraph",
             "ctrl-/": "editor::ToggleComments",
             "ctrl-;": "editor::GoToDefinition",
             "ctrl-a": null,
