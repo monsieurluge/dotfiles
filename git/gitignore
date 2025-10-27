@@ -1,8 +1,14 @@
+// mac os
 **/.DS_Store
 .DS_Store
-.vscode
-.fleet
-.zed
-*.sublime-workspace
+
+// editors
 *.sublime-project
+*.sublime-workspace
+.fleet
+.nvimlog
+.vscode
+.zed
+
+// misc
 WARP.md
