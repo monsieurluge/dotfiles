@@ -12,13 +12,16 @@
             "ctrl-d": [ "editor::SelectNext", { "replace_newest": false } ],
             "ctrl-e": "editor::DeleteLine",
             "ctrl-g": null,
+            "ctrl-h": null,
             "ctrl-j": "editor::ShowCompletions",
             "ctrl-k": null,
             "ctrl-m": "editor::MoveToEnclosingBracket",
             "ctrl-n": [ "editor::SelectNext", { "replace_newest": true } ],
+            "ctrl-o": "outline::Toggle",
             "ctrl-p": "command_palette::Toggle",
             "ctrl-r": "editor::Rename",
             "ctrl-t": null,
+            "ctrl-y": "pane::RevealInProjectPanel",
             "ctrl-backspace": "editor::DeleteToPreviousWordStart",
             "ctrl-delete": "editor::DeleteToNextWordEnd",
             "ctrl-down": "editor::MoveLineDown",
@@ -51,10 +54,7 @@
             "ctrl-g d": "editor::GoToDiagnostic",
             "ctrl-g shift-d": "editor::GoToPreviousDiagnostic",
             "ctrl-g f": "file_finder::Toggle",
-            "ctrl-g g": "editor::GoToDefinition",
             "ctrl-g l": "go_to_line::Toggle",
-            "ctrl-g o": "outline::Toggle",
-            "ctrl-g p": "pane::RevealInProjectPanel",
             "ctrl-g r": "editor::FindAllReferences",
             "ctrl-g t": "editor::MoveToBeginning",
             // UI COMMANDS ------------------------------
@@ -120,7 +120,7 @@
     {
         "context": "Editor && multibuffer",
         "bindings": {
-            "ctrl-g g": "editor::OpenExcerpts"
+            "ctrl-;": "editor::OpenExcerpts" // same as "go to definition"
         }
     },
     {
