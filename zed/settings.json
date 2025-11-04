@@ -1,4 +1,7 @@
 {
+    "debugger": {
+        "dock": "left"
+    },
     "active_pane_modifiers": {
         "border_size": 3.0
     },
@@ -175,7 +178,7 @@
         },
         "enabled": true,
         "button": true,
-        "dock": "right"
+        "dock": "left"
     },
     "show_call_status_icon": true,
     "enable_language_server": true,
