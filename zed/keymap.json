@@ -58,20 +58,20 @@
             "ctrl-g r": "editor::FindAllReferences",
             "ctrl-g t": "editor::MoveToBeginning",
             // UI COMMANDS ------------------------------
-            "ctrl-u d": "editor::ToggleSelectedDiffHunks",
-            "ctrl-u down": "workspace::ActivatePaneDown",
-            "ctrl-u shift-down": "pane::SplitDown",
+            "ctrl-u d": "workspace::ActivatePaneDown",
+            "ctrl-u shift-d": "pane::SplitDown",
             "ctrl-u f": "editor::Fold",
+            "ctrl-u shift-f": "editor::UnfoldLines",
             "ctrl-u g": "editor::ToggleLineNumbers",
             "ctrl-u h": "editor::ToggleInlayHints",
             "ctrl-u i": "editor::ToggleIndentGuides",
             "ctrl-u l": "workspace::ActivatePaneLeft",
             "ctrl-u shift-l": "pane::SplitLeft",
+            "ctrl-u p": "workspace::ToggleLeftDock",
             "ctrl-u r": "workspace::ActivatePaneRight",
             "ctrl-u shift-r": "pane::SplitRight",
-            "ctrl-u u": "editor::UnfoldLines",
-            "ctrl-u up": "workspace::ActivatePaneUp",
-            "ctrl-u shift-up": "pane::SplitUp",
+            "ctrl-u u": "workspace::ActivatePaneUp",
+            "ctrl-u shift-u": "pane::SplitUp",
             "ctrl-u w": "editor::ToggleSoftWrap"
         }
     },
@@ -106,7 +106,8 @@
             "ctrl-shift-tab": "pane::ActivatePreviousItem",
             "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u c": "collab_panel::ToggleFocus",
-            "ctrl-u e": "project_panel::ToggleFocus",
+            "ctrl-u e": "workspace::ActivateNextPane",
+            "ctrl-u p": "project_panel::ToggleFocus",
             "ctrl-u t": "terminal_panel::ToggleFocus",
             "ctrl-u z": "workspace::ToggleCenteredLayout"
         }
