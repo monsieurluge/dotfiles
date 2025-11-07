@@ -80,10 +80,11 @@
     {
         "context": "Workspace",
         "bindings": {
-            "cmd-f": "pane::DeploySearch",
-            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-tab": "tab_switcher::ToggleAll",
+            "ctrl-shift-tab": null,
             "ctrl-g": "file_finder::Toggle",
             "ctrl-p": "command_palette::Toggle",
+            "cmd-f": "pane::DeploySearch",
             "cmd-k cmd-down": "workspace::ActivatePaneDown",
             "cmd-k cmd-left": "workspace::ActivatePaneLeft",
             "cmd-k cmd-right": "workspace::ActivatePaneRight",
@@ -105,7 +106,6 @@
                     "create_new_window": false
                 }
             ],
-            "ctrl-shift-tab": "pane::ActivatePreviousItem",
             "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u c": "collab_panel::ToggleFocus",
             "ctrl-u e": "workspace::ActivateNextPane",
@@ -217,10 +217,9 @@
     {
         "context": "TabSwitcher",
         "bindings": {
-            "ctrl-up": "menu::SelectPrevious",
-            "ctrl-down": "menu::SelectNext",
-            "ctrl-shift-tab": "menu::SelectPrevious",
-            "ctrl-backspace": "tab_switcher::CloseSelectedItem"
+            "up": "menu::SelectPrevious",
+            "down": "menu::SelectNext",
+            "cmd-w": "tab_switcher::CloseSelectedItem"
         }
     },
     {
