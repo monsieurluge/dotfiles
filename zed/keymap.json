@@ -74,6 +74,7 @@
             "ctrl-u p": "workspace::ToggleLeftDock",
             "ctrl-u r": "workspace::ActivatePaneRight",
             "ctrl-u shift-r": "pane::SplitRight",
+            "ctrl-u t": "editor::ToggleTabBar",
             "ctrl-u u": "workspace::ActivatePaneUp",
             "ctrl-u shift-u": "pane::SplitUp",
             "ctrl-u w": "editor::ToggleSoftWrap"
