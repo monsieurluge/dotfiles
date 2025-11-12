@@ -30,6 +30,8 @@
             "ctrl-enter": "editor::NewlineBelow",
             "ctrl-left": "editor::MoveToPreviousWordStart",
             "ctrl-right": "editor::MoveToNextWordEnd",
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-shift-tab": "pane::ActivatePreviousItem",
             "ctrl-up": "editor::MoveLineUp",
             "ctrl-shift-d": "editor::SelectAllMatches",
             "ctrl-shift-e": "editor::DuplicateLineDown",
@@ -49,7 +51,7 @@
             "ctrl-k f": "editor::Format",
             "ctrl-k h": "editor::Hover",
             "ctrl-k s": "editor::SortLinesCaseSensitive",
-            "ctrl-k tab": "workspace::ActivateNextPane",
+            "ctrl-k tab": "tab_switcher::ToggleAll",
             "ctrl-k shift-tab": "workspace::ActivatePreviousPane",
             // GO COMMANDS ------------------------------
             "ctrl-g b": "editor::MoveToEnd",
@@ -80,10 +82,9 @@
     {
         "context": "Workspace",
         "bindings": {
-            "ctrl-tab": "tab_switcher::ToggleAll",
-            "ctrl-shift-tab": null,
             "ctrl-f": "file_finder::Toggle",
             "ctrl-p": "command_palette::Toggle",
+            "ctrl-k tab": "tab_switcher::ToggleAll",
             "cmd-f": "pane::DeploySearch",
             "cmd-k cmd-down": "workspace::ActivatePaneDown",
             "cmd-k cmd-left": "workspace::ActivatePaneLeft",
