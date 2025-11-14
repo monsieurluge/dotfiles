@@ -62,6 +62,7 @@
             "ctrl-g r": "editor::FindAllReferences",
             "ctrl-g t": "editor::MoveToBeginning",
             // UI COMMANDS ------------------------------
+            "cmd-=": "zed::ResetAllZoom",
             "ctrl-u d": "workspace::ActivatePaneDown",
             "ctrl-u shift-d": "pane::SplitDown",
             "ctrl-u f": "editor::Fold",
