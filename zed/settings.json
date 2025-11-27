@@ -206,7 +206,7 @@
     "ensure_final_newline_on_save": true,
     "format_on_save": "off",
     "formatter": "auto",
-    "soft_wrap": "bounded",
+    "soft_wrap": null,
     "preferred_line_length": 100,
     "hard_tabs": false,
     "tab_size": 4,
