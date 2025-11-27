@@ -130,7 +130,7 @@
     },
     "vertical_scroll_margin": 5,
     "scroll_sensitivity": 1.0,
-    "relative_line_numbers": false,
+    "relative_line_numbers": "disabled",
     "inlay_hints": {
         "enabled": false,
         "show_type_hints": true,
