@@ -63,6 +63,7 @@
             "ctrl-g t": "editor::MoveToBeginning",
             // UI COMMANDS ------------------------------
             "cmd-=": "zed::ResetAllZoom",
+            "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u d": "workspace::ActivatePaneDown",
             "ctrl-u shift-d": "pane::SplitDown",
             "ctrl-u f": "editor::Fold",
@@ -72,7 +73,6 @@
             "ctrl-u i": "editor::ToggleIndentGuides",
             "ctrl-u l": "workspace::ActivatePaneLeft",
             "ctrl-u shift-l": "pane::SplitLeft",
-            "ctrl-u p": "workspace::ToggleLeftDock",
             "ctrl-u r": "workspace::ActivatePaneRight",
             "ctrl-u shift-r": "pane::SplitRight",
             "ctrl-u t": "editor::ToggleTabBar",
@@ -112,7 +112,6 @@
             "ctrl-u b": "workspace::ToggleLeftDock",
             "ctrl-u c": "collab_panel::ToggleFocus",
             "ctrl-u e": "workspace::ActivateNextPane",
-            "ctrl-u p": "project_panel::ToggleFocus",
             "ctrl-u t": "terminal_panel::ToggleFocus",
             "ctrl-u z": "workspace::ToggleCenteredLayout"
         }
