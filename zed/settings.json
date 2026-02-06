@@ -211,11 +211,14 @@
     "tab_size": 4,
     "telemetry": {
         "diagnostics": true,
-        "metrics": true
+        "metrics": true,
+    },
+    "session": {
+        "trust_all_worktrees": true,
     },
     "auto_update": false,
     "diagnostics": {
-        "include_warnings": true
+        "include_warnings": true,
     },
     "file_scan_exclusions": [
         "**/.git",
