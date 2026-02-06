@@ -261,122 +261,128 @@
         "detect_venv": {
             "on": {
                 "directories": [".env", "env", ".venv", "venv"],
-                "activate_script": "default"
-            }
+                "activate_script": "default",
+            },
         },
-        "font_size": 18
+        "font_size": 18,
     },
     "code_actions_on_format": {},
     "file_types": {
         "Ruby": ["jb"],
-        "Lua": ["*.p8"]
+        "Lua": ["*.p8"],
     },
     "auto_install_extensions": {
-        "html": true
+        "html": true,
     },
     "languages": {
         "C": {
-            "format_on_save": "off"
+            "format_on_save": "off",
         },
         "C++": {
-            "format_on_save": "off"
+            "format_on_save": "off",
         },
         "CSS": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "Go": {
             "code_actions_on_format": {
-                "source.organizeImports": true
-            }
+                "source.organizeImports": true,
+            },
         },
         "HTML": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "JavaScript": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "JSON": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "Markdown": {
             "format_on_save": "off",
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "Ruby": {
             "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "!steep", "!sorbet", "..."],
-            "tab_size": 2
+            "tab_size": 2,
         },
         "SCSS": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "SQL": {
             "prettier": {
                 "allowed": true,
-                "plugins": ["prettier-plugin-sql"]
-            }
+                "plugins": ["prettier-plugin-sql"],
+            },
         },
         "TSX": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "TypeScript": {
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "Vue.js": {
+            "language_servers": ["vtsls", "..."],
             "prettier": {
-                "allowed": true
-            }
+                "allowed": true,
+            },
         },
         "YAML": {
             "prettier": {
-                "allowed": true
-            }
-        }
+                "allowed": true,
+            },
+        },
     },
     "prettier": {},
     "lsp": {
+        "eslint": {
+            "settings": {
+                "configFile": ".nuxt/eslint.config.mjs",
+            },
+        },
         "ruby-lsp": {
             "initialization_options": {
                 "enabledFeatures": {
-                    "diagnostics": false
-                }
+                    "diagnostics": false,
+                },
             },
             "settings": {
-                "use_bundler": false
-            }
+                "use_bundler": false,
+            },
         },
         "rubocop": {
             "initialization_options": {
-                "safeAutocorrect": false
+                "safeAutocorrect": false,
             },
             "settings": {
-                "use_bundler": false
-            }
-        }
+                "use_bundler": false,
+            },
+        },
     },
     "vim": {
         "use_system_clipboard": "always",
-        "use_smartcase_find": false
+        "use_smartcase_find": false,
     },
     "preview": {},
     "nightly": {},
     "stable": {},
     "dev": {},
     "line_indicator_format": "long",
-    "proxy": null
+    "proxy": null,
 }
