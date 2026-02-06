@@ -1,18 +1,18 @@
 {
     "debugger": {
-        "dock": "left"
+        "dock": "left",
     },
     "active_pane_modifiers": {
-        "border_size": 0,
-        "inactive_opacity": 0.5
+        "border_size": 6,
+        "inactive_opacity": 0.8,
     },
     "file_finder": {
         "file_icons": false,
-        "git_status": false
+        "git_status": false,
     },
     "experimental.theme_overrides": {
         "border": "#00000000",
-        "border.variant": "#00000020"
+        "border.variant": "#00000020",
     },
     // "experimental.theme_overrides": {
     //     "background": "#00000000",
