@@ -158,16 +158,17 @@
         "hide_root": true,
         "indent_size": 12,
         "indent_guides": {
-            "show": "never"
+            "show": "never",
         },
         "scrollbar": {
-            "show": null
+            "show": null,
         },
         "show_diagnostics": "errors",
-        "sticky_scroll": false
+        "starts_open": false,
+        "sticky_scroll": false,
     },
     "message_editor": {
-        "auto_replace_emoji_shortcode": true
+        "auto_replace_emoji_shortcode": true,
     },
     "notification_panel": {
         "button": false
