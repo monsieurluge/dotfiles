@@ -171,16 +171,16 @@
         "auto_replace_emoji_shortcode": true,
     },
     "notification_panel": {
-        "button": false
+        "button": true,
     },
     "agent": {
         "default_model": {
             "provider": "copilot_chat",
-            "model": "gpt-4.1"
+            "model": "gpt-4.1",
         },
         "enabled": true,
         "button": true,
-        "dock": "left"
+        "dock": "left",
     },
     "show_call_status_icon": true,
     "enable_language_server": true,
