@@ -2,7 +2,7 @@
     // ----------------------------------------------------------------- general
 
     { "keys": ["ctrl+b"], "command": "build" },
-    { "keys": ["ctrl+g"], "command": "show_overlay", "args": { "overlay": "goto", "show_files": true} },
+    { "keys": ["ctrl+f"], "command": "show_overlay", "args": { "overlay": "goto", "show_files": true} },
     { "keys": ["ctrl+h"], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } },
     { "keys": ["ctrl+k"], "command": "noop" },
     { "keys": ["ctrl+l"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" } },
