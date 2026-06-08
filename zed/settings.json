@@ -1,4 +1,14 @@
 {
+    "agent_servers": {
+        "claude-acp": {
+            "type": "registry"
+        }
+    },
+    "icon_theme": {
+        "mode": "light",
+        "light": "Zed (Default)",
+        "dark": "Zed (Default)"
+    },
     "collaboration_panel": {
         "dock": "left"
     },
@@ -38,7 +48,7 @@
         "openai": {},
     },
     "theme": {
-        "mode": "system",
+        "mode": "light",
         "light": "Arrakis Day",
         "dark": "Gruvbox Dark",
     },
@@ -173,6 +183,7 @@
         "auto_replace_emoji_shortcode": true,
     },
     "agent": {
+        "enable_feedback": false,
         "default_model": {
             "provider": "copilot_chat",
             "model": "gpt-4.1",
@@ -215,7 +226,7 @@
     "session": {
         "trust_all_worktrees": true,
     },
-    "auto_update": false,
+    "auto_update": true,
     "diagnostics": {
         "include_warnings": true,
     },
@@ -238,6 +249,7 @@
         },
     },
     "edit_predictions": {
+        "provider": "zed",
         "disabled_globs": [".env"],
     },
     "journal": {
