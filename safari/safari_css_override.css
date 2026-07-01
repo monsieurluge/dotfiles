@@ -1,0 +1,44 @@
+/* ---------------------------------------- generic */
+#primary #header {
+    display: none;
+}
+
+/* ---------------------------------------- suggestions */
+#columns #secondary {
+    display: none;
+}
+
+/* ---------------------------------------- comments */
+#comments {
+    opacity: 0;
+    transition: 200ms;
+}
+
+#comments:hover {
+    opacity: 1;
+    transition: opacity ease-in 8s;
+}
+
+/* ---------------------------------------- ADs */
+ytd-rich-item-renderer:has(.ytd-ad-slot-renderer) {
+    display: none;
+}
+
+/* ---------------------------------------- thumbnails */
+.ytThumbnailViewModelImage {
+    filter: grayscale();
+}
+
+.ytContentMetadataViewModelMediumText :nth-child(n + 1) {
+    display: none;
+}
+
+/* ---------------------------------------- thumbnails overload */
+#contents :nth-child(n + 16) {
+    display: none;
+}
+
+/* ---------------------------------------- additional sections */
+ytd-rich-section-renderer:has(ytd-chips-shelf-with-video-shelf-renderer) {
+    display: none;
+}
