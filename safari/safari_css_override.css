@@ -20,7 +20,8 @@
 }
 
 /* ---------------------------------------- ADs */
-ytd-rich-item-renderer:has(.ytd-ad-slot-renderer) {
+ytd-rich-item-renderer:has(.ytd-ad-slot-renderer),
+ytd-page-top-ad-layout-renderer {
     display: none;
 }
 
