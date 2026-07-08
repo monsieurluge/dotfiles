@@ -1,23 +1,24 @@
 {
+    "selection_highlight": false,
     "agent_servers": {
         "claude-acp": {
-            "type": "registry"
-        }
+            "type": "registry",
+        },
     },
     "icon_theme": {
         "mode": "light",
         "light": "Zed (Default)",
-        "dark": "Zed (Default)"
+        "dark": "Zed (Default)",
     },
     "collaboration_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "debugger": {
         "dock": "left",
     },
     "active_pane_modifiers": {
-        "border_size": 6,
-        "inactive_opacity": 0.8,
+        "border_size": 3,
+        "inactive_opacity": 0.6,
     },
     "file_finder": {
         "file_icons": false,
@@ -25,6 +26,8 @@
     "experimental.theme_overrides": {
         "border": "#00000000",
         "border.variant": "#00000020",
+        "border.selected": "#dcd6c7",
+        "editor.document_highlight.bracket_background": "#ffffff00",
     },
     // "experimental.theme_overrides": {
     //     "background": "#00000000",
@@ -49,7 +52,7 @@
     },
     "theme": {
         "mode": "light",
-        "light": "Arrakis Day",
+        "light": "Solarized Light",
         "dark": "Gruvbox Dark",
     },
     "base_keymap": "SublimeText",
