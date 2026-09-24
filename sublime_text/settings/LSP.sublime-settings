@@ -10,18 +10,21 @@
     "show_inlay_hints": false,
     "show_diagnostics_severity_level": 2,
     "diagnostics_highlight_style": {
-      "error": "underline",
-      "warning": "underline",
-      "info": "underline",
-      "hint": "underline"
+        "error": "underline",
+        "warning": "underline",
+        "info": "underline",
+        "hint": "underline"
     },
     "diagnostics_delay_ms": 500,
     "inhibit_snippet_completions": false,
     "inhibit_word_completions": false,
     "link_highlight_style": "disabled",
     "clients": {
-      "ruby-lsp": {
+        "ruby-lsp": {
             "enabled": true,
+            "env": {
+                "PATH": "/Users/laurent/.rbenv/shims:/usr/local/bin"
+            },
             "command": ["ruby-lsp"],
             "selector": "source.ruby | text.html.ruby",
             "initializationOptions": {
