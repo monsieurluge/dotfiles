@@ -2,6 +2,9 @@
     "selection_highlight": false,
     "agent_servers": {
         "claude-acp": {
+            "default_config_options": {
+                "effort": "low",
+            },
             "type": "registry",
         },
     },
@@ -17,7 +20,6 @@
         "dock": "left",
     },
     "active_pane_modifiers": {
-        "border_size": 3,
         "inactive_opacity": 0.6,
     },
     "file_finder": {
@@ -26,8 +28,12 @@
     "experimental.theme_overrides": {
         "border": "#00000000",
         "border.variant": "#00000020",
-        "border.selected": "#dcd6c7",
+        "editor.subheader.background": "#D6CCC3",
         "editor.document_highlight.bracket_background": "#ffffff00",
+        "minimap.thumb.background": "#00000005",
+        "minimap.thumb.hover_background": "#00000030",
+        "minimap.thumb.border": "#00000050",
+        "minimap.thumb.active_background": "#00000010",
     },
     // "experimental.theme_overrides": {
     //     "background": "#00000000",
@@ -51,17 +57,17 @@
         "openai": {},
     },
     "theme": {
-        "mode": "light",
+        "mode": "system",
         "light": "Solarized Light",
         "dark": "Gruvbox Dark",
     },
     "base_keymap": "SublimeText",
-    "buffer_font_family": "Ubuntu Mono",
+    "buffer_font_family": "Hack",
     "buffer_font_features": {
         // Disable ligatures:
         "calt": false,
     },
-    "buffer_font_size": 16.0,
+    "buffer_font_size": 15.0,
     "buffer_font_weight": 400,
     "buffer_line_height": "standard",
     "lsp_document_colors": "none",
@@ -78,6 +84,10 @@
     "centered_layout": {
         "left_padding": 0.25,
         "right_padding": 0.25,
+    },
+    "minimap": {
+        "thumb_border": "full",
+        "current_line_highlight": "all",
     },
     "multi_cursor_modifier": "alt",
     "vim_mode": false,
@@ -163,13 +173,13 @@
         "button": false,
     },
     "project_panel": {
+        "folder_indicator": "chevron",
         "dock": "left",
         "auto_fold_dirs": false,
         "auto_reveal_entries": false,
         "button": true,
         "default_width": 300,
         "file_icons": false,
-        "folder_icons": false,
         "hide_root": true,
         "indent_size": 12,
         "indent_guides": {
@@ -181,9 +191,6 @@
         "show_diagnostics": "errors",
         "starts_open": false,
         "sticky_scroll": false,
-    },
-    "message_editor": {
-        "auto_replace_emoji_shortcode": true,
     },
     "agent": {
         "enable_feedback": false,
@@ -200,11 +207,14 @@
     "language_servers": ["!prettier", "..."],
     "autosave": "on_focus_change",
     "tab_bar": {
+        "show_pinned_tabs_in_separate_row": false,
         "show": true,
         "show_nav_history_buttons": false,
         "show_tab_bar_buttons": false,
     },
     "tabs": {
+        "file_icons": false,
+        "activate_on_close": "neighbour",
         "git_status": false,
         "close_position": "left",
     },
@@ -246,7 +256,7 @@
         "**/dist",
     ],
     "git": {
-        "git_gutter": "hide",
+        "git_gutter": "tracked_files",
         "inline_blame": {
             "enabled": false,
         },
@@ -289,20 +299,9 @@
         "html": true,
     },
     "languages": {
-        "C": {
-            "format_on_save": "off",
-        },
-        "C++": {
-            "format_on_save": "off",
-        },
         "CSS": {
             "prettier": {
                 "allowed": true,
-            },
-        },
-        "Go": {
-            "code_actions_on_format": {
-                "source.organizeImports": true,
             },
         },
         "HTML": {
@@ -327,19 +326,16 @@
             },
         },
         "Ruby": {
-            "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "!steep", "!sorbet", "..."],
-            "tab_size": 2,
+            "language_servers": ["ruby-lsp"],
         },
-        "SCSS": {
-            "prettier": {
-                "allowed": true,
-            },
+        "HTML+ERB": {
+            "language_servers": ["herb", "ruby-lsp", "..."],
         },
-        "SQL": {
-            "prettier": {
-                "allowed": true,
-                "plugins": ["prettier-plugin-sql"],
-            },
+        "JS+ERB": {
+            "language_servers": ["ruby-lsp", "..."],
+        },
+        "YAML+ERB": {
+            "language_servers": ["ruby-lsp", "..."],
         },
         "TSX": {
             "prettier": {
@@ -371,19 +367,13 @@
             },
         },
         "ruby-lsp": {
-            "initialization_options": {
-                "enabledFeatures": {
-                    "diagnostics": false,
-                },
-            },
-            "settings": {
-                "use_bundler": false,
+            "settings": { "use_bundler": false },
+            "binary": {
+                "path": "/opt/homebrew/bin/mise",
+                "arguments": ["x", "--", "ruby-lsp"],
             },
         },
-        "rubocop": {
-            "initialization_options": {
-                "safeAutocorrect": false,
-            },
+        "solargraph": {
             "settings": {
                 "use_bundler": false,
             },
