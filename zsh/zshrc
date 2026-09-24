@@ -16,6 +16,24 @@ alias rmr="rm -r"
 
 [[ -f "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
 
+# worktrees
+
+wt-setup() {
+  local folder=${1:-.}
+  cd "$folder" && cpdashboardfiles && yarn install && yarn nuxt prepare
+}
+
+wt-new() {
+  local folder=$1
+  local origin=$2
+  local branch=$3
+  if [[ -z "$folder" || -z "$origin" || -z "$branch" ]]; then
+    echo "Usage: wt-new <folder> <source-branch> <type/branch-id>"
+    return 1
+  fi
+  git worktree add "$folder" "$origin" -b "$branch" && wt-setup "$folder"
+}
+
 # other services or applications
 
 endquarantine() {
