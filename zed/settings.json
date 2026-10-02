@@ -28,7 +28,6 @@
     "experimental.theme_overrides": {
         "border": "#00000000",
         "border.variant": "#00000020",
-        "editor.subheader.background": "#D6CCC3",
         "editor.document_highlight.bracket_background": "#ffffff00",
         "minimap.thumb.background": "#00000005",
         "minimap.thumb.hover_background": "#00000030",
