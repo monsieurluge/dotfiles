@@ -214,7 +214,7 @@
     },
     "tabs": {
         "file_icons": false,
-        "activate_on_close": "neighbour",
+        "activate_on_close": "history",
         "git_status": false,
         "close_position": "left",
     },
