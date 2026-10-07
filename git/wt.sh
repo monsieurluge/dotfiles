@@ -65,7 +65,7 @@ cmd_list() {
     done < <(get_worktrees)
 }
 
-cmd_purge() {
+cmd_prune() {
     printf "Fetching remote refs... "
     fetch_remote_refs
     printf "done\n\n"
@@ -146,7 +146,7 @@ cmd_review() {
 
 case "${1:-}" in
     new)    cmd_new "${@:2}" ;;
-    purge)  cmd_purge ;;
+    purge)  cmd_prune ;;
     review) cmd_review "${@:2}" ;;
     "")     cmd_list  ;;
     *)
