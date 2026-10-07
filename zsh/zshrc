@@ -8,31 +8,11 @@ alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origi
 alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias gitlog="git log --max-count=5 --oneline | cat"
-alias gitparent="git --no-pager log --oneline --first-parent -1 HEAD"
 alias openinsublime="open -a Sublime\ Text ."
 alias openinmerge="open -a Sublime\ Merge ."
 alias openinzed="open -a Zed ."
-alias rmr="rm -r"
 
 [[ -f "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
-
-# worktrees
-
-wt-setup() {
-  local folder=${1:-.}
-  cd "$folder" && cpdashboardfiles && yarn install && yarn nuxt prepare
-}
-
-wt-new() {
-  local folder=$1
-  local origin=$2
-  local branch=$3
-  if [[ -z "$folder" || -z "$origin" || -z "$branch" ]]; then
-    echo "Usage: wt-new <folder> <source-branch> <type/branch-id>"
-    return 1
-  fi
-  git worktree add "$folder" "$origin" -b "$branch" && wt-setup "$folder"
-}
 
 # other services or applications
 
