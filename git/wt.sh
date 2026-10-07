@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
-
 DIM='\033[2m'
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -10,7 +8,7 @@ RESET='\033[0m'
 YELLOW='\033[1;33m'
 
 fetch_remote_refs() {
-    git -C "$REPO_DIR" fetch --prune origin 2>/dev/null
+    git fetch --prune origin 2>/dev/null
 }
 
 # Outputs "<path>\t<branch>" per worktree, DETACHED if no branch
@@ -27,14 +25,14 @@ get_worktrees() {
                 path="" ; branch=""
                 ;;
         esac
-    done < <(git -C "$REPO_DIR" worktree list --porcelain)
+    done < <(git worktree list --porcelain)
     if [[ -n "$path" ]] && [[ "$(basename "$path")" != ".bare" ]]; then
         printf '%s\t%s\n' "$path" "${branch:-DETACHED}"
     fi
 }
 
 remote_branch_exists() {
-    git -C "$REPO_DIR" show-ref --verify --quiet "refs/remotes/origin/$1"
+    git show-ref --verify --quiet "refs/remotes/origin/$1"
 }
 
 worktree_is_dirty() {
@@ -42,7 +40,7 @@ worktree_is_dirty() {
 }
 
 cmd_list() {
-    printf "Fetching remote refs... "
+    printf "Fetching remote refs..."
     fetch_remote_refs
     printf "done\n\n"
 
@@ -92,7 +90,7 @@ cmd_purge() {
         fi
 
         printf "  Removing: %s (%s)\n" "$(basename "$path")" "$branch"
-        git -C "$REPO_DIR" worktree remove "$path"
+        git worktree remove "$path"
         purged=$((purged + 1))
     done < <(get_worktrees)
 
@@ -106,18 +104,18 @@ cmd_new() {
 
     if [[ ! -d "$PWD/.bare" ]]; then
         printf "${RED}Error: no .bare directory found in %s${RESET}\n" "$PWD"
-        return 1
+        exit 1
     fi
 
     if [[ -z "$folder" || -z "$origin" || -z "$branch" ]]; then
         printf "Usage: %s new <dir_name> <origin> <branch_name>\n" "$(basename "$0")"
-        return 1
+        exit 1
     fi
 
-    local worktree_path="$REPO_DIR/$folder"
+    local worktree_path="$PWD/$folder"
 
     printf "Creating worktree %s from %s...\n" "$folder" "$origin"
-    git -C "$REPO_DIR" worktree add "$worktree_path" "$origin" -b "$branch"
+    git worktree add "$worktree_path" "$origin" -b "$branch"
 
     (cd "$worktree_path")
     printf "\nWorktree %s ready.\n" "$folder"
@@ -129,18 +127,18 @@ cmd_review() {
 
     if [[ ! -d "$PWD/.bare" ]]; then
         printf "${RED}Error: no .bare directory found in %s${RESET}\n" "$PWD"
-        return 1
+        exit 1
     fi
 
     if [[ -z "$folder" || -z "$origin" ]]; then
         printf "Usage: %s review <dir_name> <origin>\n" "$(basename "$0")"
-        return 1
+        exit 1
     fi
 
-    local worktree_path="$REPO_DIR/$folder"
+    local worktree_path="$PWD/$folder"
 
     printf "Creating worktree %s from %s...\n" "$folder" "$origin"
-    git -C "$REPO_DIR" worktree add "$worktree_path" "$origin"
+    git worktree add "$worktree_path" "$origin"
 
     (cd "$worktree_path")
     printf "\nWorktree %s ready.\n" "$folder"
@@ -153,6 +151,6 @@ case "${1:-}" in
     "")     cmd_list  ;;
     *)
         printf "Usage: %s [new <dir> <origin> <branch> | purge | review <dir> <origin>]\n" "$(basename "$0")"
-        return 1
+        exit 1
         ;;
 esac
