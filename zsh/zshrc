@@ -1,27 +1,33 @@
-# aliases
+##### aliases
 
 unalias -m '*'
 
+# global
 alias ll="ls -l -G"
 alias lla="ls -la -G"
-alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
+alias openinmerge="open -a Sublime\ Merge ."
+alias openinsublime="open -a Sublime\ Text ."
+alias openinzed="open -a Zed ."
+# docker
 alias dockerls="docker container list --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
 alias dockerlsa="docker container list -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' | tail -n +2 | sort -k 2"
+# git
+alias addrefs="git config remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
 alias gitlog="git log --max-count=5 --oneline | cat"
-alias openinsublime="open -a Sublime\ Text ."
-alias openinmerge="open -a Sublime\ Merge ."
-alias openinzed="open -a Zed ."
-
+alias gitprunedetached="git branch --list | grep -vE '^[+*]' | awk '{print $1}' | while read -r b; do git branch -D \"$b\"; done"
+# laptop/desktop overrides
 [[ -f "$HOME/.zsh_aliases" ]] && source "$HOME/.zsh_aliases"
 
-# other services or applications
+##### functions
 
 endquarantine() {
     xattr -rd com.apple.quarantine /Applications/$1.app
 }
 
+##### applications overrides
+
 [[ -f "$HOME/.zsh_apps" ]] && source "$HOME/.zsh_apps"
 
-# end message (to avoid unrelated error code)
+##### end message (to avoid unrelated error code)
 
 echo "zshrc sourced"
