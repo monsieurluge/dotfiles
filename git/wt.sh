@@ -71,7 +71,7 @@ cmd_prune() {
     printf "done\n\n"
 
     local is_first=true
-    local purged=0
+    local removed=0
     local skipped=0
 
     while IFS=$'\t' read -r path branch; do
@@ -91,10 +91,10 @@ cmd_prune() {
 
         printf "  Removing: %s (%s)\n" "$(basename "$path")" "$branch"
         git worktree remove "$path"
-        purged=$((purged + 1))
+        removed=$((removed + 1))
     done < <(get_worktrees)
 
-    printf "\n%d removed, %d skipped (dirty).\n" "$purged" "$skipped"
+    printf "\n%d removed, %d skipped (dirty).\n" "$removed" "$skipped"
 }
 
 cmd_new() {
@@ -146,11 +146,11 @@ cmd_review() {
 
 case "${1:-}" in
     new)    cmd_new "${@:2}" ;;
-    purge)  cmd_prune ;;
+    prune)  cmd_prune ;;
     review) cmd_review "${@:2}" ;;
     "")     cmd_list  ;;
     *)
-        printf "Usage: %s [new <dir> <origin> <branch> | purge | review <dir> <origin>]\n" "$(basename "$0")"
+        printf "Usage: %s [new <dir> <origin> <branch> | prune | review <dir> <origin>]\n" "$(basename "$0")"
         exit 1
         ;;
 esac
