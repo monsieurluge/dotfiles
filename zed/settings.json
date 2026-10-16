@@ -200,6 +200,11 @@
         "enabled": true,
         "button": true,
         "dock": "left",
+        "threads_sidebar": {
+            "auto_open": false,
+            "default_width": 200,
+            "position": "left",
+        },
     },
     "show_call_status_icon": true,
     "enable_language_server": true,
